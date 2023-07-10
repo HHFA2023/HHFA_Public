@@ -1,0 +1,122 @@
+﻿//JSON reading/writing functions
+string jsonTempValue = "";
+
+list jsonStack;
+numeric jsonCurToken = 0;
+
+function startJsonWrite()
+	jsonCurToken = 0;
+	jsonStack.clear();
+	jsonStack.add(0);
+	jsonTempValue = "";
+end;
+
+function string endJsonWrite()
+	jsonCurToken = 0;
+	jsonStack.clear();
+    string res = jsonTempValue;
+	jsonTempValue = "";
+	exit res;
+end;
+
+function startObject(isArray = false)
+	string comma = "";
+	//writing comma if not property and not first in array
+	if jsonCurToken <> 3 & jsonStack.length() & jsonStack(jsonStack.length()) then
+		comma = ",";
+	endif;
+	inc(jsonStack(jsonStack.length()));
+	
+	string ops = "{";
+	jsonCurToken = 1;
+	if isArray then
+	  ops = "[";
+	  jsonCurToken = 2;
+	endif;
+
+	jsonTempValue = jsonTempValue + comma + ops;
+	jsonStack.add(0);
+	
+end;
+
+function endObject()
+	jsonTempValue = jsonTempValue + "}";
+	jsonStack.remove(jsonStack.length());
+end;
+
+function startArray()
+	startObject(true);
+end;
+
+function endArray()
+	jsonTempValue = jsonTempValue + "]";
+	jsonStack.remove(jsonStack.length());
+end;
+
+function writePropertyName(string name)
+	string comma = "";
+    if jsonStack.length() & jsonStack(jsonStack.length()) then
+		comma = ",";
+	endif;
+	jsonTempValue = jsonTempValue + makeText('%s"%s":', comma, name);
+	jsonCurToken = 3;
+end;
+
+function writeNumericValue(numeric value)
+	string comma = "";
+	//writing comma if not property and not first in array
+	if jsonCurToken <> 3 & jsonStack.length() & jsonStack(jsonStack.length()) then
+		comma = ",";
+	endif;
+	inc(jsonStack(jsonStack.length()));
+
+	if value = int(value) then
+		jsonTempValue = jsonTempValue + makeText('%s%d', comma, value);
+	else
+		jsonTempValue = jsonTempValue + makeText('%s%f', comma, value);
+	endif;
+	jsonCurToken = 4;
+end;
+
+function writeStringValue(string value)
+	string comma = "";
+	//writing comma if not property and not first in array
+	if jsonCurToken <> 3 & jsonStack.length() & jsonStack(jsonStack.length()) then
+		comma = ",";
+	endif;
+	inc(jsonStack(jsonStack.length()));
+	jsonTempValue = jsonTempValue + makeText('%s%s', comma, encode(jsonString, value));
+	jsonCurToken = 4;
+end;
+
+function writeBoolValue(numeric value)
+	string comma = "";
+	//writing comma if not property and not first in array
+	if jsonCurToken <> 3 & jsonStack.length() & jsonStack(jsonStack.length()) then
+		comma = ",";
+	endif;
+	inc(jsonStack(jsonStack.length()));
+	string bValue = "false";
+	if value then
+	  bValue = "true";
+	endif;
+	jsonTempValue = jsonTempValue + makeText('%s%s', comma, bValue);
+	jsonCurToken = 4;
+
+end;
+
+function writeNumericArray(list values)
+	startArray();
+	do numeric i = 1 while i <= values.length() 
+		writeNumericValue(values(i));
+	enddo; 
+	endArray();
+end;
+
+function writeStringArray(list string values)
+	startArray();
+	do numeric i = 1 while i <= values.length() 
+		writeStringValue(values(i));
+	enddo; 
+	endArray();
+end;

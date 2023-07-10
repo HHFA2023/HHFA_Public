@@ -1,0 +1,17 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Batch
+
+[Files]
+Application=.\Supervisor_split.bch
+InputData=..\..\data\HFA_COMB.csdb
+OutputData=|type=None
+Listing=.\Supervisor_split.lst
+
+[Parameters]
+ViewListing=Always
+ViewResults=Yes
+ListingWidth=120
+MessageWrap=No
+ErrmsgOverride=No
+InputOrder=Sequential

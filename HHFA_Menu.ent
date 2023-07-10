@@ -1,0 +1,52 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=HHFA_MENU
+Name=HHFA_MENU
+AppType=DataEntry
+OperatorID=No
+ShowEndCaseDialog=No
+CAPI=Yes
+CaseTree=Never
+CreateListing=No
+CreateLog=No
+AutoAdvanceOnSelection=Yes
+ShowFieldLabels=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ShowRefusals=No
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[External Dictionaries]
+File=.\dicts\HFA_Staff.dcf
+File=.\dicts\HFA_DICT.dcf
+File=.\dicts\cHFA_setup.dcf
+File=.\dicts\HFA_COMB.dcf
+File=.\dicts\HFA_Assignments.dcf
+File=.\dicts\QMapDict.dcf
+File=.\dicts\HFA_Facilities.dcf
+[AppCode]
+File=.\HHFA_Menu.ent.apc
+Include=.\prep\JSON.apc
+[Message]
+File=.\HHFA_Menu.ent.mgf
+[Reports]
+INTERVIEWER_PROGRESS_REPORT=.\ref\reports\interviewer_progress.html
+INTERVIEWER_GEN_REPORT=.\ref\reports\interviewer_gen_report.html
+DM_VALIDATION_REPORT=.\ref\reports\dm_validation_report.html
+DM_DUPLICATE_REPORT=.\ref\reports\dm_duplicate_report.html
+TL_FACILITIES_GEN_REPORT=.\ref\reports\tl_facilities_gen_report.html
+TL_FACILITY_PROGRESS_REPORT=.\ref\reports\tl_facility_progress_report.html
+SUP_FACILITIES_REPORT=.\ref\reports\sup_facilities_report.html
+[Help]
+File=.\HHFA_Menu.ent.qsf
+[Forms]
+File=.\HHFA_Menu.fmf
+[Dictionary Types]
+Dict-Type=.\dicts\HHFA_Menu.dcf,Input,.\HHFA_Menu.fmf
+Dict-Type=.\dicts\HFA_Staff.dcf,External
+Dict-Type=.\dicts\HFA_DICT.dcf,External
+Dict-Type=.\dicts\cHFA_setup.dcf,External
+Dict-Type=.\dicts\HFA_COMB.dcf,External
+Dict-Type=.\dicts\HFA_Assignments.dcf,External
+Dict-Type=.\dicts\QMapDict.dcf,External
+Dict-Type=.\dicts\HFA_Facilities.dcf,External

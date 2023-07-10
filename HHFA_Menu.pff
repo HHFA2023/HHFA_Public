@@ -1,0 +1,32 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+Description=Testing (WHO HHFA 2023)
+
+[DataEntryInit]
+StartMode=Add
+Lock=Add,Modify,Delete,Verify,Stats,CaseListing
+FullScreen=NoMenus
+AutoAdd=No
+NoFileOpen=Yes
+
+[Files]
+Application=.\HHFA_Menu.ent
+InputData=|type=None
+
+[ExternalFiles]
+CHFA_DICT=|type=None
+FACILITIES_DCF=|type=None
+GEOCODES_DICT=|type=None
+HFA_ASSIGNMENTS=.\data\HFA_Assignments.csdb
+HFA_COMB=.\data\HFA_COMB.csdb
+HFA_QOC=.\data\HFA_QOC.csdb
+HFA_QOC_COMB=.\data\HFA_QOC_COMB.csdb
+HHFA_DICT=.\data\HFA_Data.csdb
+MODASSIGNMENTS_DICT=.\data\HFA_Assignments.csdb
+QMAPDICT_DICT=|type=None
+STAFF_DICT=|type=None
+WS_DICT=|type=None
+
+[UserFiles]
+tmpFile=

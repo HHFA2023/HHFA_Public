@@ -1,0 +1,13 @@
+---
+mysql_root_password: "3yW#9TsRGs"
+sudo_user: "sudo_user"
+http_host: "cspro-hhfa.com"
+http_conf: "cspro-hhfa.com.conf"
+http_port: "80"
+mysql_csweb_db: "demo"
+mysql_csweb_user: "hhfa_user"
+mysql_csweb_pass: "&6_s&A~tr@"
+csweb_folder: "demo2"
+disable_default: true
+
+WHOHHFAadmin

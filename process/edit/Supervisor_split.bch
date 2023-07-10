@@ -1,0 +1,13 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=SUPERVISOR_SPLIT
+Name=SUPERVISOR_SPLIT
+AppType=Batch
+[AppCode]
+File=.\Supervisor_split.bch.apc
+[Message]
+File=.\Supervisor_split.bch.mgf
+[Order]
+File=.\Supervisor_split.ord
+[Dictionary Types]
+Dict-Type=..\..\dicts\HFA_COMB.dcf,Input,.\Supervisor_split.ord

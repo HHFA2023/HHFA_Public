@@ -1,0 +1,27 @@
+﻿Application     C:\Users\Ashley\Dropbox (Institute of International Programs)\Projects\4_WHO HHFA\5_CSPro\HHFA CSPro Jun 2020\4_New CSPro application\HFA_WHO_v3\process\report_other\Writing Other Specify.bch
+Type            BATCH
+Input Data      <<CSPro DB>> C:\Users\Ashley\Dropbox (Institute of International Programs)\Projects\4_WHO HHFA\5_CSPro\HHFA CSPro Jun 2020\4_New CSPro application\HFA_WHO_v3\data\2_HFA_COMB_FINALDATA.csdb
+Output Data     <<Empty>> 
+<File>          OtherSpecify=
+
+Date            May 11, 2022
+Start Time      10:08:15
+End Time        10:08:16
+
+CSPro Process Summary
+
+      ╔══════════════════════════════════════════════════════╗
+      ║       427 Records Read   100% of input file          ║
+      ║         0 Ignored:       0 Unknown         0 Erased  ║
+      ║         0 Messages:      0 E      0 W      0 User    ║
+      ╠═════════╦══════════════╦══════════════╦══════════════╣
+      ║  Level  ║  Input Case  ║  Bad Struct  ║  Level Post  ║
+      ╠═════════╬══════════════╬══════════════╬══════════════╣
+      ║      1  ║           7  ║           0  ║           7  ║
+      ╚═════════╩══════════════╩══════════════╩══════════════╝
+
+Process Messages
+
+
+CSPro Executor Normal End
+------------------------------------------------------------------------------------------------------------------------

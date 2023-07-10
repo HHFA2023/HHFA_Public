@@ -1,0 +1,18 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+ShowInApplicationListing=Never
+
+[DataEntryInit]
+StartMode=Add
+Lock=Delete,Verify,Stats,CaseListing
+FullScreen=Yes
+
+[Files]
+Application=.\HFA_Assignment.ent
+InputData=..\data\HFA_Assignments.csdb
+
+[ExternalFiles]
+CHFA_DICT=..\ref\HFA_setup.csdb
+HHFA_DICT=|type=None
+STAFF_DICT=..\ref\HFA_Staff.csdb

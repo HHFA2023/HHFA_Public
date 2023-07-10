@@ -1,0 +1,38 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=HFA_ASSIGNMENT
+Name=HFA_ASSIGNMENT
+AppType=DataEntry
+OperatorID=No
+ShowEndCaseDialog=No
+CAPI=Yes
+CaseTree=Never
+CreateListing=No
+CreateLog=No
+AutoAdvanceOnSelection=Yes
+ShowFieldLabels=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ShowRefusals=No
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[External Dictionaries]
+File=..\dicts\HFA_Staff.dcf
+File=..\dicts\HFA_DICT.dcf
+File=..\dicts\cHFA_setup.dcf
+[AppCode]
+File=.\HFA_Assignment.ent.apc
+Include=.\JSON.apc
+[Message]
+File=.\HFA_Assignment.ent.mgf
+[Reports]
+ASSIGNMENTS_CHECK=..\ref\reports\assignments_check.html
+[Help]
+File=.\HFA_Assignment.ent.qsf
+[Forms]
+File=.\HFA_Assignment.fmf
+[Dictionary Types]
+Dict-Type=..\dicts\HFA_Assignments.dcf,Input,.\HFA_Assignment.fmf
+Dict-Type=..\dicts\HFA_Staff.dcf,External
+Dict-Type=..\dicts\HFA_DICT.dcf,External
+Dict-Type=..\dicts\cHFA_setup.dcf,External

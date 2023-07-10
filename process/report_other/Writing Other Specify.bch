@@ -1,0 +1,13 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=WRITING_OTHER_SPECIFY
+Name=WRITING_OTHER_SPECIFY
+AppType=Batch
+[AppCode]
+File=.\Writing Other Specify.bch.apc
+[Message]
+File=.\Writing Other Specify.bch.mgf
+[Order]
+File=.\Writing Other Specify.ord
+[Dictionary Types]
+Dict-Type=..\..\dicts\HFA_COMB.dcf,Input,.\Writing Other Specify.ord

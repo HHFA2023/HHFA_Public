@@ -1,0 +1,105 @@
+{
+  "fileType": "Application Deployment Specification",
+  "version": "7.7",
+  "name": "HHFA_Demo",
+  "description": "Sample HHFA Dropbox deployment",
+  "files": [
+    {
+      "path": "..\\entry\\HFA.ent"
+    },
+    {
+      "path": "..\\entry\\HFA.pff"
+    },
+    {
+      "path": "..\\HHFA_Menu.ent"
+    },
+    {
+      "path": "..\\HHFA_Menu.pff"
+    },
+    {
+      "path": "..\\prep\\HFA_assign.html"
+    },
+    {
+      "path": "..\\prep\\HFA_Assignment.ent"
+    },
+    {
+      "path": "..\\prep\\HFA_Assignment.pff"
+    },
+    {
+      "path": "..\\prep\\JSON.apc"
+    },
+    {
+      "path": "..\\ref\\HFA_Facilities.csdb"
+    },
+    {
+      "path": "..\\ref\\HFA_setup.csdb"
+    },
+    {
+      "path": "..\\ref\\HFA_Staff.csdb"
+    },
+    {
+      "path": "..\\ref\\reports\\assignments_check.html"
+    },
+    {
+      "path": "..\\ref\\reports\\icons\\add.png"
+    },
+    {
+      "path": "..\\ref\\reports\\icons\\close.png"
+    },
+    {
+      "path": "..\\ref\\reports\\icons\\filter.png"
+    },
+    {
+      "path": "..\\ref\\reports\\icons\\layers.png"
+    },
+    {
+      "path": "..\\ref\\reports\\interviewer_gen_report.html"
+    },
+    {
+      "path": "..\\ref\\reports\\interviewer_progress.html"
+    },
+    {
+      "path": "..\\ref\\reports\\sup_facilities_report.html"
+    },
+    {
+      "path": "..\\ref\\reports\\tl_facilities_gen_report.html"
+    },
+    {
+      "path": "..\\ref\\reports\\tl_facility_progress_report.html"
+    }
+  ],
+  "dictionaries": [
+    {
+      "path": "..\\dicts\\cHFA_setup.dcf"
+    },
+    {
+      "path": "..\\dicts\\HFA_Assignments.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": "..\\dicts\\HFA_COMB.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": "..\\dicts\\HFA_DICT.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": "..\\dicts\\HFA_Facilities.dcf"
+    },
+    {
+      "path": "..\\dicts\\HFA_Staff.dcf"
+    },
+    {
+      "path": "..\\dicts\\HHFA_Menu.dcf"
+    },
+    {
+      "path": "..\\dicts\\QMapDict.dcf"
+    }
+  ],
+  "deployment": {
+    "type": "CSWeb",
+    "cswebUrl": "https:\/\/cspro-hhfa.com\/demo\/api",
+    "ftpUrl": "ftp:\/\/"
+  }
+}

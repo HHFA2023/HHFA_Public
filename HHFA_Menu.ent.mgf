@@ -1,0 +1,165 @@
+﻿{English translations}
+Language=EN 
+0001 Section not assigned
+0002 <Invalid staff code>
+0003 Cancel
+0004 Register device under my code.
+0005 Device successfully registered!
+0006 This device is registered to %s. You are not authorized to use this device for data collection. Please consult your team leader to reset the device.
+0007 Enter device reset code
+0008 Are you sure you want to reset the device registration from %s
+0009 Yes
+0010 No
+0011 WARNING==>The HFA setup file does not exist--it must be created before continuing.
+0012 Device de-registered successfully!
+0013 <Invalid facility name>
+0014 Invalid geocode
+0015 Failed to start Bluetooth server.
+0016 Failed to connect to CSWeb. Confirm that you have active internet connection.
+0017 Failed to connect to Dropbox. Confirm that you have active internet connection.
+0018 Failed to connect to Bluetooth server.
+0019 Data sync method has not been defined. Data synchronization aborted!
+0020 Failed to update the application!
+0021 Application updated successfully!
+0022 Unable to sync file %s
+0023 Application synced successfully!
+0024 Error connecting to team leader device!
+0025 Failed to download HHFA data. Check that the dictionary exists!
+0026 HHFA data downloaded successfully!
+0027 Failed to download assignments data. Check that the dictionary exists!
+0028 Failed to download interviewer data.
+0029 Failed to transfer data. Check that the dictionary exists.
+0030 HHFA data synced successfully!   
+0031 Failed to upload combined data. Check that the dictionary exists.
+0032 Combined HHFA data synced successfully! 
+0033 Data sent successfully to team leader!
+0034 Failed to upload interviewer data.
+0035 Interviewer data synced successfully!
+0036 Failed to upload complete data record.
+0037 Failed to upload section assignments.
+0038 Combined data synced successfully!
+0039 Assignments data synced successfully!   
+0040 Data synced successfully!
+0041 Section not started
+0042  (GPS Not Taken)
+0043 GPS Not Taken
+0044  (GPS Taken)
+0045 GPS Taken
+0046 GPS Collected
+0047 GPS Not Collected
+0048 Combined file not created
+0049 Choose region to view facilities
+0050 CSV file generated. Check for the file at %s
+0051 Interview Complete
+0052 Interview Incomplete
+0053 Data concatenation is about to start. Depending on the number of facilities, the process could take some time. Please be patient as the concatenation process runs.
+0054 Data concatenation complete!
+0055 Staff login file missing. Aborting!
+0056 Facilities file missing. Aborting.
+0057 Geocodes file missing. Aborting.
+0058 HHFA not configured.
+0059 Enter valid login code.
+0060 Invalid login code - %v
+0061 Data manager functions should be run on a PC.
+0062 Invalid staff role
+0063 HFA setup file can only run on a PC.
+0064 HFA password:
+0065 Failed to receive section assignments.
+0066 Section assignments received successfully!
+0067 This device/tablet is not registered for data collection.
+0068 Invalid code entered!
+0069 Section assignments downloaded successfully!
+0070 %v minutes
+0071 %v hours
+0072 %v hours,%v minutes
+//0073 <b><u>Facility Name: %s</u></b><br/>Region: %s<br/>District: %s<br/> Location: %s<br/>Facility Type: %s<br/>Managing Authority: %s<br/>Ownership: %s
+0073 <b><u>Facility Name: %s</u></b><br/>Region: %s<br/>District: %s<br/> Location: %s<br/>Facility Type: %s<br/>Managing Authority: %s
+0074 Facility Code,Facility Name,Team Leader Code,Team Leader Name,Section #,Section Title,Data Collector Code,Data Collector Name,Interview Status
+0075 case not found
+0076 Facility Code,Facility Name,Region, District, Team Leader Code,Team Leader Name,Interview Status,GPS, % Completion, Date of Interview
+0077 Data not collected
+0078 Not collected
+0079 Collected
+0080 Facility Code,Facility Name,Region, District, Data Collected
+0081 Interview not started
+0082 Facility %s has a duplicate assignment. Data concatenation will be skipped for this facility.
+0083 Choose data sync method
+0084 Bluetooth
+0085 Internet
+0086 (Modify assignments)
+0087 Yes, proceed
+0088 (Record start time)
+0089 (Record end time)
+0090 Facility start time recorded successfully!
+0091 Facility end time recorded successfully!
+0092 Select Facility (Survey)
+0093 Facility Name
+0094 Open facility %s for data collection
+0095 Continue
+0096 Choose report type
+0097 Facilities list
+0098 Map view
+0099 General report (all facilities)
+0100 Individual facility report
+0101 Do you want to update the assignment for section: %s from %s to %s
+
+0106 WHO HHFA Survey
+0107 HHFA Setup
+0108 Facility Section Assignments
+0109 Choose basemap
+0110 You cannot sync data with the selected %s's device. He/She is not your listed team leader.
+
+
+
+
+1000 WHO HHFA Setup
+1001 Y Setup Survey Parameters
+1002 Z Quit
+1003 Facility validation report
+1004 Facility coverage report (List)
+1005 Facility coverage report (Map)
+1006 Back to menu ↩️ 
+1007 A. Assign facility sections for data collection
+1008 B. Transfer assignments to data collectors
+1009 K. Record start/end interview time
+1010 C. Collect data
+1011 D. Receive data from data collectors
+1012 E. Create complete data record
+1013 F. Sync data
+1014 G. View reports
+1015 H. Clean up duplicate sections
+1016 U. Update application
+1017 V. Transfer application files to data collector
+1018 Y. Reset device registration (%s)
+1019 Z. Logout/Exit
+1020 A. Receive section assignments
+1021 D. Send data to team leader
+1022 E. Sync data for backup
+1023 U. Update application
+1024 V. Receive application files from team leader
+1025 Back to regions ↩️
+1026 Back to district ↩️
+
+1030 A. Setup HHFA survey parameters
+1031 B. Activate/Deactivate questions
+1032 C. Download all data
+1033 D. Duplicates report
+1034 E. Survey progress report
+1035 F. Detailed incomplete sections
+1036 G. Facility validation report
+1037 H. Get export questions
+1038 I. Create combined data
+1039 J. Split Validation/Data Collection
+1040 K. Run data cleaning tool
+1041 X. Export cleaned data (combined data) 
+
+1042 A. Select facility sections for validation
+1043 B. Validate facility data
+1044 C. Sync validation data
+1045 D. Download all data
+
+1050 Version: %s
+ 
+
+{Franch translations}
+Language=FR 

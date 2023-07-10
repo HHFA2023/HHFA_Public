@@ -1,0 +1,72 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=QMapDict
+Name=QMAPDICT_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=B2A0824C4952B320380A198685360BCB19E2626FCD7E86C3CFB63C49FCAE7C42
+
+[Level]
+Label=QMapDict Level
+Name=QMAPDICT_LEVEL
+
+[IdItems]
+
+[Item]
+Label=QMapDict Identification
+Name=QMAP_ID
+Start=2
+Len=4
+DataType=Alpha
+
+[Record]
+Label=QMap Record
+Name=QMAP_REC
+RecordTypeValue='1'
+Required=No
+MaxRecords=6000
+RecordLen=531
+
+[Item]
+Label=Question No
+Name=QNO_MAP
+Start=6
+Len=12
+DataType=Alpha
+
+[Item]
+Label=Question Module
+Name=QMODULE_MAP
+Start=18
+Len=8
+DataType=Alpha
+
+[ValueSet]
+Label=Question Module
+Name=QMODULE_MAP_VS1
+Value='AC      ';AC
+Value='AA      ';AA
+Value='AAS     ';AAS
+Value='RC      ';RC
+Value='QC      ';QC
+Value='MC      ';MC
+Value='MA      ';MA
+Value='RC_QC   ';RC_QC
+Value='AC_RC_QC';AC_RC_QC
+
+[Item]
+Label=Section
+Name=QMSECTION
+Start=26
+Len=6
+DataType=Alpha
+
+[Item]
+Label=Question label
+Name=QMQUESTION_LABEL
+Start=32
+Len=500
+DataType=Alpha

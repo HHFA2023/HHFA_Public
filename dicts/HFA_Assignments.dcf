@@ -1,0 +1,233 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=HHFA Section Assignments
+Name=HFA_ASSIGNMENTS
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=A9734BBA543B1894992D4394FA4459C17B649BAF8CED1D5334E32432957142A6
+
+[Level]
+Label=Assignments Level
+Name=HFAASSIGNMENTS_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Facility Id
+Name=FAC_ID
+Start=2
+Len=10
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Entry Type
+Name=ENT_TYPE
+Start=12
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Entry Type
+Name=ENT_TYPE_VS1
+Value=1;Supervisor Validation
+Value=2;Data Collection
+Value=5;Testing
+Value=9;Pilot
+
+[Item]
+Label=Assigner ID
+Name=ASSIGNER_ID
+Start=13
+Len=5
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Facility Assignments Record
+Name=FAC_ASSIGNMENT_REC
+RecordTypeValue='2'
+Required=No
+RecordLen=82
+
+[Item]
+Label=Supervisor Validation Assignments
+Name=SUP_VALIDATION_ASSIGNMENTS
+Start=18
+Len=54
+DataType=Alpha
+
+[Item]
+Label=Interv Start
+Name=INTERV_START
+Start=72
+Len=4
+DataType=Numeric
+
+[Item]
+Label=Interv Start (Hrs)
+Name=INTERV_START_H
+Start=72
+Len=2
+ItemType=SubItem
+DataType=Numeric
+
+[Item]
+Label=Interv Start (Mins)
+Name=INTERV_START_M
+Start=74
+Len=2
+ItemType=SubItem
+DataType=Numeric
+
+[Item]
+Label=Interv End
+Name=INTERV_END
+Start=76
+Len=4
+DataType=Numeric
+
+[Item]
+Label=Interv End Hrs
+Name=INTERV_END_H
+Start=76
+Len=2
+ItemType=SubItem
+DataType=Numeric
+
+[Item]
+Label=Interv End
+Name=INTERV_END_M
+Start=78
+Len=2
+ItemType=SubItem
+DataType=Numeric
+
+[Item]
+Label=Sections in assignment
+Name=ASSIGN_IN
+Start=80
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Sections in assignment
+Name=ASSIGN_IN_VS1
+Value=1;Assign facility sections
+Value=2;Done with assignment
+
+[Item]
+Label=Activation assignment
+Name=ASSIGN_ACTIVATION
+Start=81
+Len=1
+DataType=Numeric
+
+[Item]
+Label=Set Data Connection
+Name=SETDATACONNECTION
+Start=82
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Set Data Connection
+Name=SETDATACONNECTION_VS1
+Value=1;Main Data colllection
+Value=2;Pilot
+Value=3;Training
+Value=4;Testing
+
+[Record]
+Label=Assignments Roster
+Name=ASSIGNMENTS_REC
+RecordTypeValue='1'
+MaxRecords=54
+RecordLen=28
+
+[Item]
+Label=Section Number
+Name=SECT_NUMBER
+Start=18
+Len=5
+DataType=Numeric
+Decimal=2
+DecimalChar=Yes
+
+[ValueSet]
+Label=Section Number
+Name=SECT_NUMBER_VS1
+Value=1.00;Facility Identification
+Value=2.00;Client services
+Value=3.00;Health workforce
+Value=4.00;Facility beds and isolation units
+Value=5.00;Governance and management
+Value=6.00;Systems to support staff
+Value=7.00;Systems for monitoring service quality
+Value=8.00;Infrastructure and equipment maintenance
+Value=9.00;Health financing and accounting
+Value=10.00;Data sources and systems
+Value=11.00;Facility data reporting systems
+Value=12.00;Basic infrastructure and systems
+Value=13.00;Outpatient service conditions
+Value=14.00;Communicable disease services
+Value=15.00;Non-communicable disease services
+Value=16.00;Services for mental health and neurological conditions
+Value=17.00;Services for special needs
+Value=18.00;Maternal and newborn health services (Outpatient)
+Value=19.00;Abortion care services
+Value=20.00;Services for children under 5 and adolescents
+Value=21.00;Immunization services
+Value=22.00;Delivery, postnatal and newborn services (Inpatient)
+Value=23.00;HIV services
+Value=24.00;Tuberculosis (TB) services
+Value=25.00;Surgical services
+Value=26.00;Emergency (Ambulance or walk-in) Services
+Value=27.00;Imaging and specialty treatment services
+Value=28.00;Blood transfusion Services
+Value=29.00;Laboratory services
+Value=30.00;Consumable commodities
+Value=31.00;Pharmaceutical comodities
+Value=32.00;ANC Record Review
+Value=33.00;Malaria Record Review
+Value=34.00;PMTCT Record Review
+Value=35.00;HTS Record Review
+Value=36.00;ART Record Review
+Value=37.00;TB Record Review
+Value=38.00;Building Struc. for General Outpatient Services
+Value=39.00;Building Struc. for General Admissions Service Area
+Value=40.00;Building Struc. for Laboratory Service Area
+Value=41.00;Building Struc. for Main Pharmaceutical Commodity Storage Area
+Value=42.00;Building Struc. for Emergency Walk-In Services
+Value=43.00;Building Struc. for Surgical Services
+Value=44.00;Building Struc. for Operating Theatre
+Value=45.00;Building Struc. for Delivery Services
+Value=46.00;Building Struc. for Inpatient Wards
+Value=47.00;Building Struc. for Dental Services
+Value=48.00;Building Struc. for Physical Therapy Services
+Value=49.00;Building Struc. for Mortuary
+Value=50.00;Roof of Main Facility Building
+
+[Item]
+Label=Section Fielded
+Name=SECT_FIELDED
+Start=23
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Section Fielded
+Name=SECT_FIELDED_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Section User
+Name=SECT_USER
+Start=24
+Len=5
+DataType=Numeric
+ZeroFill=Yes

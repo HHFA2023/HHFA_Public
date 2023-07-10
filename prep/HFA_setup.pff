@@ -1,0 +1,11 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+ShowInApplicationListing=Never
+
+[Files]
+Application=.\HFA_setup.ent
+InputData=..\ref\HFA_setup.csdb
+
+[ExternalFiles]
+QMAPDICT_DICT=|type=None

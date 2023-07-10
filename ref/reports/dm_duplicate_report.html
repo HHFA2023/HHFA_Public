@@ -1,0 +1,129 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
+
+    <link rel="stylesheet" href="/external/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/external/bootstrap/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/css/reports.css" />
+	<link rel="stylesheet" href="/css/reports.css" />
+
+    <script src="/external/jquery/jquery.min.js"></script>
+    <script src="/external/bootstrap/bootstrap.bundle.min.js"></script>
+	
+  <!-- Report properties-->
+    <?
+    string report_title = "WHO HHFA";
+    string report_subtitle = "Facility Duplicate Report";
+    ?>
+<body>
+		<!-- Header -->
+    <div class="jumbotron text-center" style="background-color:#426296;">
+
+        <h1 style="letter-spacing:10px; color: white">~~report_title~~</h1>
+        <span style="letter-spacing:5px; color: white">~~report_subtitle~~</span>
+    </div>
+      
+      <div class="card">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs pull-right"  id="myTab" role="tablist">
+            <li class="nav-item active">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Facility Progress Report</a>
+            </li>
+          
+            
+        </ul>
+      </div>
+    <div class="card-body">
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+               
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+							<th>Assignment UUID</th>
+                            <th>Facility #</th>
+							<th>Facility Name</th>
+							<th>Team Leader Code </th>
+                            <th>Team Leader Name</th>
+                            <th>Interview Status</th>
+							<th>GPS</th>
+							<th>Combined File UUID</th>
+							
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <? 
+						i = 1;
+						forcase Facilities_dcf where CountAssignments(facility_id) > 1 do
+						forcase hfa_assignments where fac_id = facility_id & ent_type = 2 do
+							$.write('<tr>');
+							$.write('<td>'+uuid(hfa_assignments)+'</td>');
+							$.write('<td>'+maketext("%v",fac_id)+'</td>');
+							$.write('<td>'+LookupFacilityName(fac_id)+'</td>');
+							$.write('<td>'+maketext("%v",assigner_id)+'</td>');
+							$.write('<td>'+GetStaffName(assigner_id)+'</td>');
+							
+							HFA_COMB.Q100 = fac_id;
+							HFA_COMB.Q101 = ent_type;
+							HFA_COMB.ID_TEAML = assigner_id;
+							
+							string status_in = "Data not collected";
+							string str_uuid = "";
+							string gps_status = "";
+							if loadcase(HFA_COMB, HFA_COMB.Q100,HFA_COMB.Q101,HFA_COMB.ID_TEAML) then
+								status_in = getvaluelabel(INT_STATUS);
+								str_uuid = uuid(hfa_comb);
+								
+								if HFA_COMB.Q112 <> notappl & HFA_COMB.Q113 <> notappl then
+									gps_status = "GPS Taken" + maketext(" (Latitude: %v, Longitude: %v)",HFA_COMB.Q112,HFA_COMB.Q113);
+								endif;
+							endif;
+							$.write('<td>'+status_in+'</td>');	
+							$.write('<td>'+gps_status+'</td>');
+							$.write('<td>'+str_uuid+'</td>');	
+							inc(i);
+							endfor;
+							$.write('</tr>');
+						endfor;
+					?>
+            					
+					
+                      
+                    </tbody>
+                    
+                </table>
+             
+          <p class="text-center">Report generated at ~~timestring("%H:%M - %m/%d/%y")~~</p>
+             
+            </div>
+			
+
+           
+            
+        </div>
+        
+    
+     
+    
+            
+    </div>
+   
+      </div>
+    
+</body>
+
+<!-- Footer -->
+	<footer class="page-footer font-small bg-dark">
+		 <div class="footer-copyright text-center text-light py-3">
+            Harmonized Health Facility Assessment (HHFA)
+            <a href="https://www.who.int/data/data-collection-tools/harmonized-health-facility-assessment/introduction"> who.int</a>
+        </div>
+	</footer>
+</html>
+

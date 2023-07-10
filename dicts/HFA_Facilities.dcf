@@ -1,0 +1,77 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=HFA Facilities Sample File
+Name=FACILITIES_DCF
+RecordTypeStart=0
+RecordTypeLen=0
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=BA49636B05F9021D453E30FC11C3AF92D5DAE21211FAE05D63E34DA423C5D598
+
+[Level]
+Label=WHO HFA sample questionnaire
+Name=FACILITIES_QUEST
+
+[IdItems]
+
+[Item]
+Label=Facility ID
+Name=FACILITY_ID
+Start=1
+Len=10
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=WHO HFA Facilities record
+Name=FACILITIES_REC
+RecordTypeValue=''
+RecordLen=174
+
+[Item]
+Label=Facility Name
+Name=FAC_NAME
+Start=11
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Region
+Name=REG_CODE
+Start=111
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Region
+Name=REG_CODE_VS1
+Value=1:90
+
+[Item]
+Label=Region  Name
+Name=REG_NAME
+Start=113
+Len=30
+DataType=Alpha
+
+[Item]
+Label=District Code
+Name=DIST_CODE
+Start=143
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=District Code
+Name=DIST_CODE_VS1
+Value=1:90
+
+[Item]
+Label=District  Name
+Name=DIST_NAME
+Start=145
+Len=30
+DataType=Alpha

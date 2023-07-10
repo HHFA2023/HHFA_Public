@@ -1,0 +1,173 @@
+﻿---
+fileType: Question Text
+version: CSPro 7.7
+languages:
+  - name: EN
+    label: English
+  - name: RS
+    label: Russian
+styles:
+  - name: Normal
+    className: normal
+    css: |
+      font-family: Arial;font-size: 16px;
+  - name: Instruction
+    className: instruction
+    css: |
+      font-family: Arial;font-size: 14px;color: #0000FF;
+  - name: Heading 1
+    className: heading1
+    css: |
+      font-family: Arial;font-size: 36px;
+  - name: Heading 2
+    className: heading2
+    css: |
+      font-family: Arial;font-size: 24px;
+  - name: Heading 3
+    className: heading3
+    css: |
+      font-family: Arial;font-size: 18px;
+questions:
+  - name: HHFA_MENU_DICT.LOGIN
+    conditions:
+      - questionText:
+          EN: |
+            <div style="text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(0, 128, 255);">World Health Organization (WHO)&nbsp;</span></div><div style="text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(128, 0, 128);">Combined HHFA Entry Menu:&nbsp;</span></div><div style="text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(128, 0, 128);">(~~capi_country~~, ~~capi_year~~) &nbsp;</span></div><br><div style="text-align: center;"><span style="font-style: italic; font-size: 12px; color: rgb(0, 128, 255);">(Publish Date: ~~capi_pub_date~~ )&nbsp;</span> </div><div style="text-align: center;"><span style="font-size: 18px;">Please Enter LOGIN CODE: <br>
+             ~~registeredUser~~&nbsp; &nbsp;&nbsp;</span></div>
+          RS: |
+            
+        helpText:
+          EN: |
+            
+  - name: HHFA_MENU_DICT.DATA_MANAGER_MENU
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(0, 128, 255);">World Health Organization (WHO)&nbsp;</span></p><p style="text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(128, 0, 128);">Combined HHFA Entry Menu:&nbsp;</span></p><p style="text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(128, 0, 128);">(~~capi_country~~, ~~capi_year~~)&nbsp;&nbsp;</span></p><p style="text-align: center;"><span style="font-style: italic; font-size: 12px; color: rgb(0, 128, 255);">(Publish Date: ~~capi_pub_date~~<span style="font-style: normal;">)&nbsp;</span></span></p><p style="text-align: center;"><span style="font-size: 18px;">Welcome<span style="font-weight: bold;">:<span style="color: rgb(128, 0, 128);">&nbsp;~~capi_staff_name~~&nbsp;</span></span></span></p><p style="text-align: center;"><span style="font-size: 18px;">Select an option&nbsp;</span></p>
+        helpText:
+          EN: |
+            
+  - name: HHFA_MENU_DICT.SUPERVISOR_MENU
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(0, 128, 255);">World Health Organization (WHO)&nbsp;</span></p><p style="text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(128, 0, 128);">Combined HHFA Entry Menu:&nbsp;</span></p><p style="text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(128, 0, 128);">(~~capi_country~~, ~~capi_year~~)&nbsp;&nbsp;</span></p><p style="text-align: center;"><span style="font-style: italic; font-size: 12px; color: rgb(0, 128, 255);">(Publish Date: ~~capi_pub_date~~<span style="font-style: normal;">)&nbsp;</span></span></p><p style="text-align: center;"><span style="font-size: 18px;">Welcome<span style="font-weight: bold;">:<span style="color: rgb(128, 0, 128);">&nbsp;~~capi_staff_name~~&nbsp;</span></span></span></p><p style="text-align: center;"><span style="font-size: 18px;">Select an option&nbsp;</span></p>
+            <p>&nbsp;</p>
+        helpText:
+          EN: |
+            
+  - name: HHFA_MENU_DICT.TEAM_LEADER_MENU
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(0, 128, 255);">World Health Organization (WHO)&nbsp;</span></p><p style="text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(128, 0, 128);">Combined HHFA Entry Menu:&nbsp;</span></p><p style="text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(128, 0, 128);">(~~capi_country~~, ~~capi_year~~)&nbsp;&nbsp;</span></p><p style="text-align: center;"><span style="font-style: italic; font-size: 12px; color: rgb(0, 128, 255);">(Publish Date: ~~capi_pub_date~~<span style="font-style: normal;">)&nbsp;</span></span></p><p style="text-align: center;"><span style="font-size: 18px;">Welcome<span style="font-weight: bold;">:<span style="color: rgb(128, 0, 128);">&nbsp;~~capi_staff_name~~&nbsp;</span></span></span></p><p style="text-align: center;"><span style="font-size: 18px;">Select an option&nbsp;</span></p>
+        helpText:
+          EN: |
+            
+  - name: HHFA_MENU_DICT.INTERVIEWER_MENU
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(0, 128, 255);"></span></p><p style="text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(0, 128, 255);">World Health Organization (WHO)&nbsp;</span></p><p style="text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(128, 0, 128);">Combined HHFA Entry Menu:&nbsp;</span></p><p style="text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(128, 0, 128);">(~~capi_country~~, ~~capi_year~~)&nbsp;&nbsp;</span></p><p style="text-align: center;"><span style="font-style: italic; font-size: 12px; color: rgb(0, 128, 255);">(Publish Date: ~~capi_pub_date~~<span style="font-style: normal;">)&nbsp;</span></span></p><p style="text-align: center;"><span style="font-size: 18px;">Welcome<span style="font-weight: bold;">:<span style="color: rgb(128, 0, 128);">&nbsp;~~capi_staff_name~~&nbsp;</span></span></span></p><p style="text-align: center;"><span style="font-size: 18px;">Select an option&nbsp;</span></p>
+            <p>&nbsp;</p>
+        helpText:
+          EN: |
+            
+  - name: FACILITY_ADMIN_BLOCK
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size: 18px;"><b>﻿FACILITY ADMINISTRATIVE LOCATION</b></span></p>
+  - name: HHFA_MENU_DICT.SELECT_REGION
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size: 18px;"><b>Select Region:</b></span></p><p></p>
+  - name: HHFA_MENU_DICT.SELECT_DISTRICT
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size: 18px;"><b>Province: <span style="font-family: Arial; font-size: 18px;"></span></b></span><b>~~capi_selected_region~~</b><span style="background-color: rgb(255, 255, 255); font-family: Arial; font-size: 18px;"></span></p><p><span style="font-size: 18px;"><b>Select District:</b></span></p><p></p>
+  - name: HHFA_MENU_DICT.SELECT_FACILITY
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size: 18px;"><b>Region:&nbsp;</b></span><b>~~capi_selected_region~~, District:&nbsp;</b><b>~~capi_selected_district~~</b><br></p><p><span style="font-size: 18px;" class="instruction"><font color="#000000" style="">Please Select a Facility to assign Sections</font></span></p>
+        helpText:
+          EN: |
+            
+  - name: HHFA_MENU_DICT.SURVEY_START_END
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size: 18px;"><b>Record Facility Interview Start/End Times</b></span></p><p><span style="font-size: 18px;">Choose from the assigned facilities below to record interview start and end times.&nbsp;</span><p></p></p>
+  - name: HHFA_MENU_DICT.INTERV_FACILITY
+    conditions:
+      - questionText:
+          EN: |
+            <p><span class="instruction normal" style="font-size: 18px;"><b><font color="#000000">FACILITY DATA COLLECTION</font></b></span></p><p><span class="instruction" style="font-size: 18px;"><font color="#000000">Please Select a Facility to begin data collection:</font></span></p>
+        helpText:
+          EN: |
+            
+  - name: HHFA_MENU_DICT.SUP_REPORT_TYPE
+    conditions:
+      - questionText:
+          EN: |
+            <p><span class="instruction normal" style="font-size: 18px;"><b><font color="#000000">FACILITY REPORT GENERATION</font></b></span></p><p><span class="instruction" style="font-size: 18px;"><font color="#000000">Select Report Type:</font></span></p><p></p>
+  - name: HHFA_MENU_DICT.TL_REPORT_TYPE
+    conditions:
+      - questionText:
+          EN: |
+            <p><span class="instruction normal" style="font-size: 18px;"><b><font color="#000000">FACILITY REPORT GENERATION</font></b></span></p><p><span class="instruction" style="font-size: 18px;"><font color="#000000">Select Report Type:</font></span></p>
+        helpText:
+          EN: |
+            
+  - name: HHFA_MENU_DICT.INTERV_REPORT_TYPE
+    conditions:
+      - questionText:
+          EN: |
+            <p><span class="instruction normal" style="font-size: 18px;"><b><font color="#000000">FACILITY REPORT GENERATION</font></b></span></p><p><span class="instruction" style="font-size: 18px;"><font color="#000000">Select Report Type:</font></span></p><p></p>
+  - name: HHFA_MENU_DICT.SELECT_FACILITY_REPORT
+    conditions:
+      - questionText:
+          EN: |
+            <p><span class="instruction normal" style="font-size: 18px;"><b><font color="#000000">FACILITY REPORT GENERATION</font></b></span></p><p><span class="instruction" style="font-size: 18px;"><font color="#000000">Select Facility:</font></span></p>
+        helpText:
+          EN: |
+            
+  - name: HHFA_MENU_DICT.SELECT_SECT
+    conditions:
+      - questionText:
+          EN: |
+            <p><span class="instruction normal" style="font-size: 13px;"><b><font color="#000000">QUESTION MAPPING</font></b></span></p><p><span class="instruction" style="font-size: 16px;"><font color="#000000">Select Question Number:</font></span></p><p></p>
+  - name: HHFA_MENU_DICT.ACTIVATE_QSTNS
+    conditions:
+      - questionText:
+          EN: |
+            <p><br></p><p><br></p><p></p>
+  - name: HHFA_MENU_DICT.DATE_FROM
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size: 18px;"><b>Region:&nbsp;</b></span><b>~~capi_selected_region~~</b></p><p><b>District: ~~capi_selected_district~~</b><br><br></p><p><span style="background-color: rgb(255, 255, 255); font-size: 18px;"></span></p><p><span style="font-size: 18px;"><b>Select Date From:</b></span></p><p></p>
+  - name: HHFA_MENU_DICT.DATE_TO
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size: 18px;"><b>Region:&nbsp;</b></span><b>~~capi_selected_region~~</b></p><p><b>District: ~~capi_selected_district~~</b><br><br></p><p><span style="background-color: rgb(255, 255, 255); font-size: 18px;"></span></p><p><span style="font-size: 18px;"><b>Select Date To:</b></span></p><p></p>
+  - name: HHFA_MENU_DICT.SELECT_FACILITY_ASSIGNMENT
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size: 18px;"><b>DUPLICATE SECTION CLEAN UP</b></span></p><p><span style="font-size: 18px;">Select Facility</span><p></p></p>
+  - name: HHFA_MENU_DICT.SELECT_SECTION_ASSIGNMENT
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size: 18px;">List of duplicated sections in this facility</span></p><p><span style="font-size: 18px;">Select a section to modify the assignment&nbsp;</span><br></p><p></p><p></p><p></p>
+  - name: HHFA_MENU_DICT.SELECT_USER_ASSIGNMENT
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 18px;">Select User</span><p></p>
+...

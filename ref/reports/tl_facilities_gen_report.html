@@ -1,0 +1,144 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
+
+    <link rel="stylesheet" href="/external/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/external/bootstrap/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/css/reports.css" />
+	<link rel="stylesheet" href="/css/reports.css" />
+
+    <script src="/external/jquery/jquery.min.js"></script>
+    <script src="/external/bootstrap/bootstrap.bundle.min.js"></script>
+	
+  <!-- Report properties-->
+    <?
+    string report_title = "WHO HHFA";
+    string report_subtitle = "Facilities Progress Report";
+    ?>
+<body>
+		<!-- Header -->
+    <div class="jumbotron text-center" style="background-color:#426296;">
+
+        <h1 style="letter-spacing:10px; color: white">~~report_title~~</h1>
+        <span style="letter-spacing:5px; color: white">~~report_subtitle~~</span>
+    </div>
+      
+      <div class="card">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs pull-right"  id="myTab" role="tablist">
+            <li class="nav-item active">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Facility Progress Report</a>
+            </li>
+          
+            
+        </ul>
+      </div>
+    <div class="card-body">
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+               
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Facility #</th>
+                            <th>Facility Name</th>
+							 <th>Interview Status</th>
+							<th>GPS</th>
+							 <th>Interview Duration</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+					 
+					 <?
+						i = 1;
+						forcase HFA_ASSIGNMENTS where Assigner_Id = login do
+						$.write('<tr>');
+							HFA_COMB.Q100 = fac_id;
+							HFA_COMB.Q101 = ent_type;
+							HFA_COMB.ID_TEAML = assigner_id;
+							
+							$.write('<td>'+ maketext('%v', fac_id)+'</td>');
+							$.write('<td>'+ LookupFacilityName(fac_id)+'</td>');
+							string GetInGPS = maketext(0043);
+							string GetInStatus = maketext(0048);
+							string intdur_str;
+							CaseExist = loadcase(hfa_comb, hfa_comb.q100,hfa_comb.q101,hfa_comb.id_teaml); // To check whether to include ID_TEAML in ID sections for uniqueness
+								
+								if CaseExist then
+									GetInStatus = getvaluelabel(INT_STATUS);
+									if HFA_COMB.Q112 <> notappl & HFA_COMB.Q113 <> notappl then
+										//GetInGPS = maketext(0045);
+										GetInGPS = "GPS Taken";
+									endif;
+									
+									
+									if int_dur2 < 60 then
+										intdur_str = maketext(0070, int_dur2);
+									else
+										numeric dur_hrs = int(int_dur2/60);
+										numeric dur_mins = int_dur2 % 60;
+										if dur_mins = 0 then
+											intdur_str = maketext(0071, dur_hrs);
+										else
+											intdur_str = maketext(0072, dur_hrs,dur_mins);
+										endif;
+									endif;
+									
+								endif;
+								if GetInStatus = "Interview complete" then
+									$.write('<td bgcolor="#C3E5B1">'+GetInStatus+'</td>');
+								elseif GetInStatus = "Interview incomplete" then
+									$.write('<td bgcolor="#FFE67F">'+GetInStatus+'</td>');
+								else
+									$.write('<td bgcolor="#F06E8B">'+GetInStatus+'</td>');
+								endif;
+								if GetInGPS = "GPS Taken" then
+									$.write('<td bgcolor="#C3E5B1">'+GetInGPS+'</td>');
+								else
+									$.write('<td bgcolor="#F06E8B">'+GetInGPS+'</td>');
+								endif;
+								
+								$.write('<td>'+ intdur_str+'</td>');
+							
+							inc(i);
+						endfor;
+					 
+					 ?>
+
+                    </tbody>
+                    
+                </table>
+             
+           <p class="text-center">Report generated at ~~timestring("%H:%M - %m/%d/%y")~~</p>
+             
+            </div>
+
+           
+            
+        </div>
+        
+    
+     
+    
+            
+    </div>
+   
+      </div>
+    
+</body>
+
+<!-- Footer -->
+	<footer class="page-footer font-small bg-dark">
+		 <div class="footer-copyright text-center text-light py-3">
+            Harmonized Health Facility Assessment (HHFA)
+            <a href="https://www.who.int/data/data-collection-tools/harmonized-health-facility-assessment/introduction"> who.int</a>
+        </div>
+	</footer>
+</html>
+

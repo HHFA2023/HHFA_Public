@@ -1,0 +1,135 @@
+﻿exce<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
+
+    <link rel="stylesheet" href="/external/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/external/bootstrap/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/css/reports.css" />
+	<link rel="stylesheet" href="/css/reports.css" />
+
+    <script src="/external/jquery/jquery.min.js"></script>
+    <script src="/external/bootstrap/bootstrap.bundle.min.js"></script>
+	
+  <!-- Report properties-->
+    <?
+    string report_title = "WHO HHFA";
+    string report_subtitle = "Facilities Coverage Report";
+    ?>
+<body>
+		<!-- Header -->
+    <div class="jumbotron text-center" style="background-color:#426296;">
+
+        <h1 style="letter-spacing:10px; color: white">~~report_title~~</h1>
+        <span style="letter-spacing:5px; color: white">~~report_subtitle~~</span>
+    </div>
+      
+	  <h3> Total Number of facilities: ~~no_filtered~~</h3>
+      <div class="card">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs pull-right"  id="myTab" role="tablist">
+            <li class="nav-item active">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Facility Progress Report</a>
+            </li>
+          
+            
+        </ul>
+      </div>
+    <div class="card-body">
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+               
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Facility #</th>
+							<th>Facility Name</th>
+							<th>Region</th>
+							<th>District</th>
+                            <th>Team Leader</th>
+                            <th>Interview Status</th>
+							<th>GPS</th>
+							<th>Interview Date</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+						<? 
+						i = 1;
+						forcase HFA_COMB where HFA_COMB.Q101 = 2 do ?>
+							<tr>
+							<?
+
+							if !getSupervisor(HFA_COMB.ID_TEAML) then
+								next;
+							endif;
+								string str_date = maketext("%v%02d%02d", hfa_comb.fvyr,hfa_comb.fvmo,hfa_comb.fvday);
+								if (HFA_COMB.Q104 = report_region or report_region = 98) & (HFA_COMB.Q105 = report_district or report_district = 98 or report_district = notappl) then
+									if (tonumber(str_date) >= date_from & tonumber(str_date) <= date_to) then?>
+										<td>~~HFA_COMB.Q100~~</td>
+										<td>~~HFA_COMB.Q102~~</td>
+										<td>~~HFA_COMB.Q104T~~</td>
+										<td>~~HFA_COMB.Q105T~~</td>
+										<td>~~GetStaffName(HFA_COMB.ID_TEAML)~~</td>
+		
+										<?
+										string GetIn=getvaluelabel(INT_STATUS);
+										if GetIn = "Interview complete" then
+											$.write('<td bgcolor="#C3E5B1">'+GetIn+'</td>');
+										elseif GetIn = "Interview incomplete" then
+											$.write('<td bgcolor="#FFE67F">'+GetIn+'</td>');
+										else
+											$.write('<td bgcolor="#F06E8B">'+GetIn+'</td>');
+										endif;
+										if HFA_COMB.Q112 <> notappl & HFA_COMB.Q113 <> notappl then
+											$.write('<td bgcolor="#C3E5B1">'+tr("GPS Collected")+'</td>');
+										else
+											$.write('<td bgcolor="#F06E8B">'+tr("GPS Not Collected")+'</td>');
+										endif;
+										if hfa_comb.fvmo <> notappl then
+											$.write('<td>'+ maketext("%v-%s-%v", hfa_comb.fvday,months(hfa_comb.fvmo),hfa_comb.fvyr) +'</td>');
+										endif;
+			
+									endif;
+								endif;
+							inc(i);?>
+							</tr>
+						 <?  endfor;?> 
+						
+                      
+                    </tbody>
+                    
+                </table>
+             
+          <p class="text-center">Report generated at ~~timestring("%H:%M - %m/%d/%y")~~</p>
+             
+            </div>
+			
+
+           
+            
+        </div>
+        
+    
+     
+    
+            
+    </div>
+   
+      </div>
+    
+</body>
+
+<!-- Footer -->
+	<footer class="page-footer font-small bg-dark">
+		 <div class="footer-copyright text-center text-light py-3">
+            Harmonized Health Facility Assessment (HHFA)
+            <a href="https://www.who.int/data/data-collection-tools/harmonized-health-facility-assessment/introduction"> who.int</a>
+        </div>
+	</footer>
+</html>
+

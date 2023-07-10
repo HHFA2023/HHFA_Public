@@ -1,0 +1,11 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+ShowInApplicationListing=Never
+
+[Files]
+Application=.\HFA.ent
+InputData=..\data\mydata.csdb
+
+[ExternalFiles]
+HFA_ASSIGNMENTS=|type=None

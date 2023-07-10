@@ -1,0 +1,193 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/external/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/external/bootstrap/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/dialogs.css">
+
+    <link rel="stylesheet" href="common-style.css">
+    <link rel="stylesheet" href="main-menu.css" />
+
+
+    <script src="/external/jquery/jquery.min.js"></script>
+    <script src="/external/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/external/mustache/mustache.min.js"></script>
+
+    <title>Question activation check list</title>
+	
+	<style>
+        .dataContainer {
+            margin-top: 120px;
+            display: inline-block;
+            box-shadow: 2px 2px 10px rgba(0,0,0,.3);
+        }
+
+        .hover-highlight:hover {
+            outline: solid 1px #377bb5;
+            outline-offset: -1px;
+        }
+
+        .red {
+            background-color: #ff8886;
+        }
+
+        .green {
+            background-color: #90EE90;
+        }
+
+        .white {
+            background-color: #fff;
+        }
+	</style>
+	
+	<script id="listingSheet" type="text/template">
+		<table class="table-sm text-center">
+			<thead class="thead-light" style="background-color:#ccc;">
+				<tr>
+					<th><!-- select all boxes -->
+			<input class="sel-clust-checkbox" style="width:1.5rem;height:1.5rem; margin-top:.3rem;" type="checkbox" onclick="toggle(this);"  />
+					<th>
+
+					<th>No. </th>
+					<th>Active</th>
+					<th>Section</th>
+					<th>Question Module</th>
+					<th>Question</th>
+					<th>Question Label</th>
+				</tr>
+			</thead>
+			<tbody>
+			
+				{{#rows}}
+				<tr class="hover-highlight {{style}}">
+					<td><input class="sel-clust-checkbox" style="width:1.5rem;height:1.5rem; margin-top:.3rem;" type="checkbox">
+					<td>
+					<td class="Qust-id">{{id}}</td>
+					<td>{{Activation}}</td>
+					<td>{{Section}}</td>
+					<td>{{MODULE}}</td>
+					<td style="text-align: left">{{Question}}</td>
+					<td style="text-align: left">{{QuestionLabel}}</td>
+				</tr>
+				{{/rows}}
+			<tbody>
+		</table>
+	</script>
+	
+	<script> 
+
+
+			function toggle(source) {
+				var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+				for (var i = 0; i < checkboxes.length; i++) {
+					if (checkboxes[i] != source)
+						checkboxes[i].checked = source.checked;
+				}
+				updateButtons(); 
+			}
+				
+	
+	
+		
+		var input = {};
+
+		function getInput() {
+			input = { "rows": [] };
+			var curPor = 0;
+			while (curPor >= 0) {
+                var portions = JSON.parse(CSPro.runLogic(`getInputPortion(${curPor});`));
+                input.rows = input.rows.concat(portions);
+                curPor = parseInt(CSPro.runLogic('getNextPortionidx();'));
+            }
+        }
+
+		function renderTable() {
+			getInput();
+			var template = $("#listingSheet").html();
+			$(".dataContainer").html(Mustache.render(template, input));
+			updateButtons();
+
+            $('.sel-clust-checkbox').change(function () {
+                updateButtons();
+			}); 
+		}
+		
+		function onAssignDone() {
+			//re-rendering the table
+			renderTable();
+		}
+		
+		function getSelected() {
+			var res = "";
+			$(".sel-clust-checkbox:checked").each(function () {
+				var clust =$(this)
+					.closest("tr")
+					.find(".Qust-id").html();
+				res += `${clust};`;
+			});
+			
+			return res;
+		}
+
+		function updateButtons() {
+			console.log("yes");
+			var bDisabled = ($(".sel-clust-checkbox:checked").length === 0);
+            $('.disableable').prop("disabled", bDisabled);
+        }
+		
+		$(document).ready(function () {
+			renderTable();
+			
+			//$('#cExit').click(function () {
+			//	CSPro.returnData("1");
+				//CSPro.runLogicAsync('doSync(false);', 'CSPro.returnData("{}");');
+			//});
+
+            $('#cCancel').click(function () {
+				
+				CSPro.runLogicAsync('exitApp();', 'CSPro.returnData("{}");');
+            });
+			
+			$('#cAssign').click(function(){
+				CSPro.runLogicAsync(`assignSelected("${getSelected()}");`, 'onAssignDone();');
+			});
+
+            $('#cClear').click(function () {
+                CSPro.runLogicAsync(`assignSelected("${getSelected()}", true);`, 'onAssignDone();');
+			});
+			 
+			
+		});
+	</script>
+</head>
+<body style="overflow-y:auto;background-color:#acc9d9;">
+    <div class="container-fluid fixed-top bg-dark" style="box-shadow:0 2px 5px rgba(0,0,0,.3);z-index:10000;">
+        <div class="row collapse sidebar show no-gutters d-flex h-100 position-relative">
+            <div class="col px-2 px-md-0">
+                
+                <div style="font-size:1.5rem;color:white;">Question activation sheet</div>
+				<div style="padding:4px 0 8px 0;">
+					<button class="btn btn-light round-corners disableable" id="cAssign">Activate selected</button>
+					<button class="btn btn-light round-corners disableable" id="cClear">De-activate selected</button>  
+					<button class="btn btn-light round-corners" id="cCancel">Exit</button>
+				</div>
+			</div>
+        </div>
+    </div>
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col text-center">
+				<div class="dataContainer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

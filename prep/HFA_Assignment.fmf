@@ -1,0 +1,118 @@
+﻿[FormFile]
+Version=CSPro 7.7
+Name=HFA_ASSIGNMENT_FF
+Label=HFA Assignments
+DefaultTextFont=-013 0000 0000 0000 0700 0000 0000 0000 0000 0000 0000 0000 0000 Arial
+FieldEntryFont=0018 0000 0000 0000 0600 0000 0000 0000 0000 0000 0000 0000 0000 Courier New
+Type=SystemControlled
+  
+[Dictionaries]
+File=..\dicts\HFA_Assignments.dcf
+  
+[Form]
+Name=FORM001
+Label=Section Assignments
+QuestionTextHeight=205
+Level=1
+Size=707,116
+  
+Item=ASSIGNER_ID
+Item=ENT_TYPE
+Item=FAC_ID
+Item=ASSIGN_IN
+Item=ASSIGN_ACTIVATION
+  
+[EndForm]
+  
+[Level]
+Name=HFAASSIGNMENTS_LEVEL
+Label=HFA Assignments Level
+  
+[Group]
+Required=Yes
+Name=ASSIGNMENTS_REC_FORM
+Label=Section Assignments
+Form=1
+Max=1
+  
+[Field]
+Name=ASSIGNER_ID
+Position=207,71,278,91
+Item=ASSIGNER_ID,HFA_ASSIGNMENTS
+Protected=Yes
+FieldLabelType=DictionaryLabel
+DataCaptureType=TextBox
+Form=1
+  
+[Text]
+Position=51,74,122,90
+Text=Assigner ID
+Form=2
+ 
+  
+[Field]
+Name=ENT_TYPE
+Position=207,40,222,60
+Item=ENT_TYPE,HFA_ASSIGNMENTS
+Protected=Yes
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=51,43,118,59
+Text=Entry Type
+Form=2
+ 
+  
+[Field]
+Name=FAC_ID
+Position=207,9,348,29
+Item=FAC_ID,HFA_ASSIGNMENTS
+Protected=Yes
+FieldLabelType=DictionaryLabel
+DataCaptureType=TextBox
+Form=1
+  
+[Text]
+Position=51,12,113,28
+Text=Facility Id
+Form=2
+ 
+  
+  
+[Field]
+Name=ASSIGN_IN
+Position=459,10,474,30
+Item=ASSIGN_IN,HFA_ASSIGNMENTS
+FieldLabelType=DictionaryName
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=381,8,451,24
+Text=ASSIGN_IN
+ 
+  
+[Field]
+Name=ASSIGN_ACTIVATION
+Position=667,15,682,35
+Item=ASSIGN_ACTIVATION,HFA_ASSIGNMENTS
+UseEnterKey=Yes
+FieldLabelType=DictionaryName
+DataCaptureType=TextBox
+Form=1
+  
+[Text]
+Position=513,17,649,33
+Text=ASSIGN_ACTIVATION
+ 
+[Block]
+Name=ASSIGNMENT_BLOCK
+Label=Assignment Block
+DisplayTogether=No
+Position=3
+Length=2
+  
+[EndGroup]
+  

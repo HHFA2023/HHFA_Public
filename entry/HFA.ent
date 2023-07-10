@@ -1,0 +1,30 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=HFA
+Name=HFA
+AppType=DataEntry
+OperatorID=No
+ShowEndCaseDialog=No
+AutoPartialSaveMinutes=1
+CAPI=Yes
+CaseTree=Never
+ShowRefusals=No
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[External Dictionaries]
+File=..\dicts\HFA_Assignments.dcf
+File=..\dicts\cHFA_setup.dcf
+File=..\dicts\HFA_Facilities.dcf
+[AppCode]
+File=.\HFA.ent.apc
+[Message]
+File=.\HFA.ent.mgf
+[Help]
+File=.\HFA.ent.qsf
+[Forms]
+File=.\HFA.fmf
+[Dictionary Types]
+Dict-Type=..\dicts\HFA_DICT.dcf,Input,.\HFA.fmf
+Dict-Type=..\dicts\HFA_Assignments.dcf,External
+Dict-Type=..\dicts\cHFA_setup.dcf,External
+Dict-Type=..\dicts\HFA_Facilities.dcf,External

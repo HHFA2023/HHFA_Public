@@ -1,0 +1,318 @@
+﻿---
+fileType: Question Text
+version: CSPro 7.7
+languages:
+  - name: EN
+    label: English
+styles:
+  - name: Normal
+    className: normal
+    css: |
+      font-family: Arial;font-size: 16px;
+  - name: Instruction
+    className: instruction
+    css: |
+      font-family: Arial;font-size: 14px;color: #0000FF;
+  - name: Heading 1
+    className: heading1
+    css: |
+      font-family: Arial;font-size: 36px;
+  - name: Heading 2
+    className: heading2
+    css: |
+      font-family: Arial;font-size: 24px;
+  - name: Heading 3
+    className: heading3
+    css: |
+      font-family: Arial;font-size: 18px;
+questions:
+  - name: SURVEY_BASICS_BLOCK
+    conditions:
+      - questionText:
+          EN: |
+            
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.CHFA_ID
+    conditions:
+      - questionText:
+          EN: |
+            <p><b>HHFA Survey Setup</b></p><p>Select Survey Country:</p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.HFA_START_DATE
+    conditions:
+      - questionText:
+          EN: |
+            <p><b><span style="font-size: 18px;">HHFA Survey Setup</span></b></p><p><span style="font-size: 18px;">Survey Start Date:</span></p><p></p>
+  - name: CHFA_DICT.HFA_END_DATE
+    conditions:
+      - questionText:
+          EN: |
+            <p><b><span style="font-size: 18px;">HHFA Survey Setup</span></b></p><p><span style="font-size: 18px;">Survey End Date:</span></p><p></p>
+  - name: CHFA_DICT.SURVEY_LANG
+    conditions:
+      - questionText:
+          EN: |
+            <p><b>HHFA Survey Setup</b></p><p>Survey Language:</p><p></p>
+  - name: CHFA_DICT.CO_CURRENCY
+    conditions:
+      - questionText:
+          EN: |
+            <p><b>HHFA Survey Setup</b></p><p>Country Currency:</p><p></p>
+  - name: CHFA_DICT.EX_USD
+    conditions:
+      - questionText:
+          EN: |
+            <p><b>HHFA Survey Setup</b></p><p>~~CO_Currency~~&nbsp; Exchange Rate with USD:</p><p></p>
+  - name: SYNC_BLOCK
+    conditions:
+      - questionText:
+          EN: |
+            
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.SYNC_METHOD
+    conditions:
+      - questionText:
+          EN: |
+            <p><b>Sync Setup</b></p><p>Select Sync Method:</p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.SYNC_URL
+    conditions:
+      - questionText:
+          EN: |
+            <p><b>Sync Setup</b></p><p>Enter CSWeb Server URL:</p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.SYNC_UID
+    conditions:
+      - questionText:
+          EN: |
+            <p><b>Sync Setup</b></p><p>Enter CSWeb Server username:</p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.SYNC_PSWD
+    conditions:
+      - questionText:
+          EN: |
+            <p><b>Sync Setup</b></p><p>Enter CSWeb Server password:</p>
+        helpText:
+          EN: |
+            
+  - name: FACILITY_AUDITS_BLOCK
+    conditions:
+      - questionText:
+          EN: |
+            
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.MOD_AVAILABILITY
+    conditions:
+      - questionText:
+          EN: |
+            <p><b>FACILITY AUDITS</b></p><p>Which module for <b>Service Availability</b> is being fielded:</p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.MOD_READINESS
+    conditions:
+      - questionText:
+          EN: |
+            <p><b>FACILITY AUDITS</b></p><p>Which module for <b>Service Readiness</b> is being fielded:</p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.MOD_QOC
+    conditions:
+      - questionText:
+          EN: |
+            <p><b>FACILITY AUDITS</b></p><p>Which module for <b>Quality of Care</b> is being fielded:</p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.MOD_FINANCE
+    conditions:
+      - questionText:
+          EN: |
+            <p><b>FACILITY AUDITS</b></p><p>Which module for&nbsp;<b>Management &amp; Finance</b>&nbsp;is being fielded:</p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.SECTIONS_IN
+    conditions:
+      - questionText:
+          EN: |
+            <p><b>Select a section you with do the questions activatation:</b></p><p></p>
+  - name: CHFA_DICT.HFA_MOB
+    conditions:
+      - questionText:
+          EN: |
+            <p><br></p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.HFA_MOE
+    conditions:
+      - questionText:
+          EN: |
+            <p><b>HHFA Survey Setup</b></p><p>Survey End Month:</p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.HFA_YRB
+    conditions:
+      - questionText:
+          EN: |
+            <div style="word-wrap:break-word; margin:0px; padding:0px; border:0px; background-color:#ffffff; font-family: Consolas, monaco, monospace; font-size:10pt;"><p style="font-family: Arial; font-size: 16px;"><br></p></div>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.HFA_YRE
+    conditions:
+      - questionText:
+          EN: |
+            <p><br></p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.MGMT_FAC
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size:13px;color:#000000;font-family:'Arial', sans-serif;">Which variant of the Facility Management (General) questionnaire will be fielded?&#160;</span></p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.MGMT_FIN
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size:13px;color:#000000;font-family:'Arial', sans-serif;">Which variant of the Facility Management (Finance) questionnaire will be fielded?&#160;</span></p>
+            <p>&#160;</p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.MGMT_HSS
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size:13px;color:#000000;font-family:'Arial', sans-serif;">Which variant of the Facility Management (HMIS Service Statistics) questionnaire will be fielded?&#160;</span></p>
+            <p>&#160;</p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.MGMT_HSYS
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size:13px;color:#000000;font-family:'Arial', sans-serif;">Which variant of the Facility Management (HMIS System) questionnaire will be fielded?&#160;</span></p>
+            <p>&#160;</p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.MGMT_HW
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size:13px;color:#000000;font-family:'Arial', sans-serif;">Which variant of the Facility Management (Health Worker) questionnaire will be fielded?&#160;</span></p>
+            <p>&#160;</p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.QACTIVATED
+    conditions:
+      - questionText:
+          EN: |
+            <p><b>Question Selection</b></p><p>Is&nbsp;<span style="font-family: Arial, sans-serif; font-size: 13px; font-weight: 700;"><span style="font-size: 16px;">~~QNO~~</span></span>&nbsp;Activated?:</p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.QMAP_PROCEED
+    conditions:
+      - questionText:
+          EN: |
+            <p>Proceed to Question Selection?</p><p><span class="instruction">This allows you to customize which standard WHO questions that should be turned off. If you are OK with the standard question selections, select NO to proceed other select yes to go to question customization roster&nbsp;</span></p><p><p></p></p>
+  - name: CHFA_DICT.QOC_ANC
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size:13px;color:#000000;font-family:'Arial', sans-serif;">Will the Quality of Care, Antenatal Care module be fielded?&#160;</span></p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.QOC_CHILD
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size:13px;color:#000000;font-family:'Arial', sans-serif;">Will the Quality of Care, Child Health module be fielded?&#160;</span></p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.QOC_DELIVERY
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size:13px;color:#000000;font-family:'Arial', sans-serif;">Will the Quality of Care, Delivery postpartum module be fielded?&#160;</span></p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.QOC_FM
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size:13px;color:#000000;font-family:'Arial', sans-serif;">Will the Quality of Care, Facility Management module be fielded?&#160;</span></p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.QOC_HIV
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size:10px;color:#000000;">Will the Quality of Care, HIV module be fielded?&#160;</span></p>
+            <p>&#160;</p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.QOC_MALARIA
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size:13px;color:#000000;font-family:'Arial', sans-serif;">Will the Quality of Care, Malaria module be fielded?&#160;</span></p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.QOC_PMTCT
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size:13px;color:#000000;font-family:'Arial', sans-serif;">Will the Quality of Care, PMTCT module be fielded?&#160;</span></p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.QOC_TB
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size:10px;color:#000000;">Will the Quality of Care, TB module be fielded?&#160;</span></p>
+            <p>&#160;</p>
+        helpText:
+          EN: |
+            
+  - name: CHFA_DICT.QOCMOD
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size:13px;color:#000000;font-family:'Calibri', sans-serif;">Will the Quality of Care Module be fielded?&#160;</span></p>
+        helpText:
+          EN: |
+            
+...

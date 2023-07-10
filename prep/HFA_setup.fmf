@@ -1,0 +1,511 @@
+﻿[FormFile]
+Version=CSPro 7.7
+Name=CHFA_SETUP_FF
+Label=cHFA_setup
+DefaultTextFont=-020 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+FieldEntryFont=0018 0000 0000 0000 0600 0000 0000 0000 0000 0000 0000 0000 0000 Courier New
+Type=SystemControlled
+  
+[Dictionaries]
+File=..\dicts\cHFA_setup.dcf
+  
+[Form]
+Name=FORM001
+Label=cHFA_cc record
+QuestionTextHeight=187
+Level=1
+Size=1180,1039
+  
+Item=CHFA_ID
+Item=SYNC_METHOD
+Item=SYNC_URL
+Item=SYNC_UID
+Item=SYNC_PSWD
+Item=MOD_AVAILABILITY
+Item=MOD_READINESS
+Item=MOD_QOC
+Item=MOD_FINANCE
+Item=SURVEY_LANG
+Item=CO_CURRENCY
+Item=EX_USD
+Item=TOT_Q
+Item=HFA_START_DATE
+Item=HFA_END_DATE
+Item=SECTIONS_IN
+Item=SECTION_ACTIVATION
+  
+Box=18,445,438,648,Thick
+Box=20,126,437,427,Thick
+Box=102,40,631,41,Thick
+Box=453,133,1108,352,Thick
+Box=457,375,1105,761,Thick
+  
+[Text]
+Name=TEXT12
+Position=75,655,248,681
+Text=Module Selection
+Form=1
+Font=-022 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+Color=8388736
+ 
+  
+[Text]
+Name=TEXT13
+Position=187,22,540,55
+Text=World Health Organization
+Form=1
+Font=-028 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+Color=10485760
+ 
+  
+[Text]
+Name=TEXT14
+Position=19,56,696,89
+Text=Health Facility Assessment (HFA) Combined Setup
+Form=1
+Font=-028 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+Color=8388736
+ 
+  
+[Text]
+Name=TEXT3
+Position=40,113,187,139
+Text=Survey Basics
+Form=1
+Font=-022 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+Color=8388736
+ 
+  
+[Text]
+Name=TEXT4
+Position=472,124,755,150
+Text=Data Synchronization Setup
+Form=1
+Font=-022 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+Color=8388736
+ 
+  
+[Text]
+Name=TEXT5
+Position=498,362,653,386
+Text=Module Legend
+Form=1
+Font=-021 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+Color=8388736
+ 
+  
+[Text]
+Name=TEXT7
+Position=464,416,507,440
+Text=AC :
+Form=1
+Font=-021 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+ 
+  
+[Text]
+Name=TEXT8
+Position=512,415,652,438
+Text=Availability Core
+Form=1
+ 
+  
+[Text]
+Name=TEXT9
+Position=466,449,509,473
+Text=AA :
+Form=1
+Font=-021 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+ 
+  
+[Text]
+Name=TEXT10
+Position=514,448,763,471
+Text=Availability Core + Additional
+Form=1
+ 
+  
+[Text]
+Name=TEXT15
+Position=709,54,1139,86
+Text=Question Activation/Deactivation
+Form=1
+Font=-027 0000 0000 0000 0700 0000 0001 0000 0000 0003 0002 0001 0034 Arial
+Color=8388736
+ 
+  
+[Text]
+Name=TEXT16
+Position=466,485,523,509
+Text=AAS :
+Form=1
+Font=-021 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+ 
+  
+[Text]
+Name=TEXT17
+Position=532,487,1074,510
+Text=Availability Additional - Building Infrastructure (Supplementary)
+Form=1
+ 
+  
+[Text]
+Name=TEXT18
+Position=468,525,511,549
+Text=RC :
+Form=1
+Font=-021 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+ 
+  
+[Text]
+Name=TEXT19
+Position=516,524,657,547
+Text=Readiness Core
+Form=1
+ 
+  
+[Text]
+Name=TEXT20
+Position=470,565,528,589
+Text=QAS :
+Form=1
+Font=-021 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+ 
+  
+[Text]
+Name=TEXT21
+Position=518,564,893,587
+Text=Quality of Care Additional (Supplementary)
+Form=1
+ 
+  
+[Text]
+Name=TEXT22
+Position=472,608,517,632
+Text=MC :
+Form=1
+Font=-021 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+ 
+  
+[Text]
+Name=TEXT23
+Position=520,607,776,630
+Text=Management & Finance Core
+Form=1
+ 
+  
+[Text]
+Name=TEXT24
+Position=473,649,518,673
+Text=MA :
+Form=1
+Font=-021 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+ 
+  
+[Text]
+Name=TEXT25
+Position=521,648,886,671
+Text=Management & Finance Core + Additional
+Form=1
+ 
+  
+[Text]
+Name=TEXT28
+Position=471,685,550,709
+Text=AC_RC:
+Form=1
+Font=-021 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+ 
+  
+[Text]
+Name=TEXT29
+Position=558,685,857,708
+Text=Availability Core / Readiness Core
+Form=1
+ 
+  
+[Text]
+Name=TEXT33
+Position=722,990,816,1014
+Text=CTRL + S
+Form=1
+Font=-021 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+ 
+  
+[Text]
+Name=TEXT34
+Position=830,988,1155,1011
+Text=To Skip to the beginning of the roster
+Form=1
+ 
+  
+[Text]
+Name=TEXT26
+Position=471,720,552,744
+Text=RC_MC:
+Form=1
+Font=-021 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+ 
+  
+[Text]
+Name=TEXT27
+Position=566,719,981,742
+Text=Readiness Core / Management & Finance Core
+Form=1
+ 
+[EndForm]
+  
+[Level]
+Name=CHFA_QUEST
+Label=WHO Health Facility Assessment (HFA) control form for country CC
+  
+[Group]
+Required=Yes
+Name=CHFA_CC_REC_FORM
+Label=cHFA_cc record
+Form=1
+Max=1
+  
+  
+[Field]
+Name=CHFA_ID
+Position=278,151,321,171
+Item=CHFA_ID,CHFA_DICT
+UpperCase=Yes
+DataCaptureType=DropDown
+Form=1
+  
+[Text]
+Position=40,148,258,175
+Text=Country Code (UN M49)
+Font=-022 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Calibri
+ 
+  
+[Field]
+Name=HFA_START_DATE
+Position=278,190,391,210
+Item=HFA_START_DATE,CHFA_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=Date
+CaptureDateFormat=YYYYMMDD
+Form=1
+  
+[Text]
+Position=40,193,175,216
+Text=HFA Start Date
+ 
+  
+[Field]
+Name=HFA_END_DATE
+Position=278,238,391,258
+Item=HFA_END_DATE,CHFA_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=Date
+CaptureDateFormat=YYYYMMDD
+Form=1
+  
+[Text]
+Position=40,241,166,264
+Text=HFA End Date
+ 
+  
+[Field]
+Name=SURVEY_LANG
+Position=278,286,307,306
+Item=SURVEY_LANG,CHFA_DICT
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=40,287,192,310
+Text=Survey Language
+ 
+  
+[Field]
+Name=CO_CURRENCY
+Position=278,332,321,352
+Item=CO_CURRENCY,CHFA_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=40,335,193,358
+Text=Country Currency
+ 
+  
+[Field]
+Name=EX_USD
+Position=278,381,419,401
+Item=EX_USD,CHFA_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=TextBox
+Form=1
+  
+[Text]
+Position=40,384,260,407
+Text=Exchange Rate with USD
+ 
+  
+  
+[Field]
+Name=SYNC_METHOD
+Position=714,158,729,178
+Item=SYNC_METHOD,CHFA_DICT
+UpperCase=Yes
+DataCaptureType=DropDown
+Form=1
+  
+[Text]
+Position=465,155,673,178
+Text=Synchronization Method
+ 
+  
+[Field]
+Name=SYNC_URL
+Position=714,200,1084,220
+Item=SYNC_URL,CHFA_DICT
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+Form=1
+  
+[Text]
+Position=465,198,641,221
+Text=CSWeb Server URL
+ 
+  
+[Field]
+Name=SYNC_UID
+Position=714,246,904,266
+Item=SYNC_UID,CHFA_DICT
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+Form=1
+  
+[Text]
+Position=465,240,692,263
+Text=CSWeb Server Username
+ 
+  
+[Field]
+Name=SYNC_PSWD
+Position=714,296,904,316
+Item=SYNC_PSWD,CHFA_DICT
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+Form=1
+  
+[Text]
+Position=465,291,691,314
+Text=CSWeb Server Password
+ 
+  
+  
+[Field]
+Name=MOD_AVAILABILITY
+Position=368,478,397,498
+Item=MOD_AVAILABILITY,CHFA_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=CheckBox
+Form=1
+  
+[Text]
+Position=33,481,288,504
+Text=Module 1: Service Availability
+ 
+  
+[Field]
+Name=MOD_READINESS
+Position=370,516,385,536
+Item=MOD_READINESS,CHFA_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=DropDown
+Form=1
+  
+[Text]
+Position=35,519,291,542
+Text=Module 2: Service Readiness
+ 
+  
+[Field]
+Name=MOD_QOC
+Position=370,554,385,574
+Item=MOD_QOC,CHFA_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=DropDown
+Form=1
+  
+[Text]
+Position=34,557,260,580
+Text=Module 3: Quality of Care
+ 
+  
+[Field]
+Name=MOD_FINANCE
+Position=372,594,387,614
+Item=MOD_FINANCE,CHFA_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=DropDown
+Form=1
+  
+[Text]
+Position=35,597,335,620
+Text=Module 4: Management & Finance
+ 
+  
+[Field]
+Name=TOT_Q
+Position=1043,94,1100,114
+Item=TOT_Q,CHFA_DICT
+DataCaptureType=TextBox
+Form=1
+  
+  
+[Field]
+Name=SECTIONS_IN
+Position=207,694,236,714
+Item=SECTIONS_IN,CHFA_DICT
+FieldLabelType=DictionaryName
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=64,694,194,717
+Text=SECTIONS_IN
+ 
+  
+[Field]
+Name=SECTION_ACTIVATION
+Position=287,740,302,760
+Item=SECTION_ACTIVATION,CHFA_DICT
+UseEnterKey=Yes
+FieldLabelType=DictionaryName
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=66,737,282,760
+Text=SECTION_ACTIVATION
+ 
+[Block]
+Name=SURVEY_BASICS_BLOCK
+Label=Survey Bascis
+DisplayTogether=Yes
+Position=0
+Length=6
+  
+[Block]
+Name=SYNC_BLOCK
+Label=Synchronization Setup
+DisplayTogether=No
+Position=7
+Length=4
+  
+[Block]
+Name=FACILITY_AUDITS_BLOCK
+Label=Facility Audits Block
+DisplayTogether=Yes
+Position=12
+Length=4
+  
+[EndGroup]
+  

@@ -1,0 +1,797 @@
+﻿Facility Code,Facility Name,Team Leader Code,Team Leader Name,Section #,Section Title,Data Collector Code,Data Collector Name,Interview Status
+210010050,St. Thomas Health Centre,04722,Jerome Bomaal Kwesitey,30.00,Consumable commodities,06276,Kwadwo Nyanor Afriyie,Section not started
+210010050,St. Thomas Health Centre,04722,Jerome Bomaal Kwesitey,31.00,Pharmaceutical comodities,06276,Kwadwo Nyanor Afriyie,Section not started
+211010001,St. Martin's Catholic Hospital,04722,Jerome Bomaal Kwesitey,12.00,Basic infrastructure and systems,03413,Abraham Agbenya Awanu,Section started incomplete
+211030067,Offinho Asamang CHPS,04722,Jerome Bomaal Kwesitey,30.00,Consumable commodities,06276,Kwadwo Nyanor Afriyie,Section not started
+211030067,Offinho Asamang CHPS,04722,Jerome Bomaal Kwesitey,31.00,Pharmaceutical comodities,06276,Kwadwo Nyanor Afriyie,Section not started
+211040148,Tontokrom Health Centre,04722,Jerome Bomaal Kwesitey,26.00,Emergency(Ambulance or walk-in) Services,06276,Kwadwo Nyanor Afriyie,Section started incomplete
+211040148,Tontokrom Health Centre,04722,Jerome Bomaal Kwesitey,30.00,Consumable commodities,06276,Kwadwo Nyanor Afriyie,Section not started
+211040148,Tontokrom Health Centre,04722,Jerome Bomaal Kwesitey,31.00,Pharmaceutical comodities,06276,Kwadwo Nyanor Afriyie,Section not started
+213020087,Patience Clinic,04722,Jerome Bomaal Kwesitey, 1.00,Facility Identification,09282, Daniel Ike Adinkrah,case not found
+213020087,Patience Clinic,04722,Jerome Bomaal Kwesitey, 3.00,Health workforce,09282, Daniel Ike Adinkrah,case not found
+213020087,Patience Clinic,04722,Jerome Bomaal Kwesitey, 4.00,Facility beds and isolation units,09282, Daniel Ike Adinkrah,case not found
+213020087,Patience Clinic,04722,Jerome Bomaal Kwesitey, 5.00,Governance and management,09282, Daniel Ike Adinkrah,case not found
+213020087,Patience Clinic,04722,Jerome Bomaal Kwesitey, 6.00,Systems to support staff,09282, Daniel Ike Adinkrah,case not found
+213020087,Patience Clinic,04722,Jerome Bomaal Kwesitey, 7.00,Systems for monitoring service quality,09282, Daniel Ike Adinkrah,case not found
+213020087,Patience Clinic,04722,Jerome Bomaal Kwesitey, 8.00,Infrastructure and equipment maintenance,09282, Daniel Ike Adinkrah,case not found
+213020087,Patience Clinic,04722,Jerome Bomaal Kwesitey, 9.00,Health financing and accounting,09282, Daniel Ike Adinkrah,case not found
+213020087,Patience Clinic,04722,Jerome Bomaal Kwesitey,10.00,Data sources and systems,09282, Daniel Ike Adinkrah,case not found
+213020087,Patience Clinic,04722,Jerome Bomaal Kwesitey,11.00,Facility data reporting systems,09282, Daniel Ike Adinkrah,case not found
+213020087,Patience Clinic,04722,Jerome Bomaal Kwesitey,12.00,Basic infrastructure and systems,09282, Daniel Ike Adinkrah,case not found
+213020087,Patience Clinic,04722,Jerome Bomaal Kwesitey,13.00,Outpatient service conditions,09282, Daniel Ike Adinkrah,case not found
+213020087,Patience Clinic,04722,Jerome Bomaal Kwesitey,14.00,Communicable disease services,09282, Daniel Ike Adinkrah,case not found
+213020087,Patience Clinic,04722,Jerome Bomaal Kwesitey,15.00,Non-communicable disease services,09282, Daniel Ike Adinkrah,case not found
+213020087,Patience Clinic,04722,Jerome Bomaal Kwesitey,16.00,Services for mental health and neurological conditions,09282, Daniel Ike Adinkrah,case not found
+213020087,Patience Clinic,04722,Jerome Bomaal Kwesitey,17.00,Services for special needs,09282, Daniel Ike Adinkrah,case not found
+213040092,Obenimase CHPS,04722,Jerome Bomaal Kwesitey, 1.00,Facility Identification,09282, Daniel Ike Adinkrah,case not found
+213040092,Obenimase CHPS,04722,Jerome Bomaal Kwesitey, 3.00,Health workforce,09282, Daniel Ike Adinkrah,case not found
+213040092,Obenimase CHPS,04722,Jerome Bomaal Kwesitey, 4.00,Facility beds and isolation units,09282, Daniel Ike Adinkrah,case not found
+213040092,Obenimase CHPS,04722,Jerome Bomaal Kwesitey, 5.00,Governance and management,09282, Daniel Ike Adinkrah,case not found
+213040092,Obenimase CHPS,04722,Jerome Bomaal Kwesitey, 6.00,Systems to support staff,09282, Daniel Ike Adinkrah,case not found
+213040092,Obenimase CHPS,04722,Jerome Bomaal Kwesitey, 7.00,Systems for monitoring service quality,09282, Daniel Ike Adinkrah,case not found
+213040092,Obenimase CHPS,04722,Jerome Bomaal Kwesitey, 8.00,Infrastructure and equipment maintenance,09282, Daniel Ike Adinkrah,case not found
+213040092,Obenimase CHPS,04722,Jerome Bomaal Kwesitey, 9.00,Health financing and accounting,09282, Daniel Ike Adinkrah,case not found
+213040092,Obenimase CHPS,04722,Jerome Bomaal Kwesitey,10.00,Data sources and systems,09282, Daniel Ike Adinkrah,case not found
+213040092,Obenimase CHPS,04722,Jerome Bomaal Kwesitey,11.00,Facility data reporting systems,09282, Daniel Ike Adinkrah,case not found
+213040092,Obenimase CHPS,04722,Jerome Bomaal Kwesitey,12.00,Basic infrastructure and systems,09282, Daniel Ike Adinkrah,case not found
+213040092,Obenimase CHPS,04722,Jerome Bomaal Kwesitey,13.00,Outpatient service conditions,09282, Daniel Ike Adinkrah,case not found
+213040092,Obenimase CHPS,04722,Jerome Bomaal Kwesitey,14.00,Communicable disease services,09282, Daniel Ike Adinkrah,case not found
+213040092,Obenimase CHPS,04722,Jerome Bomaal Kwesitey,15.00,Non-communicable disease services,09282, Daniel Ike Adinkrah,case not found
+213040092,Obenimase CHPS,04722,Jerome Bomaal Kwesitey,16.00,Services for mental health and neurological conditions,09282, Daniel Ike Adinkrah,case not found
+213040092,Obenimase CHPS,04722,Jerome Bomaal Kwesitey,17.00,Services for special needs,09282, Daniel Ike Adinkrah,case not found
+214020124,Akutuase CHPS,04722,Jerome Bomaal Kwesitey, 1.00,Facility Identification,09282, Daniel Ike Adinkrah,case not found
+214020124,Akutuase CHPS,04722,Jerome Bomaal Kwesitey, 3.00,Health workforce,09282, Daniel Ike Adinkrah,case not found
+214020124,Akutuase CHPS,04722,Jerome Bomaal Kwesitey, 4.00,Facility beds and isolation units,09282, Daniel Ike Adinkrah,case not found
+214020124,Akutuase CHPS,04722,Jerome Bomaal Kwesitey, 5.00,Governance and management,09282, Daniel Ike Adinkrah,case not found
+214020124,Akutuase CHPS,04722,Jerome Bomaal Kwesitey, 6.00,Systems to support staff,09282, Daniel Ike Adinkrah,case not found
+214020124,Akutuase CHPS,04722,Jerome Bomaal Kwesitey, 7.00,Systems for monitoring service quality,09282, Daniel Ike Adinkrah,case not found
+214020124,Akutuase CHPS,04722,Jerome Bomaal Kwesitey, 8.00,Infrastructure and equipment maintenance,09282, Daniel Ike Adinkrah,case not found
+214020124,Akutuase CHPS,04722,Jerome Bomaal Kwesitey, 9.00,Health financing and accounting,09282, Daniel Ike Adinkrah,case not found
+214020124,Akutuase CHPS,04722,Jerome Bomaal Kwesitey,10.00,Data sources and systems,09282, Daniel Ike Adinkrah,case not found
+214020124,Akutuase CHPS,04722,Jerome Bomaal Kwesitey,11.00,Facility data reporting systems,09282, Daniel Ike Adinkrah,case not found
+214020124,Akutuase CHPS,04722,Jerome Bomaal Kwesitey,12.00,Basic infrastructure and systems,09282, Daniel Ike Adinkrah,case not found
+214020124,Akutuase CHPS,04722,Jerome Bomaal Kwesitey,13.00,Outpatient service conditions,09282, Daniel Ike Adinkrah,case not found
+214020124,Akutuase CHPS,04722,Jerome Bomaal Kwesitey,14.00,Communicable disease services,09282, Daniel Ike Adinkrah,case not found
+214020124,Akutuase CHPS,04722,Jerome Bomaal Kwesitey,15.00,Non-communicable disease services,09282, Daniel Ike Adinkrah,case not found
+214020124,Akutuase CHPS,04722,Jerome Bomaal Kwesitey,16.00,Services for mental health and neurological conditions,09282, Daniel Ike Adinkrah,case not found
+214020124,Akutuase CHPS,04722,Jerome Bomaal Kwesitey,17.00,Services for special needs,09282, Daniel Ike Adinkrah,case not found
+214040154,Juansa Government Polyclinic,04722,Jerome Bomaal Kwesitey, 1.00,Facility Identification,09282, Daniel Ike Adinkrah,case not found
+214040154,Juansa Government Polyclinic,04722,Jerome Bomaal Kwesitey, 3.00,Health workforce,09282, Daniel Ike Adinkrah,case not found
+214040154,Juansa Government Polyclinic,04722,Jerome Bomaal Kwesitey, 4.00,Facility beds and isolation units,09282, Daniel Ike Adinkrah,case not found
+214040154,Juansa Government Polyclinic,04722,Jerome Bomaal Kwesitey, 5.00,Governance and management,09282, Daniel Ike Adinkrah,case not found
+214040154,Juansa Government Polyclinic,04722,Jerome Bomaal Kwesitey, 6.00,Systems to support staff,09282, Daniel Ike Adinkrah,case not found
+214040154,Juansa Government Polyclinic,04722,Jerome Bomaal Kwesitey, 7.00,Systems for monitoring service quality,09282, Daniel Ike Adinkrah,case not found
+214040154,Juansa Government Polyclinic,04722,Jerome Bomaal Kwesitey, 8.00,Infrastructure and equipment maintenance,09282, Daniel Ike Adinkrah,case not found
+214040154,Juansa Government Polyclinic,04722,Jerome Bomaal Kwesitey, 9.00,Health financing and accounting,09282, Daniel Ike Adinkrah,case not found
+214040154,Juansa Government Polyclinic,04722,Jerome Bomaal Kwesitey,10.00,Data sources and systems,09282, Daniel Ike Adinkrah,case not found
+214040154,Juansa Government Polyclinic,04722,Jerome Bomaal Kwesitey,11.00,Facility data reporting systems,09282, Daniel Ike Adinkrah,case not found
+214040154,Juansa Government Polyclinic,04722,Jerome Bomaal Kwesitey,12.00,Basic infrastructure and systems,09282, Daniel Ike Adinkrah,case not found
+214040154,Juansa Government Polyclinic,04722,Jerome Bomaal Kwesitey,13.00,Outpatient service conditions,09282, Daniel Ike Adinkrah,case not found
+214040154,Juansa Government Polyclinic,04722,Jerome Bomaal Kwesitey,14.00,Communicable disease services,09282, Daniel Ike Adinkrah,case not found
+214040154,Juansa Government Polyclinic,04722,Jerome Bomaal Kwesitey,15.00,Non-communicable disease services,09282, Daniel Ike Adinkrah,case not found
+214040154,Juansa Government Polyclinic,04722,Jerome Bomaal Kwesitey,16.00,Services for mental health and neurological conditions,09282, Daniel Ike Adinkrah,case not found
+214040154,Juansa Government Polyclinic,04722,Jerome Bomaal Kwesitey,17.00,Services for special needs,09282, Daniel Ike Adinkrah,case not found
+229040014,Suntreso Government Hospital,04722,Jerome Bomaal Kwesitey, 9.00,Health financing and accounting,03413,Abraham Agbenya Awanu,Section started incomplete
+229060115,Three Stones Clinic,04722,Jerome Bomaal Kwesitey, 1.00,Facility Identification,03413,Abraham Agbenya Awanu,Section started incomplete
+229060115,Three Stones Clinic,04722,Jerome Bomaal Kwesitey, 3.00,Health workforce,03413,Abraham Agbenya Awanu,Section started incomplete
+229060115,Three Stones Clinic,04722,Jerome Bomaal Kwesitey, 6.00,Systems to support staff,03413,Abraham Agbenya Awanu,Section not started
+229060115,Three Stones Clinic,04722,Jerome Bomaal Kwesitey, 9.00,Health financing and accounting,03413,Abraham Agbenya Awanu,Section not started
+241020151,Temate-Nkwanta CHPS,04722,Jerome Bomaal Kwesitey,11.00,Facility data reporting systems,09282, Daniel Ike Adinkrah,Section not started
+241020151,Temate-Nkwanta CHPS,04722,Jerome Bomaal Kwesitey,12.00,Basic infrastructure and systems,09282, Daniel Ike Adinkrah,Section not started
+241020151,Temate-Nkwanta CHPS,04722,Jerome Bomaal Kwesitey,15.00,Non-communicable disease services,09282, Daniel Ike Adinkrah,Section started incomplete
+241020151,Temate-Nkwanta CHPS,04722,Jerome Bomaal Kwesitey,16.00,Services for mental health and neurological conditions,09282, Daniel Ike Adinkrah,Section not started
+241020151,Temate-Nkwanta CHPS,04722,Jerome Bomaal Kwesitey,17.00,Services for special needs,09282, Daniel Ike Adinkrah,Section not started
+241020159,Kumawu Government Polyclinic,04722,Jerome Bomaal Kwesitey,13.00,Outpatient service conditions,09282, Daniel Ike Adinkrah,Section not started
+241020159,Kumawu Government Polyclinic,04722,Jerome Bomaal Kwesitey,14.00,Communicable disease services,09282, Daniel Ike Adinkrah,Section not started
+241020159,Kumawu Government Polyclinic,04722,Jerome Bomaal Kwesitey,15.00,Non-communicable disease services,09282, Daniel Ike Adinkrah,Section not started
+241020159,Kumawu Government Polyclinic,04722,Jerome Bomaal Kwesitey,17.00,Services for special needs,09282, Daniel Ike Adinkrah,Section not started
+241030080,Dadiase Amangoase CHPS,04722,Jerome Bomaal Kwesitey,19.00,Abortion care services,04722,Jerome Bomaal Kwesitey,Section not started
+241030080,Dadiase Amangoase CHPS,04722,Jerome Bomaal Kwesitey,20.00,Services for children under 5 and adolescents,04722,Jerome Bomaal Kwesitey,Section not started
+241030080,Dadiase Amangoase CHPS,04722,Jerome Bomaal Kwesitey,21.00,Immunization services,04722,Jerome Bomaal Kwesitey,Section started incomplete
+241030080,Dadiase Amangoase CHPS,04722,Jerome Bomaal Kwesitey,22.00,Delivery postnatal and newborn services (Inpatient),04722,Jerome Bomaal Kwesitey,Section started incomplete
+241030080,Dadiase Amangoase CHPS,04722,Jerome Bomaal Kwesitey,23.00,HIV services,04722,Jerome Bomaal Kwesitey,Section not started
+241030080,Dadiase Amangoase CHPS,04722,Jerome Bomaal Kwesitey,24.00,Turberculosis (TB) services,04722,Jerome Bomaal Kwesitey,Section not started
+241030080,Dadiase Amangoase CHPS,04722,Jerome Bomaal Kwesitey,25.00,Surgical services,04722,Jerome Bomaal Kwesitey,Section not started
+241030080,Dadiase Amangoase CHPS,04722,Jerome Bomaal Kwesitey,26.00,Emergency(Ambulance or walk-in) Services,04722,Jerome Bomaal Kwesitey,Section not started
+241030080,Dadiase Amangoase CHPS,04722,Jerome Bomaal Kwesitey,27.00,Imaging and specialty treatment services,04722,Jerome Bomaal Kwesitey,Section not started
+241030080,Dadiase Amangoase CHPS,04722,Jerome Bomaal Kwesitey,28.00,Blood transfusion Services,04722,Jerome Bomaal Kwesitey,Section not started
+241030080,Dadiase Amangoase CHPS,04722,Jerome Bomaal Kwesitey,29.00,Laboratory services,04722,Jerome Bomaal Kwesitey,Section not started
+241030080,Dadiase Amangoase CHPS,04722,Jerome Bomaal Kwesitey,30.00,Consumable commodities,04722,Jerome Bomaal Kwesitey,Section not started
+307030049,Jankufa Presby Health Centre,04209,Freddie Amponsah, 9.00,Health financing and accounting,04209,Freddie Amponsah,Section not started
+308030052,Drobo Polyclinic,04209,Freddie Amponsah,14.00,Communicable disease services,04209,Freddie Amponsah,Section started incomplete
+308050021,Miremano chps,04209,Freddie Amponsah, 9.00,Health financing and accounting,04209,Freddie Amponsah,Section not started
+308050021,Miremano chps,04209,Freddie Amponsah,31.00,Pharmaceutical comodities,05719,George Asare-Tabi,Section not started
+309030046,Peace (sunyani) Maternity,04209,Freddie Amponsah, 3.00,Health workforce,01201,James Makpa,case not found
+309030046,Peace (sunyani) Maternity,04209,Freddie Amponsah, 4.00,Facility beds and isolation units,01201,James Makpa,case not found
+309030046,Peace (sunyani) Maternity,04209,Freddie Amponsah, 5.00,Governance and management,01201,James Makpa,case not found
+309030046,Peace (sunyani) Maternity,04209,Freddie Amponsah, 6.00,Systems to support staff,01201,James Makpa,case not found
+309030046,Peace (sunyani) Maternity,04209,Freddie Amponsah, 7.00,Systems for monitoring service quality,01201,James Makpa,case not found
+309030046,Peace (sunyani) Maternity,04209,Freddie Amponsah, 8.00,Infrastructure and equipment maintenance,01201,James Makpa,case not found
+309030046,Peace (sunyani) Maternity,04209,Freddie Amponsah, 9.00,Health financing and accounting,01201,James Makpa,case not found
+309030046,Peace (sunyani) Maternity,04209,Freddie Amponsah,12.00,Basic infrastructure and systems,01201,James Makpa,case not found
+309030046,Peace (sunyani) Maternity,04209,Freddie Amponsah,17.00,Services for special needs,01201,James Makpa,case not found
+309030046,Peace (sunyani) Maternity,04209,Freddie Amponsah,25.00,Surgical services,01201,James Makpa,case not found
+309030046,Peace (sunyani) Maternity,04209,Freddie Amponsah,26.00,Emergency(Ambulance or walk-in) Services,01201,James Makpa,case not found
+309030046,Peace (sunyani) Maternity,04209,Freddie Amponsah,28.00,Blood transfusion Services,01201,James Makpa,case not found
+309030046,Peace (sunyani) Maternity,04209,Freddie Amponsah,29.00,Laboratory services,01201,James Makpa,case not found
+309030046,Peace (sunyani) Maternity,04209,Freddie Amponsah,30.00,Consumable commodities,01201,James Makpa,case not found
+309040027,HealthPoint Clinic,04209,Freddie Amponsah, 3.00,Health workforce,01201,James Makpa,case not found
+309040027,HealthPoint Clinic,04209,Freddie Amponsah, 4.00,Facility beds and isolation units,01201,James Makpa,case not found
+309040027,HealthPoint Clinic,04209,Freddie Amponsah, 5.00,Governance and management,01201,James Makpa,case not found
+309040027,HealthPoint Clinic,04209,Freddie Amponsah, 6.00,Systems to support staff,01201,James Makpa,case not found
+309040027,HealthPoint Clinic,04209,Freddie Amponsah, 7.00,Systems for monitoring service quality,01201,James Makpa,case not found
+309040027,HealthPoint Clinic,04209,Freddie Amponsah, 8.00,Infrastructure and equipment maintenance,01201,James Makpa,case not found
+309040027,HealthPoint Clinic,04209,Freddie Amponsah, 9.00,Health financing and accounting,01201,James Makpa,case not found
+309040027,HealthPoint Clinic,04209,Freddie Amponsah,12.00,Basic infrastructure and systems,01201,James Makpa,case not found
+309040027,HealthPoint Clinic,04209,Freddie Amponsah,17.00,Services for special needs,01201,James Makpa,case not found
+309040027,HealthPoint Clinic,04209,Freddie Amponsah,25.00,Surgical services,01201,James Makpa,case not found
+309040027,HealthPoint Clinic,04209,Freddie Amponsah,26.00,Emergency(Ambulance or walk-in) Services,01201,James Makpa,case not found
+309040027,HealthPoint Clinic,04209,Freddie Amponsah,28.00,Blood transfusion Services,01201,James Makpa,case not found
+309040027,HealthPoint Clinic,04209,Freddie Amponsah,29.00,Laboratory services,01201,James Makpa,case not found
+309040027,HealthPoint Clinic,04209,Freddie Amponsah,30.00,Consumable commodities,01201,James Makpa,case not found
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,12.00,Basic infrastructure and systems,05719,George Asare-Tabi,Section started incomplete
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,13.00,Outpatient service conditions,05719,George Asare-Tabi,Section not started
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,14.00,Communicable disease services,05719,George Asare-Tabi,Section not started
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,15.00,Non-communicable disease services,05719,George Asare-Tabi,Section not started
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,16.00,Services for mental health and neurological conditions,05719,George Asare-Tabi,Section not started
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,17.00,Services for special needs,05719,George Asare-Tabi,Section not started
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,18.00,Maternal and newborn health services (Outpatient),05719,George Asare-Tabi,Section not started
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,19.00,Abortion care services,05719,George Asare-Tabi,Section not started
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,20.00,Services for children under 5 and adolescents,05719,George Asare-Tabi,Section not started
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,21.00,Immunization services,05719,George Asare-Tabi,Section not started
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,22.00,Delivery postnatal and newborn services (Inpatient),05719,George Asare-Tabi,Section not started
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,23.00,HIV services,05719,George Asare-Tabi,Section not started
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,24.00,Turberculosis (TB) services,05719,George Asare-Tabi,Section not started
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,25.00,Surgical services,05719,George Asare-Tabi,Section not started
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,26.00,Emergency(Ambulance or walk-in) Services,05719,George Asare-Tabi,Section not started
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,27.00,Imaging and specialty treatment services,05719,George Asare-Tabi,Section not started
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,28.00,Blood transfusion Services,05719,George Asare-Tabi,Section not started
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,29.00,Laboratory services,05719,George Asare-Tabi,Section not started
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,30.00,Consumable commodities,05719,George Asare-Tabi,Section not started
+309050004,Brong Ahafo Regional Hospital,04209,Freddie Amponsah,31.00,Pharmaceutical comodities,05719,George Asare-Tabi,Section not started
+512010072,Gyangyanadze CHPS,03138,Henry Safori,26.00,Emergency(Ambulance or walk-in) Services,03138,Henry Safori,Section started incomplete
+512010072,Gyangyanadze CHPS,03138,Henry Safori,27.00,Imaging and specialty treatment services,03138,Henry Safori,Section not started
+512010072,Gyangyanadze CHPS,03138,Henry Safori,28.00,Blood transfusion Services,03138,Henry Safori,Section not started
+512010072,Gyangyanadze CHPS,03138,Henry Safori,29.00,Laboratory services,03138,Henry Safori,Section not started
+512010072,Gyangyanadze CHPS,03138,Henry Safori,31.00,Pharmaceutical comodities,03138,Henry Safori,Section not started
+512020006,Trauma & Specialist Hospital,03138,Henry Safori,25.00,Surgical services,09310,Mary Duffie Osei,Section not started
+512020006,Trauma & Specialist Hospital,03138,Henry Safori,30.00,Consumable commodities,02145,Enoch Koomson,Section not started
+512030061,Papa-Kow Demtse CHPS,03138,Henry Safori,19.00,Abortion care services,05606,Akosua Serwaa Gyening,case not found
+512030061,Papa-Kow Demtse CHPS,03138,Henry Safori,20.00,Services for children under 5 and adolescents,05606,Akosua Serwaa Gyening,case not found
+512030061,Papa-Kow Demtse CHPS,03138,Henry Safori,21.00,Immunization services,05606,Akosua Serwaa Gyening,case not found
+512030061,Papa-Kow Demtse CHPS,03138,Henry Safori,22.00,Delivery postnatal and newborn services (Inpatient),05606,Akosua Serwaa Gyening,case not found
+512030061,Papa-Kow Demtse CHPS,03138,Henry Safori,23.00,HIV services,05606,Akosua Serwaa Gyening,case not found
+512030061,Papa-Kow Demtse CHPS,03138,Henry Safori,24.00,Turberculosis (TB) services,05606,Akosua Serwaa Gyening,case not found
+512030061,Papa-Kow Demtse CHPS,03138,Henry Safori,25.00,Surgical services,05606,Akosua Serwaa Gyening,case not found
+512030061,Papa-Kow Demtse CHPS,03138,Henry Safori,26.00,Emergency(Ambulance or walk-in) Services,05606,Akosua Serwaa Gyening,case not found
+512030061,Papa-Kow Demtse CHPS,03138,Henry Safori,27.00,Imaging and specialty treatment services,05606,Akosua Serwaa Gyening,case not found
+512030061,Papa-Kow Demtse CHPS,03138,Henry Safori,28.00,Blood transfusion Services,05606,Akosua Serwaa Gyening,case not found
+512030061,Papa-Kow Demtse CHPS,03138,Henry Safori,29.00,Laboratory services,05606,Akosua Serwaa Gyening,case not found
+512030061,Papa-Kow Demtse CHPS,03138,Henry Safori,30.00,Consumable commodities,05606,Akosua Serwaa Gyening,case not found
+512030061,Papa-Kow Demtse CHPS,03138,Henry Safori,31.00,Pharmaceutical comodities,05606,Akosua Serwaa Gyening,case not found
+516010007,St Luke Catholic Hospital Apam,03138,Henry Safori, 3.00,Health workforce,05633,Selassie Kennedy Kofitse,Section not started
+516050033,Kumasi CHPS,03138,Henry Safori,19.00,Abortion care services,09310,Mary Duffie Osei,case not found
+516050033,Kumasi CHPS,03138,Henry Safori,20.00,Services for children under 5 and adolescents,09310,Mary Duffie Osei,case not found
+516050033,Kumasi CHPS,03138,Henry Safori,21.00,Immunization services,09310,Mary Duffie Osei,case not found
+516050033,Kumasi CHPS,03138,Henry Safori,22.00,Delivery postnatal and newborn services (Inpatient),09310,Mary Duffie Osei,case not found
+516050033,Kumasi CHPS,03138,Henry Safori,23.00,HIV services,09310,Mary Duffie Osei,case not found
+516050033,Kumasi CHPS,03138,Henry Safori,24.00,Turberculosis (TB) services,09310,Mary Duffie Osei,case not found
+516050033,Kumasi CHPS,03138,Henry Safori,25.00,Surgical services,09310,Mary Duffie Osei,case not found
+516050033,Kumasi CHPS,03138,Henry Safori,26.00,Emergency(Ambulance or walk-in) Services,09310,Mary Duffie Osei,case not found
+516050033,Kumasi CHPS,03138,Henry Safori,27.00,Imaging and specialty treatment services,09310,Mary Duffie Osei,case not found
+516050033,Kumasi CHPS,03138,Henry Safori,28.00,Blood transfusion Services,09310,Mary Duffie Osei,case not found
+516050033,Kumasi CHPS,03138,Henry Safori,29.00,Laboratory services,09310,Mary Duffie Osei,case not found
+516050033,Kumasi CHPS,03138,Henry Safori,30.00,Consumable commodities,09310,Mary Duffie Osei,case not found
+516050033,Kumasi CHPS,03138,Henry Safori,31.00,Pharmaceutical comodities,09310,Mary Duffie Osei,case not found
+516050121,Eshiem CHPS,03138,Henry Safori,19.00,Abortion care services,02145,Enoch Koomson,case not found
+516050121,Eshiem CHPS,03138,Henry Safori,20.00,Services for children under 5 and adolescents,02145,Enoch Koomson,case not found
+516050121,Eshiem CHPS,03138,Henry Safori,21.00,Immunization services,02145,Enoch Koomson,case not found
+516050121,Eshiem CHPS,03138,Henry Safori,22.00,Delivery postnatal and newborn services (Inpatient),02145,Enoch Koomson,case not found
+516050121,Eshiem CHPS,03138,Henry Safori,23.00,HIV services,02145,Enoch Koomson,case not found
+516050121,Eshiem CHPS,03138,Henry Safori,24.00,Turberculosis (TB) services,02145,Enoch Koomson,case not found
+516050121,Eshiem CHPS,03138,Henry Safori,25.00,Surgical services,02145,Enoch Koomson,case not found
+516050121,Eshiem CHPS,03138,Henry Safori,26.00,Emergency(Ambulance or walk-in) Services,02145,Enoch Koomson,case not found
+516050121,Eshiem CHPS,03138,Henry Safori,27.00,Imaging and specialty treatment services,02145,Enoch Koomson,case not found
+516050121,Eshiem CHPS,03138,Henry Safori,28.00,Blood transfusion Services,02145,Enoch Koomson,case not found
+516050121,Eshiem CHPS,03138,Henry Safori,29.00,Laboratory services,02145,Enoch Koomson,case not found
+516050121,Eshiem CHPS,03138,Henry Safori,30.00,Consumable commodities,02145,Enoch Koomson,case not found
+516050121,Eshiem CHPS,03138,Henry Safori,31.00,Pharmaceutical comodities,02145,Enoch Koomson,case not found
+518020044,St Jude Clinic,03138,Henry Safori, 1.00,Facility Identification,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori, 3.00,Health workforce,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori, 4.00,Facility beds and isolation units,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori, 5.00,Governance and management,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori, 6.00,Systems to support staff,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori, 7.00,Systems for monitoring service quality,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori, 8.00,Infrastructure and equipment maintenance,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori, 9.00,Health financing and accounting,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,10.00,Data sources and systems,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,11.00,Facility data reporting systems,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,12.00,Basic infrastructure and systems,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,13.00,Outpatient service conditions,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,14.00,Communicable disease services,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,15.00,Non-communicable disease services,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,16.00,Services for mental health and neurological conditions,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,17.00,Services for special needs,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,18.00,Maternal and newborn health services (Outpatient),09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,19.00,Abortion care services,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,20.00,Services for children under 5 and adolescents,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,21.00,Immunization services,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,22.00,Delivery postnatal and newborn services (Inpatient),09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,23.00,HIV services,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,24.00,Turberculosis (TB) services,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,25.00,Surgical services,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,26.00,Emergency(Ambulance or walk-in) Services,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,27.00,Imaging and specialty treatment services,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,28.00,Blood transfusion Services,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,29.00,Laboratory services,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,30.00,Consumable commodities,09310,Mary Duffie Osei,Section not started
+518020044,St Jude Clinic,03138,Henry Safori,31.00,Pharmaceutical comodities,09310,Mary Duffie Osei,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori, 1.00,Facility Identification,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori, 3.00,Health workforce,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori, 4.00,Facility beds and isolation units,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori, 5.00,Governance and management,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori, 6.00,Systems to support staff,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori, 7.00,Systems for monitoring service quality,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori, 8.00,Infrastructure and equipment maintenance,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori, 9.00,Health financing and accounting,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,10.00,Data sources and systems,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,11.00,Facility data reporting systems,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,12.00,Basic infrastructure and systems,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,13.00,Outpatient service conditions,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,14.00,Communicable disease services,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,15.00,Non-communicable disease services,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,16.00,Services for mental health and neurological conditions,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,17.00,Services for special needs,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,18.00,Maternal and newborn health services (Outpatient),06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,19.00,Abortion care services,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,20.00,Services for children under 5 and adolescents,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,21.00,Immunization services,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,22.00,Delivery postnatal and newborn services (Inpatient),06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,23.00,HIV services,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,24.00,Turberculosis (TB) services,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,25.00,Surgical services,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,26.00,Emergency(Ambulance or walk-in) Services,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,27.00,Imaging and specialty treatment services,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,28.00,Blood transfusion Services,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,29.00,Laboratory services,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,30.00,Consumable commodities,06958,Wisdom Mawuli Dzontoh,Section not started
+518040110,Prince Charles Clinic,03138,Henry Safori,31.00,Pharmaceutical comodities,06958,Wisdom Mawuli Dzontoh,Section not started
+619040003,Kade Govt Hospital,08866,Benjamin Tandoh Boakye,28.00,Blood transfusion Services,03823,Philip Arthur-Baidoo,Section started incomplete
+622020027,Asuboni Rails Health Centre,08866,Benjamin Tandoh Boakye,17.00,Services for special needs,04709,Samuel Adolf Bosoka,case not found
+622020027,Asuboni Rails Health Centre,08866,Benjamin Tandoh Boakye,20.00,Services for children under 5 and adolescents,04709,Samuel Adolf Bosoka,case not found
+622020027,Asuboni Rails Health Centre,08866,Benjamin Tandoh Boakye,21.00,Immunization services,04709,Samuel Adolf Bosoka,case not found
+622020027,Asuboni Rails Health Centre,08866,Benjamin Tandoh Boakye,23.00,HIV services,04709,Samuel Adolf Bosoka,case not found
+622020027,Asuboni Rails Health Centre,08866,Benjamin Tandoh Boakye,24.00,Turberculosis (TB) services,04709,Samuel Adolf Bosoka,case not found
+622020027,Asuboni Rails Health Centre,08866,Benjamin Tandoh Boakye,25.00,Surgical services,04709,Samuel Adolf Bosoka,case not found
+622020027,Asuboni Rails Health Centre,08866,Benjamin Tandoh Boakye,26.00,Emergency(Ambulance or walk-in) Services,04709,Samuel Adolf Bosoka,case not found
+622020027,Asuboni Rails Health Centre,08866,Benjamin Tandoh Boakye,27.00,Imaging and specialty treatment services,04709,Samuel Adolf Bosoka,case not found
+622020027,Asuboni Rails Health Centre,08866,Benjamin Tandoh Boakye,28.00,Blood transfusion Services,04709,Samuel Adolf Bosoka,case not found
+622020027,Asuboni Rails Health Centre,08866,Benjamin Tandoh Boakye,29.00,Laboratory services,04709,Samuel Adolf Bosoka,case not found
+622020027,Asuboni Rails Health Centre,08866,Benjamin Tandoh Boakye,30.00,Consumable commodities,04709,Samuel Adolf Bosoka,case not found
+622020027,Asuboni Rails Health Centre,08866,Benjamin Tandoh Boakye,31.00,Pharmaceutical comodities,04709,Samuel Adolf Bosoka,case not found
+622080040,Kenop Care Hospital,08866,Benjamin Tandoh Boakye, 1.00,Facility Identification,04709,Samuel Adolf Bosoka,case not found
+622080040,Kenop Care Hospital,08866,Benjamin Tandoh Boakye, 3.00,Health workforce,04709,Samuel Adolf Bosoka,case not found
+622080040,Kenop Care Hospital,08866,Benjamin Tandoh Boakye, 4.00,Facility beds and isolation units,04709,Samuel Adolf Bosoka,case not found
+622080040,Kenop Care Hospital,08866,Benjamin Tandoh Boakye, 5.00,Governance and management,04709,Samuel Adolf Bosoka,case not found
+622080040,Kenop Care Hospital,08866,Benjamin Tandoh Boakye, 6.00,Systems to support staff,04709,Samuel Adolf Bosoka,case not found
+622080040,Kenop Care Hospital,08866,Benjamin Tandoh Boakye, 7.00,Systems for monitoring service quality,04709,Samuel Adolf Bosoka,case not found
+622080040,Kenop Care Hospital,08866,Benjamin Tandoh Boakye, 8.00,Infrastructure and equipment maintenance,04709,Samuel Adolf Bosoka,case not found
+622080040,Kenop Care Hospital,08866,Benjamin Tandoh Boakye, 9.00,Health financing and accounting,04709,Samuel Adolf Bosoka,case not found
+622080040,Kenop Care Hospital,08866,Benjamin Tandoh Boakye,10.00,Data sources and systems,04709,Samuel Adolf Bosoka,case not found
+622080040,Kenop Care Hospital,08866,Benjamin Tandoh Boakye,11.00,Facility data reporting systems,04709,Samuel Adolf Bosoka,case not found
+622080040,Kenop Care Hospital,08866,Benjamin Tandoh Boakye,12.00,Basic infrastructure and systems,04709,Samuel Adolf Bosoka,case not found
+622080040,Kenop Care Hospital,08866,Benjamin Tandoh Boakye,13.00,Outpatient service conditions,04709,Samuel Adolf Bosoka,case not found
+631050084,Asamankese Government Hospital,08866,Benjamin Tandoh Boakye, 1.00,Facility Identification,08866,Benjamin Tandoh Boakye,case not found
+631050084,Asamankese Government Hospital,08866,Benjamin Tandoh Boakye, 3.00,Health workforce,08866,Benjamin Tandoh Boakye,case not found
+631050084,Asamankese Government Hospital,08866,Benjamin Tandoh Boakye, 4.00,Facility beds and isolation units,08866,Benjamin Tandoh Boakye,case not found
+631050084,Asamankese Government Hospital,08866,Benjamin Tandoh Boakye, 5.00,Governance and management,08866,Benjamin Tandoh Boakye,case not found
+631050084,Asamankese Government Hospital,08866,Benjamin Tandoh Boakye, 6.00,Systems to support staff,08866,Benjamin Tandoh Boakye,case not found
+631050084,Asamankese Government Hospital,08866,Benjamin Tandoh Boakye, 7.00,Systems for monitoring service quality,08866,Benjamin Tandoh Boakye,case not found
+631050084,Asamankese Government Hospital,08866,Benjamin Tandoh Boakye, 8.00,Infrastructure and equipment maintenance,08866,Benjamin Tandoh Boakye,case not found
+631050084,Asamankese Government Hospital,08866,Benjamin Tandoh Boakye, 9.00,Health financing and accounting,08866,Benjamin Tandoh Boakye,case not found
+631050084,Asamankese Government Hospital,08866,Benjamin Tandoh Boakye,10.00,Data sources and systems,08866,Benjamin Tandoh Boakye,case not found
+631050084,Asamankese Government Hospital,08866,Benjamin Tandoh Boakye,11.00,Facility data reporting systems,08866,Benjamin Tandoh Boakye,case not found
+631050084,Asamankese Government Hospital,08866,Benjamin Tandoh Boakye,12.00,Basic infrastructure and systems,08866,Benjamin Tandoh Boakye,case not found
+631050084,Asamankese Government Hospital,08866,Benjamin Tandoh Boakye,13.00,Outpatient service conditions,08866,Benjamin Tandoh Boakye,case not found
+631050084,Asamankese Government Hospital,08866,Benjamin Tandoh Boakye,31.00,Pharmaceutical comodities,08866,Benjamin Tandoh Boakye,case not found
+712020146,Martins Medical Clinic,03769,Charles Amotoh, 1.00,Facility Identification,06398,Therson Kofi Mintah,Section not started
+712020146,Martins Medical Clinic,03769,Charles Amotoh, 3.00,Health workforce,06398,Therson Kofi Mintah,Section not started
+712020146,Martins Medical Clinic,03769,Charles Amotoh, 4.00,Facility beds and isolation units,08852,Selorm P.A. Nutakor,case not found
+712020146,Martins Medical Clinic,03769,Charles Amotoh, 5.00,Governance and management,08852,Selorm P.A. Nutakor,case not found
+712020146,Martins Medical Clinic,03769,Charles Amotoh, 6.00,Systems to support staff,08852,Selorm P.A. Nutakor,case not found
+712020146,Martins Medical Clinic,03769,Charles Amotoh, 7.00,Systems for monitoring service quality,06398,Therson Kofi Mintah,Section not started
+712020146,Martins Medical Clinic,03769,Charles Amotoh, 8.00,Infrastructure and equipment maintenance,08852,Selorm P.A. Nutakor,case not found
+712020146,Martins Medical Clinic,03769,Charles Amotoh, 9.00,Health financing and accounting,08852,Selorm P.A. Nutakor,case not found
+712020146,Martins Medical Clinic,03769,Charles Amotoh,10.00,Data sources and systems,06398,Therson Kofi Mintah,Section not started
+712020146,Martins Medical Clinic,03769,Charles Amotoh,11.00,Facility data reporting systems,08852,Selorm P.A. Nutakor,case not found
+712020146,Martins Medical Clinic,03769,Charles Amotoh,12.00,Basic infrastructure and systems,08852,Selorm P.A. Nutakor,case not found
+712020146,Martins Medical Clinic,03769,Charles Amotoh,13.00,Outpatient service conditions,06398,Therson Kofi Mintah,Section not started
+712020146,Martins Medical Clinic,03769,Charles Amotoh,14.00,Communicable disease services,06398,Therson Kofi Mintah,Section not started
+712020146,Martins Medical Clinic,03769,Charles Amotoh,15.00,Non-communicable disease services,06398,Therson Kofi Mintah,Section not started
+712020146,Martins Medical Clinic,03769,Charles Amotoh,16.00,Services for mental health and neurological conditions,06398,Therson Kofi Mintah,Section not started
+712020146,Martins Medical Clinic,03769,Charles Amotoh,17.00,Services for special needs,08852,Selorm P.A. Nutakor,case not found
+712020146,Martins Medical Clinic,03769,Charles Amotoh,18.00,Maternal and newborn health services (Outpatient),06398,Therson Kofi Mintah,Section not started
+712020146,Martins Medical Clinic,03769,Charles Amotoh,19.00,Abortion care services,08852,Selorm P.A. Nutakor,case not found
+712020146,Martins Medical Clinic,03769,Charles Amotoh,20.00,Services for children under 5 and adolescents,06398,Therson Kofi Mintah,Section not started
+712020146,Martins Medical Clinic,03769,Charles Amotoh,21.00,Immunization services,06398,Therson Kofi Mintah,Section not started
+712020146,Martins Medical Clinic,03769,Charles Amotoh,22.00,Delivery postnatal and newborn services (Inpatient),08852,Selorm P.A. Nutakor,case not found
+712020146,Martins Medical Clinic,03769,Charles Amotoh,23.00,HIV services,06398,Therson Kofi Mintah,Section not started
+712020146,Martins Medical Clinic,03769,Charles Amotoh,24.00,Turberculosis (TB) services,06398,Therson Kofi Mintah,Section not started
+712020146,Martins Medical Clinic,03769,Charles Amotoh,25.00,Surgical services,06398,Therson Kofi Mintah,Section not started
+712020146,Martins Medical Clinic,03769,Charles Amotoh,26.00,Emergency(Ambulance or walk-in) Services,08852,Selorm P.A. Nutakor,case not found
+712020146,Martins Medical Clinic,03769,Charles Amotoh,27.00,Imaging and specialty treatment services,08852,Selorm P.A. Nutakor,case not found
+712020146,Martins Medical Clinic,03769,Charles Amotoh,28.00,Blood transfusion Services,08852,Selorm P.A. Nutakor,case not found
+712020146,Martins Medical Clinic,03769,Charles Amotoh,29.00,Laboratory services,08852,Selorm P.A. Nutakor,case not found
+712020146,Martins Medical Clinic,03769,Charles Amotoh,30.00,Consumable commodities,08852,Selorm P.A. Nutakor,case not found
+712020146,Martins Medical Clinic,03769,Charles Amotoh,31.00,Pharmaceutical comodities,06398,Therson Kofi Mintah,Section not started
+714030057,County Plus Medical Centre,03769,Charles Amotoh,14.00,Communicable disease services,06398,Therson Kofi Mintah,Section not started
+714030057,County Plus Medical Centre,03769,Charles Amotoh,15.00,Non-communicable disease services,06398,Therson Kofi Mintah,Section started incomplete
+714030057,County Plus Medical Centre,03769,Charles Amotoh,17.00,Services for special needs,06398,Therson Kofi Mintah,Section started incomplete
+714030057,County Plus Medical Centre,03769,Charles Amotoh,20.00,Services for children under 5 and adolescents,06398,Therson Kofi Mintah,Section not started
+714030057,County Plus Medical Centre,03769,Charles Amotoh,31.00,Pharmaceutical comodities,06398,Therson Kofi Mintah,Section not started
+714050068,Taifa Polyclinic (RCH),03769,Charles Amotoh, 3.00,Health workforce,06398,Therson Kofi Mintah,Section not started
+718010163,Dr Morton Clinic,03769,Charles Amotoh, 3.00,Health workforce,01977,Thomas Frank Ankomah,Section started incomplete
+718040080,Civil Service Clinic,03769,Charles Amotoh, 3.00,Health workforce,09304,Deborah Obeng,Section started incomplete
+722010046,Danfa Health Centre,03769,Charles Amotoh, 3.00,Health workforce,06398,Therson Kofi Mintah,Section not started
+722010046,Danfa Health Centre,03769,Charles Amotoh, 4.00,Facility beds and isolation units,08852,Selorm P.A. Nutakor,Section started incomplete
+722010046,Danfa Health Centre,03769,Charles Amotoh, 8.00,Infrastructure and equipment maintenance,08852,Selorm P.A. Nutakor,Section started incomplete
+722010046,Danfa Health Centre,03769,Charles Amotoh, 9.00,Health financing and accounting,08852,Selorm P.A. Nutakor,Section not started
+722010046,Danfa Health Centre,03769,Charles Amotoh,11.00,Facility data reporting systems,08852,Selorm P.A. Nutakor,Section not started
+722010046,Danfa Health Centre,03769,Charles Amotoh,12.00,Basic infrastructure and systems,08852,Selorm P.A. Nutakor,Section started incomplete
+722010046,Danfa Health Centre,03769,Charles Amotoh,17.00,Services for special needs,08852,Selorm P.A. Nutakor,Section not started
+722010046,Danfa Health Centre,03769,Charles Amotoh,18.00,Maternal and newborn health services (Outpatient),08852,Selorm P.A. Nutakor,Section started incomplete
+722010046,Danfa Health Centre,03769,Charles Amotoh,26.00,Emergency(Ambulance or walk-in) Services,08852,Selorm P.A. Nutakor,Section not started
+722010046,Danfa Health Centre,03769,Charles Amotoh,28.00,Blood transfusion Services,00000,<Invalid staff code>,case not found
+722010046,Danfa Health Centre,03769,Charles Amotoh,29.00,Laboratory services,08852,Selorm P.A. Nutakor,Section not started
+722010046,Danfa Health Centre,03769,Charles Amotoh,30.00,Consumable commodities,08852,Selorm P.A. Nutakor,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh, 1.00,Facility Identification,06398,Therson Kofi Mintah,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh, 3.00,Health workforce,06398,Therson Kofi Mintah,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh, 4.00,Facility beds and isolation units,06398,Therson Kofi Mintah,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh, 5.00,Governance and management,06398,Therson Kofi Mintah,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh, 6.00,Systems to support staff,06398,Therson Kofi Mintah,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh, 7.00,Systems for monitoring service quality,06398,Therson Kofi Mintah,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh, 8.00,Infrastructure and equipment maintenance,06398,Therson Kofi Mintah,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh, 9.00,Health financing and accounting,06398,Therson Kofi Mintah,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,10.00,Data sources and systems,06398,Therson Kofi Mintah,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,11.00,Facility data reporting systems,06398,Therson Kofi Mintah,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,12.00,Basic infrastructure and systems,06398,Therson Kofi Mintah,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,13.00,Outpatient service conditions,06398,Therson Kofi Mintah,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,14.00,Communicable disease services,06398,Therson Kofi Mintah,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,15.00,Non-communicable disease services,06398,Therson Kofi Mintah,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,16.00,Services for mental health and neurological conditions,06398,Therson Kofi Mintah,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,17.00,Services for special needs,08852,Selorm P.A. Nutakor,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,18.00,Maternal and newborn health services (Outpatient),08852,Selorm P.A. Nutakor,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,19.00,Abortion care services,08852,Selorm P.A. Nutakor,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,20.00,Services for children under 5 and adolescents,08852,Selorm P.A. Nutakor,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,21.00,Immunization services,08852,Selorm P.A. Nutakor,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,22.00,Delivery postnatal and newborn services (Inpatient),08852,Selorm P.A. Nutakor,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,23.00,HIV services,08852,Selorm P.A. Nutakor,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,24.00,Turberculosis (TB) services,08852,Selorm P.A. Nutakor,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,25.00,Surgical services,08852,Selorm P.A. Nutakor,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,26.00,Emergency(Ambulance or walk-in) Services,08852,Selorm P.A. Nutakor,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,27.00,Imaging and specialty treatment services,08852,Selorm P.A. Nutakor,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,28.00,Blood transfusion Services,08852,Selorm P.A. Nutakor,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,29.00,Laboratory services,08852,Selorm P.A. Nutakor,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,30.00,Consumable commodities,08852,Selorm P.A. Nutakor,Section not started
+722050119,UPSA Clinic,03769,Charles Amotoh,31.00,Pharmaceutical comodities,08852,Selorm P.A. Nutakor,Section not started
+802020005,Chereponi Health Centre,05523,Etowi Boye Yakubu, 7.00,Systems for monitoring service quality,03063,Marcel Buamah,case not found
+802020005,Chereponi Health Centre,05523,Etowi Boye Yakubu, 8.00,Infrastructure and equipment maintenance,03063,Marcel Buamah,case not found
+802020005,Chereponi Health Centre,05523,Etowi Boye Yakubu, 9.00,Health financing and accounting,03063,Marcel Buamah,case not found
+802020005,Chereponi Health Centre,05523,Etowi Boye Yakubu,10.00,Data sources and systems,03063,Marcel Buamah,case not found
+802020005,Chereponi Health Centre,05523,Etowi Boye Yakubu,11.00,Facility data reporting systems,08994,Awatey-Lamptey Richard,case not found
+802020005,Chereponi Health Centre,05523,Etowi Boye Yakubu,12.00,Basic infrastructure and systems,03063,Marcel Buamah,case not found
+802020005,Chereponi Health Centre,05523,Etowi Boye Yakubu,13.00,Outpatient service conditions,08994,Awatey-Lamptey Richard,case not found
+802020005,Chereponi Health Centre,05523,Etowi Boye Yakubu,15.00,Non-communicable disease services,08994,Awatey-Lamptey Richard,case not found
+802020005,Chereponi Health Centre,05523,Etowi Boye Yakubu,19.00,Abortion care services,08994,Awatey-Lamptey Richard,case not found
+802020005,Chereponi Health Centre,05523,Etowi Boye Yakubu,22.00,Delivery postnatal and newborn services (Inpatient),08994,Awatey-Lamptey Richard,case not found
+802020005,Chereponi Health Centre,05523,Etowi Boye Yakubu,24.00,Turberculosis (TB) services,03063,Marcel Buamah,case not found
+802020005,Chereponi Health Centre,05523,Etowi Boye Yakubu,26.00,Emergency(Ambulance or walk-in) Services,03063,Marcel Buamah,case not found
+802020005,Chereponi Health Centre,05523,Etowi Boye Yakubu,29.00,Laboratory services,08994,Awatey-Lamptey Richard,case not found
+802020005,Chereponi Health Centre,05523,Etowi Boye Yakubu,30.00,Consumable commodities,03063,Marcel Buamah,case not found
+802020022,Chereponi Government Hospital,05523,Etowi Boye Yakubu,12.00,Basic infrastructure and systems,03063,Marcel Buamah,case not found
+802020022,Chereponi Government Hospital,05523,Etowi Boye Yakubu,24.00,Turberculosis (TB) services,03063,Marcel Buamah,case not found
+802020022,Chereponi Government Hospital,05523,Etowi Boye Yakubu,25.00,Surgical services,03063,Marcel Buamah,case not found
+802020022,Chereponi Government Hospital,05523,Etowi Boye Yakubu,26.00,Emergency(Ambulance or walk-in) Services,03063,Marcel Buamah,case not found
+802020022,Chereponi Government Hospital,05523,Etowi Boye Yakubu,27.00,Imaging and specialty treatment services,03063,Marcel Buamah,case not found
+802020022,Chereponi Government Hospital,05523,Etowi Boye Yakubu,28.00,Blood transfusion Services,03063,Marcel Buamah,case not found
+802020022,Chereponi Government Hospital,05523,Etowi Boye Yakubu,31.00,Pharmaceutical comodities,03063,Marcel Buamah,case not found
+802040021,Wenchiki Health Centre,05523,Etowi Boye Yakubu,10.00,Data sources and systems,03063,Marcel Buamah,case not found
+802040021,Wenchiki Health Centre,05523,Etowi Boye Yakubu,11.00,Facility data reporting systems,03063,Marcel Buamah,case not found
+802040021,Wenchiki Health Centre,05523,Etowi Boye Yakubu,12.00,Basic infrastructure and systems,03063,Marcel Buamah,case not found
+802040021,Wenchiki Health Centre,05523,Etowi Boye Yakubu,13.00,Outpatient service conditions,03063,Marcel Buamah,case not found
+802040021,Wenchiki Health Centre,05523,Etowi Boye Yakubu,16.00,Services for mental health and neurological conditions,03063,Marcel Buamah,case not found
+802040021,Wenchiki Health Centre,05523,Etowi Boye Yakubu,22.00,Delivery postnatal and newborn services (Inpatient),03063,Marcel Buamah,case not found
+802040021,Wenchiki Health Centre,05523,Etowi Boye Yakubu,24.00,Turberculosis (TB) services,03063,Marcel Buamah,case not found
+804020025,Kunkwa Health Centre,05523,Etowi Boye Yakubu, 1.00,Facility Identification,05087,Nene Evans Odallah,case not found
+804020025,Kunkwa Health Centre,05523,Etowi Boye Yakubu, 3.00,Health workforce,05087,Nene Evans Odallah,case not found
+804020025,Kunkwa Health Centre,05523,Etowi Boye Yakubu, 4.00,Facility beds and isolation units,05087,Nene Evans Odallah,case not found
+804020025,Kunkwa Health Centre,05523,Etowi Boye Yakubu, 5.00,Governance and management,05087,Nene Evans Odallah,case not found
+804020025,Kunkwa Health Centre,05523,Etowi Boye Yakubu, 6.00,Systems to support staff,05087,Nene Evans Odallah,case not found
+804020025,Kunkwa Health Centre,05523,Etowi Boye Yakubu, 8.00,Infrastructure and equipment maintenance,05944,Benedict Lamptey,Section not started
+804020025,Kunkwa Health Centre,05523,Etowi Boye Yakubu,10.00,Data sources and systems,05944,Benedict Lamptey,Section not started
+804020025,Kunkwa Health Centre,05523,Etowi Boye Yakubu,26.00,Emergency(Ambulance or walk-in) Services,05944,Benedict Lamptey,Section not started
+804030013,Soo CHPS,05523,Etowi Boye Yakubu, 5.00,Governance and management,05087,Nene Evans Odallah,case not found
+804030013,Soo CHPS,05523,Etowi Boye Yakubu, 6.00,Systems to support staff,05087,Nene Evans Odallah,case not found
+804030013,Soo CHPS,05523,Etowi Boye Yakubu, 7.00,Systems for monitoring service quality,05087,Nene Evans Odallah,case not found
+804040002,Fame (yiezesi) Health Centre,05523,Etowi Boye Yakubu, 6.00,Systems to support staff,04972,Edem Akorli Adzimah,Section not started
+804040002,Fame (yiezesi) Health Centre,05523,Etowi Boye Yakubu, 7.00,Systems for monitoring service quality,04972,Edem Akorli Adzimah,Section not started
+804040002,Fame (yiezesi) Health Centre,05523,Etowi Boye Yakubu, 8.00,Infrastructure and equipment maintenance,04972,Edem Akorli Adzimah,Section not started
+804040002,Fame (yiezesi) Health Centre,05523,Etowi Boye Yakubu,14.00,Communicable disease services,05087,Nene Evans Odallah,case not found
+804040002,Fame (yiezesi) Health Centre,05523,Etowi Boye Yakubu,15.00,Non-communicable disease services,05087,Nene Evans Odallah,case not found
+804040002,Fame (yiezesi) Health Centre,05523,Etowi Boye Yakubu,16.00,Services for mental health and neurological conditions,05944,Benedict Lamptey,Section not started
+804040002,Fame (yiezesi) Health Centre,05523,Etowi Boye Yakubu,26.00,Emergency(Ambulance or walk-in) Services,05087,Nene Evans Odallah,case not found
+804040002,Fame (yiezesi) Health Centre,05523,Etowi Boye Yakubu,29.00,Laboratory services,05087,Nene Evans Odallah,case not found
+804040002,Fame (yiezesi) Health Centre,05523,Etowi Boye Yakubu,31.00,Pharmaceutical comodities,04972,Edem Akorli Adzimah,Section started incomplete
+804040003,Yikpabongo CHPS,05523,Etowi Boye Yakubu,20.00,Services for children under 5 and adolescents,04972,Edem Akorli Adzimah,Section not started
+804040003,Yikpabongo CHPS,05523,Etowi Boye Yakubu,21.00,Immunization services,04972,Edem Akorli Adzimah,Section not started
+804040003,Yikpabongo CHPS,05523,Etowi Boye Yakubu,31.00,Pharmaceutical comodities,04972,Edem Akorli Adzimah,Section started incomplete
+805020011,Kpasenkpe Health Centre,05523,Etowi Boye Yakubu, 1.00,Facility Identification,05087,Nene Evans Odallah,case not found
+805020011,Kpasenkpe Health Centre,05523,Etowi Boye Yakubu, 3.00,Health workforce,05087,Nene Evans Odallah,case not found
+805020011,Kpasenkpe Health Centre,05523,Etowi Boye Yakubu, 4.00,Facility beds and isolation units,05087,Nene Evans Odallah,case not found
+805020011,Kpasenkpe Health Centre,05523,Etowi Boye Yakubu, 5.00,Governance and management,05087,Nene Evans Odallah,case not found
+805040009,St. Patrick's Health Center,05523,Etowi Boye Yakubu,29.00,Laboratory services,06403,Adijatu Tiamiyu,Section started incomplete
+805040028,Bugya CHPS,05523,Etowi Boye Yakubu,24.00,Turberculosis (TB) services,05944,Benedict Lamptey,Section not started
+805040028,Bugya CHPS,05523,Etowi Boye Yakubu,25.00,Surgical services,05944,Benedict Lamptey,Section not started
+805040028,Bugya CHPS,05523,Etowi Boye Yakubu,26.00,Emergency(Ambulance or walk-in) Services,05944,Benedict Lamptey,Section not started
+805040028,Bugya CHPS,05523,Etowi Boye Yakubu,27.00,Imaging and specialty treatment services,05944,Benedict Lamptey,Section not started
+805040028,Bugya CHPS,05523,Etowi Boye Yakubu,28.00,Blood transfusion Services,05944,Benedict Lamptey,Section not started
+805040028,Bugya CHPS,05523,Etowi Boye Yakubu,29.00,Laboratory services,05944,Benedict Lamptey,Section not started
+805040028,Bugya CHPS,05523,Etowi Boye Yakubu,30.00,Consumable commodities,05944,Benedict Lamptey,Section not started
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu, 1.00,Facility Identification,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu, 3.00,Health workforce,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu, 4.00,Facility beds and isolation units,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu, 5.00,Governance and management,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu, 6.00,Systems to support staff,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu, 7.00,Systems for monitoring service quality,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu, 8.00,Infrastructure and equipment maintenance,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu, 9.00,Health financing and accounting,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,10.00,Data sources and systems,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,11.00,Facility data reporting systems,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,12.00,Basic infrastructure and systems,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,13.00,Outpatient service conditions,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,14.00,Communicable disease services,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,15.00,Non-communicable disease services,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,16.00,Services for mental health and neurological conditions,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,17.00,Services for special needs,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,18.00,Maternal and newborn health services (Outpatient),07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,19.00,Abortion care services,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,20.00,Services for children under 5 and adolescents,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,21.00,Immunization services,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,22.00,Delivery postnatal and newborn services (Inpatient),07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,23.00,HIV services,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,24.00,Turberculosis (TB) services,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,25.00,Surgical services,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,26.00,Emergency(Ambulance or walk-in) Services,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,27.00,Imaging and specialty treatment services,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,28.00,Blood transfusion Services,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,30.00,Consumable commodities,07507,Adam Anas,case not found
+806020004,Nasuan Health Centre,05523,Etowi Boye Yakubu,31.00,Pharmaceutical comodities,07507,Adam Anas,case not found
+806020027,Temaa CHPS,05523,Etowi Boye Yakubu, 1.00,Facility Identification,05944,Benedict Lamptey,case not found
+806020027,Temaa CHPS,05523,Etowi Boye Yakubu, 3.00,Health workforce,05944,Benedict Lamptey,case not found
+806020027,Temaa CHPS,05523,Etowi Boye Yakubu, 4.00,Facility beds and isolation units,05944,Benedict Lamptey,case not found
+806020027,Temaa CHPS,05523,Etowi Boye Yakubu, 5.00,Governance and management,05944,Benedict Lamptey,case not found
+806020027,Temaa CHPS,05523,Etowi Boye Yakubu,10.00,Data sources and systems,05944,Benedict Lamptey,case not found
+806020027,Temaa CHPS,05523,Etowi Boye Yakubu,11.00,Facility data reporting systems,05087,Nene Evans Odallah,case not found
+806020027,Temaa CHPS,05523,Etowi Boye Yakubu,14.00,Communicable disease services,05944,Benedict Lamptey,case not found
+806020027,Temaa CHPS,05523,Etowi Boye Yakubu,15.00,Non-communicable disease services,05944,Benedict Lamptey,case not found
+806020027,Temaa CHPS,05523,Etowi Boye Yakubu,18.00,Maternal and newborn health services (Outpatient),05944,Benedict Lamptey,case not found
+806020027,Temaa CHPS,05523,Etowi Boye Yakubu,19.00,Abortion care services,05944,Benedict Lamptey,case not found
+806020027,Temaa CHPS,05523,Etowi Boye Yakubu,22.00,Delivery postnatal and newborn services (Inpatient),05944,Benedict Lamptey,case not found
+806020027,Temaa CHPS,05523,Etowi Boye Yakubu,23.00,HIV services,05944,Benedict Lamptey,case not found
+806020027,Temaa CHPS,05523,Etowi Boye Yakubu,26.00,Emergency(Ambulance or walk-in) Services,05087,Nene Evans Odallah,case not found
+806020027,Temaa CHPS,05523,Etowi Boye Yakubu,27.00,Imaging and specialty treatment services,05087,Nene Evans Odallah,case not found
+806020027,Temaa CHPS,05523,Etowi Boye Yakubu,30.00,Consumable commodities,05087,Nene Evans Odallah,case not found
+806030010,Yunyoo Health Centre,05523,Etowi Boye Yakubu, 1.00,Facility Identification,05944,Benedict Lamptey,case not found
+806030010,Yunyoo Health Centre,05523,Etowi Boye Yakubu, 3.00,Health workforce,05944,Benedict Lamptey,case not found
+806030010,Yunyoo Health Centre,05523,Etowi Boye Yakubu, 8.00,Infrastructure and equipment maintenance,05944,Benedict Lamptey,case not found
+806030010,Yunyoo Health Centre,05523,Etowi Boye Yakubu, 9.00,Health financing and accounting,05944,Benedict Lamptey,case not found
+806030010,Yunyoo Health Centre,05523,Etowi Boye Yakubu,14.00,Communicable disease services,05944,Benedict Lamptey,case not found
+806030010,Yunyoo Health Centre,05523,Etowi Boye Yakubu,15.00,Non-communicable disease services,05944,Benedict Lamptey,case not found
+806030010,Yunyoo Health Centre,05523,Etowi Boye Yakubu,20.00,Services for children under 5 and adolescents,05944,Benedict Lamptey,case not found
+806030010,Yunyoo Health Centre,05523,Etowi Boye Yakubu,21.00,Immunization services,05944,Benedict Lamptey,case not found
+806030010,Yunyoo Health Centre,05523,Etowi Boye Yakubu,24.00,Turberculosis (TB) services,05944,Benedict Lamptey,case not found
+806030010,Yunyoo Health Centre,05523,Etowi Boye Yakubu,25.00,Surgical services,05944,Benedict Lamptey,case not found
+806030010,Yunyoo Health Centre,05523,Etowi Boye Yakubu,31.00,Pharmaceutical comodities,05944,Benedict Lamptey,case not found
+910030013,PPAG Jisonayilli Clinic,05523,Etowi Boye Yakubu, 1.00,Facility Identification,05523,Etowi Boye Yakubu,case not found
+910030013,PPAG Jisonayilli Clinic,05523,Etowi Boye Yakubu, 3.00,Health workforce,05523,Etowi Boye Yakubu,case not found
+910030013,PPAG Jisonayilli Clinic,05523,Etowi Boye Yakubu, 4.00,Facility beds and isolation units,05523,Etowi Boye Yakubu,case not found
+910030013,PPAG Jisonayilli Clinic,05523,Etowi Boye Yakubu, 5.00,Governance and management,05523,Etowi Boye Yakubu,case not found
+910030013,PPAG Jisonayilli Clinic,05523,Etowi Boye Yakubu, 6.00,Systems to support staff,05523,Etowi Boye Yakubu,case not found
+910030013,PPAG Jisonayilli Clinic,05523,Etowi Boye Yakubu, 7.00,Systems for monitoring service quality,05523,Etowi Boye Yakubu,case not found
+910030013,PPAG Jisonayilli Clinic,05523,Etowi Boye Yakubu, 8.00,Infrastructure and equipment maintenance,05523,Etowi Boye Yakubu,case not found
+910030013,PPAG Jisonayilli Clinic,05523,Etowi Boye Yakubu, 9.00,Health financing and accounting,05523,Etowi Boye Yakubu,case not found
+910030013,PPAG Jisonayilli Clinic,05523,Etowi Boye Yakubu,10.00,Data sources and systems,05523,Etowi Boye Yakubu,case not found
+912010056,Fooshegu CHPS,05523,Etowi Boye Yakubu,30.00,Consumable commodities,03063,Marcel Buamah,Section not started
+912010056,Fooshegu CHPS,05523,Etowi Boye Yakubu,31.00,Pharmaceutical comodities,03063,Marcel Buamah,Section not started
+914040006,Nyankpala Health Centre,05523,Etowi Boye Yakubu,18.00,Maternal and newborn health services (Outpatient),04972,Edem Akorli Adzimah,Section not started
+914040006,Nyankpala Health Centre,05523,Etowi Boye Yakubu,21.00,Immunization services,04972,Edem Akorli Adzimah,Section not started
+914040006,Nyankpala Health Centre,05523,Etowi Boye Yakubu,22.00,Delivery postnatal and newborn services (Inpatient),04972,Edem Akorli Adzimah,Section not started
+914040006,Nyankpala Health Centre,05523,Etowi Boye Yakubu,24.00,Turberculosis (TB) services,04972,Edem Akorli Adzimah,Section not started
+914040006,Nyankpala Health Centre,05523,Etowi Boye Yakubu,26.00,Emergency(Ambulance or walk-in) Services,04972,Edem Akorli Adzimah,Section not started
+914040006,Nyankpala Health Centre,05523,Etowi Boye Yakubu,30.00,Consumable commodities,04972,Edem Akorli Adzimah,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu, 6.00,Systems to support staff,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu, 7.00,Systems for monitoring service quality,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu, 8.00,Infrastructure and equipment maintenance,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu, 9.00,Health financing and accounting,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu,10.00,Data sources and systems,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu,11.00,Facility data reporting systems,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu,12.00,Basic infrastructure and systems,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu,13.00,Outpatient service conditions,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu,14.00,Communicable disease services,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu,15.00,Non-communicable disease services,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu,21.00,Immunization services,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu,22.00,Delivery postnatal and newborn services (Inpatient),05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu,23.00,HIV services,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu,24.00,Turberculosis (TB) services,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu,25.00,Surgical services,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu,26.00,Emergency(Ambulance or walk-in) Services,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu,27.00,Imaging and specialty treatment services,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu,28.00,Blood transfusion Services,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu,29.00,Laboratory services,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu,30.00,Consumable commodities,05523,Etowi Boye Yakubu,Section not started
+914040062,Tuunaayili CHPS,05523,Etowi Boye Yakubu,31.00,Pharmaceutical comodities,05523,Etowi Boye Yakubu,Section not started
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe, 3.00,Health workforce,05696,Cosmos Agbe Todoko,Section not started
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe, 4.00,Facility beds and isolation units,05696,Cosmos Agbe Todoko,Section not started
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe, 5.00,Governance and management,05696,Cosmos Agbe Todoko,Section not started
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe, 6.00,Systems to support staff,05696,Cosmos Agbe Todoko,Section not started
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe, 7.00,Systems for monitoring service quality,05696,Cosmos Agbe Todoko,Section not started
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe, 8.00,Infrastructure and equipment maintenance,05696,Cosmos Agbe Todoko,Section not started
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe, 9.00,Health financing and accounting,05696,Cosmos Agbe Todoko,Section not started
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe,10.00,Data sources and systems,05696,Cosmos Agbe Todoko,Section not started
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe,11.00,Facility data reporting systems,05696,Cosmos Agbe Todoko,Section not started
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe,12.00,Basic infrastructure and systems,05696,Cosmos Agbe Todoko,Section not started
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe,13.00,Outpatient service conditions,05696,Cosmos Agbe Todoko,Section not started
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe,14.00,Communicable disease services,05696,Cosmos Agbe Todoko,Section not started
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe,15.00,Non-communicable disease services,05696,Cosmos Agbe Todoko,Section not started
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe,16.00,Services for mental health and neurological conditions,05696,Cosmos Agbe Todoko,Section not started
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe,17.00,Services for special needs,05696,Cosmos Agbe Todoko,Section not started
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe,18.00,Maternal and newborn health services (Outpatient),09674,Abraham Ndekudugu,case not found
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe,19.00,Abortion care services,09674,Abraham Ndekudugu,case not found
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe,20.00,Services for children under 5 and adolescents,09674,Abraham Ndekudugu,case not found
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe,21.00,Immunization services,09674,Abraham Ndekudugu,case not found
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe,22.00,Delivery postnatal and newborn services (Inpatient),09674,Abraham Ndekudugu,case not found
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe,29.00,Laboratory services,06929,Divine Amanie,Section started incomplete
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe,30.00,Consumable commodities,06929,Divine Amanie,Section not started
+1005020017,Zongo Macheri CHPS,02621,Ignatius Aklikpe,31.00,Pharmaceutical comodities,06929,Divine Amanie,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi, 1.00,Facility Identification,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi, 3.00,Health workforce,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi, 4.00,Facility beds and isolation units,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi, 5.00,Governance and management,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi, 6.00,Systems to support staff,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi, 7.00,Systems for monitoring service quality,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi, 8.00,Infrastructure and equipment maintenance,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi, 9.00,Health financing and accounting,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,10.00,Data sources and systems,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,11.00,Facility data reporting systems,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,12.00,Basic infrastructure and systems,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,13.00,Outpatient service conditions,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,14.00,Communicable disease services,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,15.00,Non-communicable disease services,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,16.00,Services for mental health and neurological conditions,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,17.00,Services for special needs,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,18.00,Maternal and newborn health services (Outpatient),07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,19.00,Abortion care services,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,20.00,Services for children under 5 and adolescents,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,21.00,Immunization services,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,22.00,Delivery postnatal and newborn services (Inpatient),07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,23.00,HIV services,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,24.00,Turberculosis (TB) services,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,25.00,Surgical services,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,26.00,Emergency(Ambulance or walk-in) Services,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,27.00,Imaging and specialty treatment services,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,28.00,Blood transfusion Services,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,29.00,Laboratory services,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,30.00,Consumable commodities,07234,Patience Kumi,Section not started
+1201070025,Dan's Clinic,07234,Patience Kumi,31.00,Pharmaceutical comodities,07234,Patience Kumi,Section not started
+1202010006,Binaba Health Centre,07234,Patience Kumi, 9.00,Health financing and accounting,07234,Patience Kumi,Section not started
+1202010006,Binaba Health Centre,07234,Patience Kumi,16.00,Services for mental health and neurological conditions,07234,Patience Kumi,Section started incomplete
+1202020008,Gbantango Health Centre,07234,Patience Kumi,12.00,Basic infrastructure and systems,04870,Ibrahim Ishaq,Section not started
+1202080034,Zongoire Health Centre,07234,Patience Kumi,16.00,Services for mental health and neurological conditions,04870,Ibrahim Ishaq,Section started incomplete
+1202080034,Zongoire Health Centre,07234,Patience Kumi,27.00,Imaging and specialty treatment services,04870,Ibrahim Ishaq,Section started incomplete
+1202080034,Zongoire Health Centre,07234,Patience Kumi,31.00,Pharmaceutical comodities,04870,Ibrahim Ishaq,Section not started
+1203020040,Azimbe Hospital,07234,Patience Kumi,29.00,Laboratory services,04870,Ibrahim Ishaq,Section not started
+1203040051,Binduri Health Centre,07234,Patience Kumi, 9.00,Health financing and accounting,07234,Patience Kumi,Section started incomplete
+1203040051,Binduri Health Centre,07234,Patience Kumi,23.00,HIV services,04597,Adwoa Amankwaa Opoku,Section not started
+1203040051,Binduri Health Centre,07234,Patience Kumi,24.00,Turberculosis (TB) services,04597,Adwoa Amankwaa Opoku,Section not started
+1205020062,Nyariga Health Centre,07234,Patience Kumi, 9.00,Health financing and accounting,04870,Ibrahim Ishaq,Section started incomplete
+1205020062,Nyariga Health Centre,07234,Patience Kumi,12.00,Basic infrastructure and systems,04870,Ibrahim Ishaq,Section started incomplete
+1205020062,Nyariga Health Centre,07234,Patience Kumi,14.00,Communicable disease services,04870,Ibrahim Ishaq,Section started incomplete
+1205020062,Nyariga Health Centre,07234,Patience Kumi,15.00,Non-communicable disease services,04870,Ibrahim Ishaq,Section not started
+1205020062,Nyariga Health Centre,07234,Patience Kumi,16.00,Services for mental health and neurological conditions,04870,Ibrahim Ishaq,Section not started
+1205020062,Nyariga Health Centre,07234,Patience Kumi,17.00,Services for special needs,04870,Ibrahim Ishaq,Section not started
+1205020062,Nyariga Health Centre,07234,Patience Kumi,22.00,Delivery postnatal and newborn services (Inpatient),04870,Ibrahim Ishaq,Section not started
+1205020062,Nyariga Health Centre,07234,Patience Kumi,23.00,HIV services,04870,Ibrahim Ishaq,Section not started
+1205020062,Nyariga Health Centre,07234,Patience Kumi,24.00,Turberculosis (TB) services,04870,Ibrahim Ishaq,Section not started
+1205020062,Nyariga Health Centre,07234,Patience Kumi,30.00,Consumable commodities,04870,Ibrahim Ishaq,Section not started
+1205020062,Nyariga Health Centre,07234,Patience Kumi,31.00,Pharmaceutical comodities,04870,Ibrahim Ishaq,Section started incomplete
+1205030005,Yikene Medical Centre,07234,Patience Kumi, 1.00,Facility Identification,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi, 3.00,Health workforce,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi, 4.00,Facility beds and isolation units,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi, 5.00,Governance and management,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi, 6.00,Systems to support staff,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi, 7.00,Systems for monitoring service quality,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi, 8.00,Infrastructure and equipment maintenance,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi, 9.00,Health financing and accounting,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,10.00,Data sources and systems,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,11.00,Facility data reporting systems,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,12.00,Basic infrastructure and systems,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,13.00,Outpatient service conditions,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,14.00,Communicable disease services,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,15.00,Non-communicable disease services,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,16.00,Services for mental health and neurological conditions,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,17.00,Services for special needs,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,18.00,Maternal and newborn health services (Outpatient),04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,19.00,Abortion care services,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,20.00,Services for children under 5 and adolescents,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,21.00,Immunization services,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,22.00,Delivery postnatal and newborn services (Inpatient),04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,23.00,HIV services,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,24.00,Turberculosis (TB) services,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,25.00,Surgical services,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,26.00,Emergency(Ambulance or walk-in) Services,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,27.00,Imaging and specialty treatment services,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,28.00,Blood transfusion Services,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,29.00,Laboratory services,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,30.00,Consumable commodities,04597,Adwoa Amankwaa Opoku,Section not started
+1205030005,Yikene Medical Centre,07234,Patience Kumi,31.00,Pharmaceutical comodities,04597,Adwoa Amankwaa Opoku,Section not started
+1209070038,Worikambo Health Centre,07234,Patience Kumi,20.00,Services for children under 5 and adolescents,04597,Adwoa Amankwaa Opoku,Section started incomplete
+1209070038,Worikambo Health Centre,07234,Patience Kumi,21.00,Immunization services,04597,Adwoa Amankwaa Opoku,Section not started
+1209070038,Worikambo Health Centre,07234,Patience Kumi,24.00,Turberculosis (TB) services,04597,Adwoa Amankwaa Opoku,Section started incomplete
+1209070038,Worikambo Health Centre,07234,Patience Kumi,29.00,Laboratory services,04597,Adwoa Amankwaa Opoku,Section started incomplete
+1211010047,Chiana Health Centre,07234,Patience Kumi, 9.00,Health financing and accounting,07234,Patience Kumi,Section started incomplete
+1211010047,Chiana Health Centre,07234,Patience Kumi,26.00,Emergency(Ambulance or walk-in) Services,07234,Patience Kumi,Section not started
+1211070053,Badunu CHPS,07234,Patience Kumi,12.00,Basic infrastructure and systems,07234,Patience Kumi,Section not started
+1211070053,Badunu CHPS,07234,Patience Kumi,13.00,Outpatient service conditions,07234,Patience Kumi,Section not started
+1211070053,Badunu CHPS,07234,Patience Kumi,14.00,Communicable disease services,07234,Patience Kumi,Section not started
+1211070053,Badunu CHPS,07234,Patience Kumi,15.00,Non-communicable disease services,07234,Patience Kumi,Section not started
+1211070053,Badunu CHPS,07234,Patience Kumi,18.00,Maternal and newborn health services (Outpatient),07234,Patience Kumi,Section not started
+1211070053,Badunu CHPS,07234,Patience Kumi,20.00,Services for children under 5 and adolescents,07234,Patience Kumi,Section started incomplete
+1211070053,Badunu CHPS,07234,Patience Kumi,21.00,Immunization services,07234,Patience Kumi,Section not started
+1211070053,Badunu CHPS,07234,Patience Kumi,22.00,Delivery postnatal and newborn services (Inpatient),07234,Patience Kumi,Section started incomplete
+1211070053,Badunu CHPS,07234,Patience Kumi,23.00,HIV services,07234,Patience Kumi,Section not started
+1211070053,Badunu CHPS,07234,Patience Kumi,25.00,Surgical services,07234,Patience Kumi,Section not started
+1211070053,Badunu CHPS,07234,Patience Kumi,26.00,Emergency(Ambulance or walk-in) Services,07234,Patience Kumi,Section started incomplete
+1211070053,Badunu CHPS,07234,Patience Kumi,30.00,Consumable commodities,07234,Patience Kumi,Section not started
+1211070053,Badunu CHPS,07234,Patience Kumi,31.00,Pharmaceutical comodities,07234,Patience Kumi,Section started incomplete
+1211080005,Paga Hospital,07234,Patience Kumi, 7.00,Systems for monitoring service quality,07095,Aziz Yirikye,Section started incomplete
+1211080005,Paga Hospital,07234,Patience Kumi,13.00,Outpatient service conditions,07095,Aziz Yirikye,Section not started
+1211080005,Paga Hospital,07234,Patience Kumi,14.00,Communicable disease services,07095,Aziz Yirikye,Section started incomplete
+1211080005,Paga Hospital,07234,Patience Kumi,15.00,Non-communicable disease services,07095,Aziz Yirikye,Section started incomplete
+1211080005,Paga Hospital,07234,Patience Kumi,16.00,Services for mental health and neurological conditions,07095,Aziz Yirikye,Section not started
+1211080005,Paga Hospital,07234,Patience Kumi,17.00,Services for special needs,07095,Aziz Yirikye,Section not started
+1211080005,Paga Hospital,07234,Patience Kumi,18.00,Maternal and newborn health services (Outpatient),07095,Aziz Yirikye,Section not started
+1211080005,Paga Hospital,07234,Patience Kumi,19.00,Abortion care services,04597,Adwoa Amankwaa Opoku,case not found
+1211080005,Paga Hospital,07234,Patience Kumi,20.00,Services for children under 5 and adolescents,04597,Adwoa Amankwaa Opoku,case not found
+1211080005,Paga Hospital,07234,Patience Kumi,23.00,HIV services,04597,Adwoa Amankwaa Opoku,case not found
+1211080005,Paga Hospital,07234,Patience Kumi,25.00,Surgical services,04597,Adwoa Amankwaa Opoku,case not found
+1211080005,Paga Hospital,07234,Patience Kumi,26.00,Emergency(Ambulance or walk-in) Services,04597,Adwoa Amankwaa Opoku,case not found
+1211080005,Paga Hospital,07234,Patience Kumi,27.00,Imaging and specialty treatment services,04597,Adwoa Amankwaa Opoku,case not found
+1211080005,Paga Hospital,07234,Patience Kumi,28.00,Blood transfusion Services,04597,Adwoa Amankwaa Opoku,case not found
+1211080005,Paga Hospital,07234,Patience Kumi,29.00,Laboratory services,04597,Adwoa Amankwaa Opoku,case not found
+1211080005,Paga Hospital,07234,Patience Kumi,30.00,Consumable commodities,04597,Adwoa Amankwaa Opoku,case not found
+1212020024,Pelungu Health Centre,07234,Patience Kumi,26.00,Emergency(Ambulance or walk-in) Services,07234,Patience Kumi,Section started incomplete
+1212020024,Pelungu Health Centre,07234,Patience Kumi,31.00,Pharmaceutical comodities,07234,Patience Kumi,Section started incomplete
+1212050010,Zanlerigu CHPS,07234,Patience Kumi,17.00,Services for special needs,04870,Ibrahim Ishaq,Section not started
+1212050010,Zanlerigu CHPS,07234,Patience Kumi,30.00,Consumable commodities,04870,Ibrahim Ishaq,Section not started
+1212050010,Zanlerigu CHPS,07234,Patience Kumi,31.00,Pharmaceutical comodities,04870,Ibrahim Ishaq,Section not started
+1301010033,Bussie Health Centre,04325,Richard Darku,15.00,Non-communicable disease services,02686,Naawa Ambrose,Section started incomplete
+1302030056,St. Joseph's Hospital,04325,Richard Darku, 1.00,Facility Identification,04325,Richard Darku,case not found
+1302030056,St. Joseph's Hospital,04325,Richard Darku, 3.00,Health workforce,04325,Richard Darku,case not found
+1302030056,St. Joseph's Hospital,04325,Richard Darku, 4.00,Facility beds and isolation units,04325,Richard Darku,case not found
+1302030056,St. Joseph's Hospital,04325,Richard Darku, 5.00,Governance and management,04325,Richard Darku,case not found
+1302030056,St. Joseph's Hospital,04325,Richard Darku, 6.00,Systems to support staff,04325,Richard Darku,case not found
+1302030056,St. Joseph's Hospital,04325,Richard Darku, 7.00,Systems for monitoring service quality,04325,Richard Darku,case not found
+1302030056,St. Joseph's Hospital,04325,Richard Darku, 8.00,Infrastructure and equipment maintenance,04325,Richard Darku,case not found
+1302030056,St. Joseph's Hospital,04325,Richard Darku, 9.00,Health financing and accounting,04325,Richard Darku,case not found
+1302030056,St. Joseph's Hospital,04325,Richard Darku,10.00,Data sources and systems,08414,Emmanuel Kaleo,case not found
+1302030056,St. Joseph's Hospital,04325,Richard Darku,11.00,Facility data reporting systems,08414,Emmanuel Kaleo,case not found
+1302030056,St. Joseph's Hospital,04325,Richard Darku,12.00,Basic infrastructure and systems,08414,Emmanuel Kaleo,case not found
+1302030056,St. Joseph's Hospital,04325,Richard Darku,13.00,Outpatient service conditions,08414,Emmanuel Kaleo,case not found
+1302030056,St. Joseph's Hospital,04325,Richard Darku,14.00,Communicable disease services,08414,Emmanuel Kaleo,case not found
+1302030056,St. Joseph's Hospital,04325,Richard Darku,15.00,Non-communicable disease services,08414,Emmanuel Kaleo,case not found
+1302030056,St. Joseph's Hospital,04325,Richard Darku,16.00,Services for mental health and neurological conditions,08414,Emmanuel Kaleo,case not found
+1302050069,Tizza Health centre,04325,Richard Darku,10.00,Data sources and systems,08414,Emmanuel Kaleo,case not found
+1302050069,Tizza Health centre,04325,Richard Darku,11.00,Facility data reporting systems,08414,Emmanuel Kaleo,case not found
+1302050069,Tizza Health centre,04325,Richard Darku,12.00,Basic infrastructure and systems,08414,Emmanuel Kaleo,case not found
+1302050069,Tizza Health centre,04325,Richard Darku,13.00,Outpatient service conditions,08414,Emmanuel Kaleo,case not found
+1302050069,Tizza Health centre,04325,Richard Darku,14.00,Communicable disease services,08414,Emmanuel Kaleo,case not found
+1302050069,Tizza Health centre,04325,Richard Darku,15.00,Non-communicable disease services,08414,Emmanuel Kaleo,case not found
+1302050069,Tizza Health centre,04325,Richard Darku,16.00,Services for mental health and neurological conditions,08414,Emmanuel Kaleo,case not found
+1302050069,Tizza Health centre,04325,Richard Darku,17.00,Services for special needs,08414,Emmanuel Kaleo,case not found
+1302050069,Tizza Health centre,04325,Richard Darku,18.00,Maternal and newborn health services (Outpatient),08414,Emmanuel Kaleo,case not found
+1302050069,Tizza Health centre,04325,Richard Darku,19.00,Abortion care services,08414,Emmanuel Kaleo,case not found
+1302050069,Tizza Health centre,04325,Richard Darku,20.00,Services for children under 5 and adolescents,08414,Emmanuel Kaleo,case not found
+1302050069,Tizza Health centre,04325,Richard Darku,21.00,Immunization services,08414,Emmanuel Kaleo,case not found
+1302050069,Tizza Health centre,04325,Richard Darku,23.00,HIV services,08414,Emmanuel Kaleo,case not found
+1302050069,Tizza Health centre,04325,Richard Darku,24.00,Turberculosis (TB) services,08414,Emmanuel Kaleo,case not found
+1302080004,Guoripuo CHPS,04325,Richard Darku, 1.00,Facility Identification,08414,Emmanuel Kaleo,case not found
+1302080004,Guoripuo CHPS,04325,Richard Darku, 3.00,Health workforce,08414,Emmanuel Kaleo,case not found
+1302080004,Guoripuo CHPS,04325,Richard Darku, 4.00,Facility beds and isolation units,08414,Emmanuel Kaleo,case not found
+1302080004,Guoripuo CHPS,04325,Richard Darku, 5.00,Governance and management,08414,Emmanuel Kaleo,case not found
+1302080004,Guoripuo CHPS,04325,Richard Darku, 6.00,Systems to support staff,08414,Emmanuel Kaleo,case not found
+1302080004,Guoripuo CHPS,04325,Richard Darku, 7.00,Systems for monitoring service quality,08414,Emmanuel Kaleo,case not found
+1302080004,Guoripuo CHPS,04325,Richard Darku, 8.00,Infrastructure and equipment maintenance,08414,Emmanuel Kaleo,case not found
+1302080004,Guoripuo CHPS,04325,Richard Darku, 9.00,Health financing and accounting,08414,Emmanuel Kaleo,case not found
+1302080004,Guoripuo CHPS,04325,Richard Darku,10.00,Data sources and systems,08414,Emmanuel Kaleo,case not found
+1302080004,Guoripuo CHPS,04325,Richard Darku,11.00,Facility data reporting systems,08414,Emmanuel Kaleo,case not found
+1302080004,Guoripuo CHPS,04325,Richard Darku,12.00,Basic infrastructure and systems,08414,Emmanuel Kaleo,case not found
+1302080004,Guoripuo CHPS,04325,Richard Darku,13.00,Outpatient service conditions,08414,Emmanuel Kaleo,case not found
+1302080004,Guoripuo CHPS,04325,Richard Darku,14.00,Communicable disease services,08414,Emmanuel Kaleo,case not found
+1302080004,Guoripuo CHPS,04325,Richard Darku,15.00,Non-communicable disease services,08414,Emmanuel Kaleo,case not found
+1304010025,Babile Polyclinic,04325,Richard Darku,24.00,Turberculosis (TB) services,08414,Emmanuel Kaleo,case not found
+1304010025,Babile Polyclinic,04325,Richard Darku,25.00,Surgical services,08414,Emmanuel Kaleo,case not found
+1304010025,Babile Polyclinic,04325,Richard Darku,26.00,Emergency(Ambulance or walk-in) Services,08414,Emmanuel Kaleo,case not found
+1304010025,Babile Polyclinic,04325,Richard Darku,27.00,Imaging and specialty treatment services,08414,Emmanuel Kaleo,case not found
+1304010025,Babile Polyclinic,04325,Richard Darku,28.00,Blood transfusion Services,08414,Emmanuel Kaleo,case not found
+1304010025,Babile Polyclinic,04325,Richard Darku,29.00,Laboratory services,08414,Emmanuel Kaleo,case not found
+1304010025,Babile Polyclinic,04325,Richard Darku,30.00,Consumable commodities,08414,Emmanuel Kaleo,case not found
+1304010025,Babile Polyclinic,04325,Richard Darku,31.00,Pharmaceutical comodities,08414,Emmanuel Kaleo,case not found
+1304020006,Dowine Health Centre,04325,Richard Darku,20.00,Services for children under 5 and adolescents,08414,Emmanuel Kaleo,Section not started
+1304020006,Dowine Health Centre,04325,Richard Darku,24.00,Turberculosis (TB) services,08414,Emmanuel Kaleo,Section started incomplete
+1304020006,Dowine Health Centre,04325,Richard Darku,25.00,Surgical services,08414,Emmanuel Kaleo,Section not started
+1304020006,Dowine Health Centre,04325,Richard Darku,26.00,Emergency(Ambulance or walk-in) Services,08414,Emmanuel Kaleo,Section started incomplete
+1304020006,Dowine Health Centre,04325,Richard Darku,30.00,Consumable commodities,08414,Emmanuel Kaleo,Section not started
+1304020006,Dowine Health Centre,04325,Richard Darku,31.00,Pharmaceutical comodities,08414,Emmanuel Kaleo,Section not started
+1306030064,Ko Polyclinic,04325,Richard Darku, 9.00,Health financing and accounting,04325,Richard Darku,Section started incomplete
+1308010032,St. Gerhard Health Centre,04325,Richard Darku,31.00,Pharmaceutical comodities,02686,Naawa Ambrose,Section started incomplete
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe, 1.00,Facility Identification,02621,Ignatius Aklikpe,Section started incomplete
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe, 3.00,Health workforce,02621,Ignatius Aklikpe,Section not started
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe, 4.00,Facility beds and isolation units,02621,Ignatius Aklikpe,Section not started
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe, 5.00,Governance and management,02621,Ignatius Aklikpe,Section not started
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe, 6.00,Systems to support staff,02621,Ignatius Aklikpe,Section not started
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe, 7.00,Systems for monitoring service quality,02621,Ignatius Aklikpe,Section not started
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe, 8.00,Infrastructure and equipment maintenance,02621,Ignatius Aklikpe,Section not started
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe, 9.00,Health financing and accounting,02621,Ignatius Aklikpe,Section not started
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,10.00,Data sources and systems,02621,Ignatius Aklikpe,Section not started
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,11.00,Facility data reporting systems,02621,Ignatius Aklikpe,Section not started
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,12.00,Basic infrastructure and systems,02621,Ignatius Aklikpe,Section not started
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,13.00,Outpatient service conditions,02621,Ignatius Aklikpe,Section not started
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,14.00,Communicable disease services,02621,Ignatius Aklikpe,Section not started
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,15.00,Non-communicable disease services,02621,Ignatius Aklikpe,Section not started
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,16.00,Services for mental health and neurological conditions,02621,Ignatius Aklikpe,Section not started
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,17.00,Services for special needs,02621,Ignatius Aklikpe,Section not started
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,18.00,Maternal and newborn health services (Outpatient),02666,Odoi Kafui Kofi,case not found
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,19.00,Abortion care services,02666,Odoi Kafui Kofi,case not found
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,20.00,Services for children under 5 and adolescents,02666,Odoi Kafui Kofi,case not found
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,21.00,Immunization services,02666,Odoi Kafui Kofi,case not found
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,22.00,Delivery postnatal and newborn services (Inpatient),02666,Odoi Kafui Kofi,case not found
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,23.00,HIV services,08664,Dennis Allotey,case not found
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,24.00,Turberculosis (TB) services,08664,Dennis Allotey,case not found
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,25.00,Surgical services,08664,Dennis Allotey,case not found
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,26.00,Emergency(Ambulance or walk-in) Services,08664,Dennis Allotey,case not found
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,27.00,Imaging and specialty treatment services,08132,Leeford Lokko,case not found
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,28.00,Blood transfusion Services,08132,Leeford Lokko,case not found
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,29.00,Laboratory services,08132,Leeford Lokko,case not found
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,30.00,Consumable commodities,08132,Leeford Lokko,case not found
+1413010018,Aborigines Medical Centre,02621,Ignatius Aklikpe,31.00,Pharmaceutical comodities,08132,Leeford Lokko,case not found
+1503050095,Asasetre Health Centre,01083,Patrick Quainoo,26.00,Emergency(Ambulance or walk-in) Services,08748,Anna Tommy,Section not started
+1503050095,Asasetre Health Centre,01083,Patrick Quainoo,31.00,Pharmaceutical comodities,08748,Anna Tommy,Section started incomplete
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo, 1.00,Facility Identification,01083,Patrick Quainoo,case not found
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo, 3.00,Health workforce,01083,Patrick Quainoo,case not found
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo, 4.00,Facility beds and isolation units,01083,Patrick Quainoo,case not found
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo, 5.00,Governance and management,01083,Patrick Quainoo,case not found
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo, 6.00,Systems to support staff,01083,Patrick Quainoo,case not found
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo, 7.00,Systems for monitoring service quality,01083,Patrick Quainoo,case not found
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo, 8.00,Infrastructure and equipment maintenance,01083,Patrick Quainoo,case not found
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo, 9.00,Health financing and accounting,01083,Patrick Quainoo,case not found
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo,10.00,Data sources and systems,01083,Patrick Quainoo,case not found
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo,11.00,Facility data reporting systems,01083,Patrick Quainoo,case not found
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo,12.00,Basic infrastructure and systems,01083,Patrick Quainoo,case not found
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo,13.00,Outpatient service conditions,01083,Patrick Quainoo,case not found
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo,14.00,Communicable disease services,01083,Patrick Quainoo,case not found
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo,15.00,Non-communicable disease services,01083,Patrick Quainoo,case not found
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo,18.00,Maternal and newborn health services (Outpatient),01083,Patrick Quainoo,case not found
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo,19.00,Abortion care services,01083,Patrick Quainoo,case not found
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo,22.00,Delivery postnatal and newborn services (Inpatient),01083,Patrick Quainoo,case not found
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo,27.00,Imaging and specialty treatment services,01083,Patrick Quainoo,case not found
+1507020035,S.D.A (Wassa Nkran) Health Centre,01083,Patrick Quainoo,28.00,Blood transfusion Services,01083,Patrick Quainoo,case not found
+6661060404,<Invalid facility name>,08866,Benjamin Tandoh Boakye,23.00,HIV services,06403,Adijatu Tiamiyu,Section started incomplete
+6661062407,<Invalid facility name>,03138,Henry Safori,23.00,HIV services,09847,Isaac Boadu,Section started incomplete
+6661062407,<Invalid facility name>,03138,Henry Safori,26.00,Emergency(Ambulance or walk-in) Services,04870,Ibrahim Ishaq,Section started incomplete
+6666062501,<Invalid facility name>,04722,Jerome Bomaal Kwesitey, 8.00,Infrastructure and equipment maintenance,07199,Florence Okoe,Section started incomplete
+6666062501,<Invalid facility name>,04722,Jerome Bomaal Kwesitey, 9.00,Health financing and accounting,07199,Florence Okoe,Section started incomplete
+6666062501,<Invalid facility name>,04722,Jerome Bomaal Kwesitey,11.00,Facility data reporting systems,07199,Florence Okoe,Section started incomplete
+6666062501,<Invalid facility name>,04722,Jerome Bomaal Kwesitey,12.00,Basic infrastructure and systems,07199,Florence Okoe,Section not started
+6666062502,<Invalid facility name>,04209,Freddie Amponsah, 3.00,Health workforce,09115,Solomon Boamah,Section started incomplete
+6666062502,<Invalid facility name>,04209,Freddie Amponsah,19.00,Abortion care services,04597,Adwoa Amankwaa Opoku,Section started incomplete
+6666062502,<Invalid facility name>,04209,Freddie Amponsah,31.00,Pharmaceutical comodities,02225,Frank Slippie -Mensah,Section started incomplete

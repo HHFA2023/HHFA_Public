@@ -1,0 +1,17 @@
+﻿[Run Information]
+Version=CSPro 7.6
+AppType=Batch
+
+[Files]
+Application=.\HFA_Edit.bch
+InputData=..\..\data\2_HFA_COMB_FINALDATA.csdb
+OutputData=..\..\data\6_HFA_COMB_FINALDATA_EDITED.csdb
+Listing=.\HFA_Edit.lst
+
+[Parameters]
+ViewListing=Always
+ViewResults=Yes
+ListingWidth=120
+MessageWrap=No
+ErrmsgOverride=No
+InputOrder=Sequential

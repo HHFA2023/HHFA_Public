@@ -1,0 +1,729 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=WHO HHFA Setup Dictionary
+Name=CHFA_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=3B699C4C6C4E50730B8574BADB3310393AAAE98671B0C2203B6F31FC1732CCE8
+
+[Level]
+Label=WHO Health Facility Assessment (HFA) control form for country CC
+Name=CHFA_QUEST
+
+[IdItems]
+
+[Item]
+Label=HFA country code (UN M49 numerical code)
+Name=CHFA_ID
+Start=2
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=HFA country code (UN M49 numerical code)
+Name=CHFA_ID_VS1
+Value=4;Afghanistan
+Value=248;Åland Islands
+Value=8;Albania
+Value=12;Algeria
+Value=16;American Samoa
+Value=20;Andorra
+Value=24;Angola
+Value=660;Anguilla
+Value=28;Antigua and Barbuda
+Value=32;Argentina
+Value=51;Armenia
+Value=533;Aruba
+Value=36;Australia
+Value=40;Austria
+Value=31;Azerbaijan
+Value=44;Bahamas
+Value=48;Bahrain
+Value=50;Bangladesh
+Value=52;Barbados
+Value=112;Belarus
+Value=56;Belgium
+Value=84;Belize
+Value=204;Benin
+Value=60;Bermuda
+Value=64;Bhutan
+Value=68;Bolivia (Plurinational State of)
+Value=535;Bonaire, Sint Eustatius and Saba
+Value=70;Bosnia and Herzegovina
+Value=72;Botswana
+Value=74;Bouvet Island
+Value=76;Brazil
+Value=86;British Indian Ocean Territory
+Value=92;British Virgin Islands
+Value=96;Brunei Darussalam
+Value=100;Bulgaria
+Value=854;Burkina Faso
+Value=108;Burundi
+Value=132;Cabo Verde
+Value=116;Cambodia
+Value=120;Cameroon
+Value=124;Canada
+Value=136;Cayman Islands
+Value=140;Central African Republic
+Value=148;Chad
+Value=152;Chile
+Value=156;China
+Value=344;China, Hong Kong Special Administrative Region
+Value=446;China, Macao Special Administrative Region
+Value=162;Christmas Island
+Value=166;Cocos (Keeling) Islands
+Value=170;Colombia
+Value=174;Comoros
+Value=178;Congo
+Value=184;Cook Islands
+Value=188;Costa Rica
+Value=384;Côte d’Ivoire
+Value=191;Croatia
+Value=192;Cuba
+Value=531;Curaçao
+Value=196;Cyprus
+Value=203;Czechia
+Value=408;Democratic People's Republic of Korea
+Value=180;Democratic Republic of the Congo
+Value=208;Denmark
+Value=262;Djibouti
+Value=212;Dominica
+Value=214;Dominican Republic
+Value=218;Ecuador
+Value=818;Egypt
+Value=222;El Salvador
+Value=226;Equatorial Guinea
+Value=232;Eritrea
+Value=233;Estonia
+Value=748;Eswatini
+Value=231;Ethiopia
+Value=238;Falkland Islands (Malvinas)
+Value=234;Faroe Islands
+Value=242;Fiji
+Value=246;Finland
+Value=250;France
+Value=254;French Guiana
+Value=258;French Polynesia
+Value=260;French Southern Territories
+Value=266;Gabon
+Value=270;Gambia
+Value=268;Georgia
+Value=276;Germany
+Value=288;Ghana
+Value=292;Gibraltar
+Value=300;Greece
+Value=304;Greenland
+Value=308;Grenada
+Value=312;Guadeloupe
+Value=316;Guam
+Value=320;Guatemala
+Value=831;Guernsey
+Value=324;Guinea
+Value=624;Guinea-Bissau
+Value=328;Guyana
+Value=332;Haiti
+Value=334;Heard Island and McDonald Islands
+Value=336;Holy See
+Value=340;Honduras
+Value=348;Hungary
+Value=352;Iceland
+Value=356;India
+Value=360;Indonesia
+Value=364;Iran (Islamic Republic of)
+Value=368;Iraq
+Value=372;Ireland
+Value=833;Isle of Man
+Value=376;Israel
+Value=380;Italy
+Value=388;Jamaica
+Value=392;Japan
+Value=832;Jersey
+Value=400;Jordan
+Value=398;Kazakhstan
+Value=404;Kenya
+Value=296;Kiribati
+Value=414;Kuwait
+Value=417;Kyrgyzstan
+Value=418;Lao People's Democratic Republic
+Value=428;Latvia
+Value=422;Lebanon
+Value=426;Lesotho
+Value=430;Liberia
+Value=434;Libya
+Value=438;Liechtenstein
+Value=440;Lithuania
+Value=442;Luxembourg
+Value=450;Madagascar
+Value=454;Malawi
+Value=458;Malaysia
+Value=462;Maldives
+Value=466;Mali
+Value=470;Malta
+Value=584;Marshall Islands
+Value=474;Martinique
+Value=478;Mauritania
+Value=480;Mauritius
+Value=175;Mayotte
+Value=484;Mexico
+Value=583;Micronesia (Federated States of)
+Value=492;Monaco
+Value=496;Mongolia
+Value=499;Montenegro
+Value=500;Montserrat
+Value=504;Morocco
+Value=508;Mozambique
+Value=104;Myanmar
+Value=516;Namibia
+Value=520;Nauru
+Value=524;Nepal
+Value=528;Netherlands
+Value=540;New Caledonia
+Value=554;New Zealand
+Value=558;Nicaragua
+Value=562;Niger
+Value=566;Nigeria
+Value=570;Niue
+Value=574;Norfolk Island
+Value=580;Northern Mariana Islands
+Value=578;Norway
+Value=512;Oman
+Value=586;Pakistan
+Value=585;Palau
+Value=591;Panama
+Value=598;Papua New Guinea
+Value=600;Paraguay
+Value=604;Peru
+Value=608;Philippines
+Value=612;Pitcairn
+Value=616;Poland
+Value=620;Portugal
+Value=630;Puerto Rico
+Value=634;Qatar
+Value=410;Republic of Korea
+Value=498;Republic of Moldova
+Value=638;Réunion
+Value=642;Romania
+Value=643;Russian Federation
+Value=646;Rwanda
+Value=652;Saint Barthélemy
+Value=654;Saint Helena
+Value=659;Saint Kitts and Nevis
+Value=662;Saint Lucia
+Value=663;Saint Martin (French Part)
+Value=666;Saint Pierre and Miquelon
+Value=670;Saint Vincent and the Grenadines
+Value=882;Samoa
+Value=674;San Marino
+Value=678;Sao Tome and Principe
+Value=680;Sark
+Value=682;Saudi Arabia
+Value=686;Senegal
+Value=688;Serbia
+Value=690;Seychelles
+Value=694;Sierra Leone
+Value=702;Singapore
+Value=534;Sint Maarten (Dutch part)
+Value=703;Slovakia
+Value=705;Slovenia
+Value=90;Solomon Islands
+Value=706;Somalia
+Value=710;South Africa
+Value=239;South Georgia and the South Sandwich Islands
+Value=728;South Sudan
+Value=724;Spain
+Value=144;Sri Lanka
+Value=275;State of Palestine
+Value=729;Sudan
+Value=740;Suriname
+Value=744;Svalbard and Jan Mayen Islands
+Value=752;Sweden
+Value=756;Switzerland
+Value=760;Syrian Arab Republic
+Value=762;Tajikistan
+Value=764;Thailand
+Value=807;The former Yugoslav Republic of Macedonia
+Value=626;Timor-Leste
+Value=768;Togo
+Value=772;Tokelau
+Value=776;Tonga
+Value=780;Trinidad and Tobago
+Value=788;Tunisia
+Value=792;Turkey
+Value=795;Turkmenistan
+Value=796;Turks and Caicos Islands
+Value=798;Tuvalu
+Value=800;Uganda
+Value=804;Ukraine
+Value=784;United Arab Emirates
+Value=826;United Kingdom of Great Britain and Northern Ireland
+Value=834;United Republic of Tanzania
+Value=581;United States Minor Outlying Islands
+Value=840;United States of America
+Value=850;United States Virgin Islands
+Value=858;Uruguay
+Value=860;Uzbekistan
+Value=548;Vanuatu
+Value=862;Venezuela (Bolivarian Republic of)
+Value=704;Viet Nam
+Value=876;Wallis and Futuna Islands
+Value=732;Western Sahara
+Value=887;Yemen
+Value=894;Zambia
+Value=716;Zimbabwe
+Value=999;Country Name
+
+[Record]
+Label=cHFA_cc record
+Name=CHFA_CC_REC
+RecordTypeValue='2'
+RecordLen=139
+
+[Item]
+Label=HFA Start Date
+Name=HFA_START_DATE
+Start=5
+Len=8
+DataType=Numeric
+
+[Item]
+Label=HFA start date: year
+Name=HFA_START_YR
+Start=5
+Len=4
+ItemType=SubItem
+DataType=Numeric
+
+[Item]
+Label=HFA start date: month
+Name=HFA_START_MON
+Start=9
+Len=2
+ItemType=SubItem
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=HFA start date: day
+Name=HFA_START_DAY
+Start=11
+Len=2
+ItemType=SubItem
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=HFA End Date
+Name=HFA_END_DATE
+Start=13
+Len=8
+DataType=Numeric
+
+[Item]
+Label=HFA end date: year
+Name=HFA_END_YR
+Start=13
+Len=4
+ItemType=SubItem
+DataType=Numeric
+
+[Item]
+Label=HFA end date: month
+Name=HFA_END_MON
+Start=17
+Len=2
+ItemType=SubItem
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=HFA end date: day
+Name=HFA_END_DAY
+Start=19
+Len=2
+ItemType=SubItem
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Module 1: Service Availability
+Name=MOD_AVAILABILITY
+Start=21
+Len=2
+DataType=Alpha
+
+[ValueSet]
+Label=Module 1: Service Availability
+Name=MOD_AVAILABILITY_VS1
+Value='1 ';Core
+Value='2 ';Core + Additional
+Value='3 ';Additional - Building Infrastructure (Supplementary)
+Value='0 ';Not Being Conducted
+
+[Item]
+Label=Module 2: Service Readiness
+Name=MOD_READINESS
+Start=23
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Module 2: Service Readiness
+Name=MOD_READINESS_VS1
+Value=1;Core
+Value=0;Not Being Conducted
+
+[Item]
+Label=Module 3: Quality of Care
+Name=MOD_QOC
+Start=24
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Module 3: Quality of Care
+Name=MOD_QOC_VS1
+Value=1;Additional - Record Review (Supplementary)
+Value=0;Not Being Conducted
+
+[Item]
+Label=Module 4: Management & Finance
+Name=MOD_FINANCE
+Start=25
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Module 4: Management & Finance
+Name=MOD_FINANCE_VS1
+Value=1;Core
+Value=2;Core + Additional
+Value=0;Not Being Conducted
+
+[Item]
+Label=Sync method
+Name=SYNC_METHOD
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Sync method
+Name=SYNC_METHOD_VS1
+Value=1;Dropbox
+Value=2;CSWeb
+
+[Item]
+Label=Sync URL (optional)
+Name=SYNC_URL
+Start=27
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Sync UserID (optional)
+Name=SYNC_UID
+Start=77
+Len=20
+DataType=Alpha
+
+[Item]
+Label=Sync Password (optional)
+Name=SYNC_PSWD
+Start=97
+Len=20
+DataType=Alpha
+
+[Item]
+Label=Survey Language
+Name=SURVEY_LANG
+Start=117
+Len=2
+DataType=Alpha
+
+[ValueSet]
+Label=Survey Language
+Name=SURVEY_LANG_VS1
+Value='EN';English
+Value='FR';French
+Value='AR';Arabic
+Value='CH';Chinese
+Value='RS';Russian
+Value='SP';Spanish
+
+[Item]
+Label=Country Currency
+Name=CO_CURRENCY
+Start=119
+Len=3
+DataType=Alpha
+
+[ValueSet]
+Label=Country Currency
+Name=CO_CURRENCY_VS1
+Value='AFN';Afghan afghani
+Value='ALL';Albanian lek
+Value='DZD';Algerian dinar
+Value='AOA';Angolan kwanza
+Value='ARS';Argentine peso
+Value='AMD';Armenian dram
+Value='AWG';Aruban florin
+Value='AUD';Australian dollar
+Value='AZN';Azerbaijan manat
+Value='BSD';Bahamian dollar
+Value='BHD';Bahraini dinar
+Value='BDT';Bangladeshi taka
+Value='BBD';Barbadian dollar
+Value='BYN';Belarusian ruble
+Value='BZD';Belize dollar
+Value='BMD';Bermudian dollar
+Value='BTN';Bhutanese ngultrum
+Value='BOB';Bolivian boliviano
+Value='BAM';Bosnia and Herzegovina convertible mark
+Value='BWP';Botswana pula
+Value='BRL';Brazilian real
+Value='BND';Brunei dollar
+Value='BGN';Bulgarian lev
+Value='BIF';Burundi franc
+Value='CVE';Cabo Verdean escudo
+Value='KHR';Cambodian riel
+Value='CAD';Canadian dollar
+Value='KYD';Cayman Islands dollar
+Value='XAF';Central African CFA franc
+Value='XPF';CFP franc
+Value='CLP';Chilean peso
+Value='CNY';Chinese Yuan Renminbi
+Value='COP';Colombian peso
+Value='KMF';Comorian franc
+Value='CDF';Congolese franc
+Value='non';Cook Islands dollar
+Value='CRC';Costa Rican colon
+Value='HRK';Croatian kuna
+Value='CUP';Cuban peso
+Value='CZK';Czech koruna
+Value='DKK';Danish krone
+Value='DJF';Djiboutian franc
+Value='DOP';Dominican peso
+Value='XCD';East Caribbean dollar
+Value='EGP';Egyptian pound
+Value='ERN';Eritrean nakfa
+Value='ETB';Ethiopian birr
+Value='EUR';European euro
+Value='FKP';Falkland Islands pound
+Value='non';Faroese krona
+Value='FJD';Fijian dollar
+Value='GMD';Gambian dalasi
+Value='GEL';Georgian lari
+Value='GHS';Ghanaian cedi
+Value='GIP';Gibraltar pound
+Value='GTQ';Guatemalan quetzal
+Value='GGP';Guernsey Pound
+Value='GYD';Guyanese dollar
+Value='HTG';Haitian gourde
+Value='HNL';Honduran lempira
+Value='HKD';Hong Kong dollar
+Value='HUF';Hungarian forint
+Value='ISK';Icelandic krona
+Value='INR';Indian rupee
+Value='IDR';Indonesian rupiah
+Value='IRR';Iranian rial
+Value='IQD';Iraqi dinar
+Value='ILS';Israeli new shekel
+Value='JMD';Jamaican dollar
+Value='JPY';Japanese yen
+Value='JEP';Jersey pound
+Value='JOD';Jordanian dinar
+Value='KZT';Kazakhstani tenge
+Value='KES';Kenyan shilling
+Value='KWD';Kuwaiti dinar
+Value='KGS';Kyrgyzstani som
+Value='LAK';Lao kip
+Value='LBP';Lebanese pound
+Value='LSL';Lesotho loti
+Value='LRD';Liberian dollar
+Value='LYD';Libyan dinar
+Value='MOP';Macanese pataca
+Value='MKD';Macedonian denar
+Value='MGA';Malagasy ariary
+Value='MWK';Malawian kwacha
+Value='MYR';Malaysian ringgit
+Value='MVR';Maldivian rufiyaa
+Value='IMP';Manx pound
+Value='MRU';Mauritanian ouguiya
+Value='MUR';Mauritian rupee
+Value='MXN';Mexican peso
+Value='MDL';Moldovan leu
+Value='MNT';Mongolian tugrik
+Value='MAD';Moroccan dirham
+Value='MZN';Mozambican metical
+Value='MMK';Myanmar kyat
+Value='NAD';Namibian dollar
+Value='NPR';Nepalese rupee
+Value='ANG';Netherlands Antillean guilder
+Value='TWD';New Taiwan dollar
+Value='NZD';New Zealand dollar
+Value='NIO';Nicaraguan cordoba
+Value='NGN';Nigerian naira
+Value='KPW';North Korean won
+Value='NOK';Norwegian krone
+Value='OMR';Omani rial
+Value='PKR';Pakistani rupee
+Value='PGK';Papua New Guinean kina
+Value='PYG';Paraguayan guarani
+Value='PEN';Peruvian sol
+Value='PHP';Philippine peso
+Value='PLN';Polish zloty
+Value='GBP';Pound sterling
+Value='QAR';Qatari riyal
+Value='RON';Romanian leu
+Value='RUB';Russian ruble
+Value='RWF';Rwandan franc
+Value='SHP';Saint Helena pound
+Value='WST';Samoan tala
+Value='STN';Sao Tome and Principe dobra
+Value='SAR';Saudi Arabian riyal
+Value='XDR';SDR (Special Drawing Right)
+Value='RSD';Serbian dinar
+Value='SCR';Seychellois rupee
+Value='SLL';Sierra Leonean leone
+Value='SGD';Singapore dollar
+Value='SBD';Solomon Islands dollar
+Value='SOS';Somali shilling
+Value='ZAR';South African rand
+Value='KRW';South Korean won
+Value='SSP';South Sudanese pound
+Value='LKR';Sri Lankan rupee
+Value='SDG';Sudanese pound
+Value='SRD';Surinamese dollar
+Value='SZL';Swazi lilangeni
+Value='SEK';Swedish krona
+Value='CHF';Swiss franc
+Value='SYP';Syrian pound
+Value='TJS';Tajikistani somoni
+Value='TZS';Tanzanian shilling
+Value='THB';Thai baht
+Value='TOP';Tongan pa’anga
+Value='TTD';Trinidad and Tobago dollar
+Value='TND';Tunisian dinar
+Value='TRY';Turkish lira
+Value='TMT';Turkmen manat
+Value='AED';UAE dirham
+Value='UGX';Ugandan shilling
+Value='UAH';Ukrainian hryvnia
+Value='USD';United States dollar
+Value='UYU';Uruguayan peso
+Value='UZS';Uzbekistani som
+Value='VUV';Vanuatu vatu
+Value='VES';Venezuelan bolivar
+Value='VND';Vietnamese dong
+Value='XOF';West African CFA franc
+Value='YER';Yemeni rial
+Value='ZMW';Zambian kwacha
+
+[Item]
+Label=Exchange Rate with USD
+Name=EX_USD
+Start=122
+Len=10
+DataType=Numeric
+Decimal=3
+DecimalChar=Yes
+
+[Item]
+Label=Proceed to Question Mapping
+Name=QMAP_PROCEED
+Start=132
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Proceed to Question Mapping
+Name=QMAP_PROCEED_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Total No of Questions
+Name=TOT_Q
+Start=133
+Len=4
+DataType=Numeric
+
+[Item]
+Label=Sections in
+Name=SECTIONS_IN
+Start=137
+Len=2
+DataType=Numeric
+
+[Item]
+Label=Section activation
+Name=SECTION_ACTIVATION
+Start=139
+Len=1
+DataType=Numeric
+
+[Record]
+Label=Question Mapping
+Name=QUESTION_MAPPING
+RecordTypeValue='3'
+Required=No
+MaxRecords=5547
+RecordLen=36
+
+[Item]
+Label=Random No
+Name=QN
+Start=5
+Len=5
+DataType=Numeric
+
+[Item]
+Label=Question Label
+Name=QNO
+Start=10
+Len=12
+DataType=Alpha
+
+[Item]
+Label=Question Module
+Name=QMODULE
+Start=22
+Len=8
+DataType=Alpha
+
+[ValueSet]
+Label=Question Module
+Name=QMODULE_VS1
+Value='AC      ';AC
+Value='AA      ';AA
+Value='AAS     ';AAS
+Value='RC      ';RC
+Value='QC      ';QC
+Value='MC      ';MC
+Value='MA      ';MA
+Value='RC_QC   ';RC_QC
+Value='AC_RC_QC';AC_RC_QC
+
+[Item]
+Label=Question Activated
+Name=QACTIVATED
+Start=30
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Question Activated
+Name=QACTIVATED_VS1
+Value=1;Yes
+Value=0;No
+
+[Item]
+Label=Section
+Name=QASECTION
+Start=31
+Len=6
+DataType=Alpha

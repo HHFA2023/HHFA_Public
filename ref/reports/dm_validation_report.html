@@ -1,0 +1,118 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
+
+    <link rel="stylesheet" href="/external/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/external/bootstrap/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/css/reports.css" />
+	<link rel="stylesheet" href="/css/reports.css" />
+
+    <script src="/external/jquery/jquery.min.js"></script>
+    <script src="/external/bootstrap/bootstrap.bundle.min.js"></script>
+	
+  <!-- Report properties-->
+    <?
+    string report_title = "WHO HHFA";
+    string report_subtitle = "Facilities Validation Report";
+    ?>
+<body>
+		<!-- Header -->
+    <div class="jumbotron text-center" style="background-color:#426296;">
+
+        <h1 style="letter-spacing:10px; color: white">~~report_title~~</h1>
+        <span style="letter-spacing:5px; color: white">~~report_subtitle~~</span>
+    </div>
+      
+      <div class="card">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs pull-right"  id="myTab" role="tablist">
+            <li class="nav-item active">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Facility Progress Report</a>
+            </li>
+          
+            
+        </ul>
+      </div>
+    <div class="card-body">
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+               
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Facility #</th>
+							<th>Facility Name</th>
+							<th>Region</th>
+							<th>District</th>
+                            <th>Validated By</th>
+                            <th>Interview Status</th>
+							<th>GPS</th>
+							<th>Assigned Sections</th>
+							<th>Complete Sections</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+					<? 
+						i = 1;
+						forcase HFA_COMB where HFA_COMB.Q101 = 1 do
+							$.write('<tr>');
+							$.write('<td>'+maketext("%v",HFA_COMB.Q100)+'</td>');
+							$.write('<td>'+strip(HFA_COMB.Q102)+'</td>');
+							$.write('<td>'+strip(HFA_COMB.Q104T)+'</td>');
+							$.write('<td>'+strip(HFA_COMB.Q105T)+'</td>');
+							$.write('<td>'+GetStaffName(HFA_COMB.ID_TEAML)+'</td>');
+							$.write('<td>'+getvaluelabel(INT_STATUS)+'</td>');
+							if HFA_COMB.Q112 <> notappl & HFA_COMB.Q113 <> notappl then
+								$.write('<td>'+maketext(0046)+'</td>');
+							else
+								$.write('<td>'+maketext(0047)+'</td>');
+							endif;
+							
+							numeric assigned_sects = count(SECT_RESULT where SECT_RESULT in 0:2);
+							numeric complete_sects = count(SECT_RESULT where SECT_RESULT = 2);
+							
+							$.write('<td>'+maketext("%v", assigned_sects)+'</td>');
+							$.write('<td>'+maketext("%v", complete_sects)+'</td>');
+							inc(i);
+							$.write('</tr>');
+						endfor;
+					?>
+                      
+                    </tbody>
+                    
+                </table>
+             
+          <p class="text-center">Report generated at ~~timestring("%H:%M - %m/%d/%y")~~</p>
+             
+            </div>
+			
+
+           
+            
+        </div>
+        
+    
+     
+    
+            
+    </div>
+   
+      </div>
+    
+</body>
+
+<!-- Footer -->
+	<footer class="page-footer font-small bg-dark">
+		 <div class="footer-copyright text-center text-light py-3">
+            Harmonized Health Facility Assessment (HHFA)
+            <a href="https://www.who.int/data/data-collection-tools/harmonized-health-facility-assessment/introduction"> who.int</a>
+        </div>
+	</footer>
+</html>
+

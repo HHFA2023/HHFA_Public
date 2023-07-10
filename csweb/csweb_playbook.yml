@@ -1,0 +1,138 @@
+#########################################################
+# Ansible Playbook: Installation of CSWeb on Ubuntu 20.04
+# Developed By: Boniface Muganda
+# WHO Consultant
+# Date: 10-July-2021
+#########################################################
+
+##################################################
+# Notes
+# Incase the inventory file is not authnticating with 
+# the host, please run the following commands on the 
+# the control node
+# ssh-agent bash
+# ssh-add /path/to/server.pem
+#####################################################
+
+---
+- hosts: all
+  become: true
+  vars_files:
+    - vars/default.yml
+
+  tasks:
+    - name: Install prerequisites
+      apt: name={{ item }} update_cache=yes state=latest force_apt_get=yes
+      loop: [ 'aptitude' ]
+    #Apache Configuration
+    - name: Install LAMP Packages
+      apt: name={{ item }} update_cache=yes state=latest
+      loop: [ 'apache2', 'mysql-server', 'php', 'php-mysql', 'libapache2-mod-php', 'php-xml', 'python3-pip', 'php-zip', 'wget', 'unzip' ]
+     
+    - name: Make sure pymysql is present
+      pip:
+        name: pymysql
+        state: present
+
+    - name: Create document root
+      file:
+        path: "/var/www/{{ http_host }}"
+        state: directory
+        owner: "{{ app_user }}"
+        mode: 0755
+
+    - name: Set up Apache virtualhost
+      template:
+        src: "files/apache.conf.j2"
+        dest: "/etc/apache2/sites-available/{{ http_conf }}"
+      notify: Reload Apache
+
+    - name: Enable new site
+      shell: /usr/sbin/a2ensite {{ http_conf }}
+      notify: Reload Apache
+
+    - name: Disable default Apache site
+      shell: /usr/sbin/a2dissite 000-default.conf
+      when: disable_default
+      notify: Reload Apache
+    
+      # MySQL Configuration
+    - name: Sets the root password
+      mysql_user:
+        name: root
+        password: "{{ mysql_root_password }}"
+        login_unix_socket: /var/run/mysqld/mysqld.sock
+
+    - name: Remove all anonymous mysql user accounts
+      mysql_user:
+        name: ''
+        host_all: yes
+        state: absent
+        login_user: root
+        login_password: "{{ mysql_root_password }}"
+
+    - name: Remove the MySQL test database
+      mysql_db:
+        name: test
+        state: absent
+        login_user: root
+        login_password: "{{ mysql_root_password }}"
+    
+        
+    - name: Create CSWeb database
+      mysql_db:
+        name: "{{ mysql_csweb_db }}"
+        state: present
+        login_user: root
+        login_password: "{{ mysql_root_password }}"
+        
+    - name: Create CSWeb DB user/Grant privileges to csweb db
+      mysql_user:
+        name: "{{ mysql_csweb_user }}"
+        host: localhost
+        password: "{{ mysql_csweb_pass }}"     
+        state: present
+        priv: "{{ mysql_csweb_db }}.*:ALL"
+        login_user: root
+        login_password: "{{ mysql_root_password }}"
+    
+    - name: Create csweb installation directory
+      file:
+        path: "/var/www/{{ http_host }}/{{ csweb_folder }}"
+        state: directory
+        mode: 0755
+      
+    - name: Unzip CSweb.zip
+      unarchive:
+        src: "files/csweb.zip"
+        dest: "/var/www/{{ http_host }}/{{ csweb_folder }}"
+        
+    - name: Change folder permissions
+      file:
+        path: "{{item}}"
+        state: directory
+        owner: www-data
+        group: www-data
+        recurse: yes
+      loop: 
+        - /var/www/{{ http_host }}/{{ csweb_folder }}/api
+        - /var/www/{{ http_host }}/{{ csweb_folder }}/files
+        - /var/www/{{ http_host }}/{{ csweb_folder }}/setup
+        - /var/www/{{ http_host }}/{{ csweb_folder }}/src
+        - /var/www/{{ http_host }}/{{ csweb_folder }}/var
+    
+
+  handlers:
+    - name: Reload Apache
+      service:
+        name: apache2
+        state: reloaded
+
+    - name: Restart Apache
+      service:
+        name: apache2
+        state: restarted
+        
+    
+        
+ 

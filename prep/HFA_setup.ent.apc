@@ -1,0 +1,511 @@
+﻿ // *********************************************************************************
+ // Project:       World Health Org Health Facility Assessment (HFA) Combined
+ // Module:        HFA Setup (MUST be run prior to data collection)
+
+ // Designer:      Boniface Muganda, Consultant
+ 
+ // Designer(Modified):  Lutwama Geofrey, WHO Consultant
+
+ // ****************************************************************
+
+PROC GLOBAL
+
+  numeric sysYr, sysMo, sysDay, firstTime=0, always, i, j,k,s,t,y;
+  string  sSavePswd = "save_password";		// sSavePswd is being assigned the string name being used in the Menu App; these must agree
+  string  pswd;
+	
+	valueset SelectionV,InModules;  
+	
+numeric availCore = 0;
+numeric availAdd = 0;
+numeric availAddSup = 0;
+numeric readCore = 0;
+numeric qocAddSup = 0;
+numeric mgmtCore = 0;
+numeric mgmtAdd = 0;
+  
+string preSelection="";
+
+string partial_saved_question;
+
+
+function CheckCSWebConnection()
+	numeric success = 1;
+	if !syncconnect(CSWeb, strip(SYNC_URL),strip(SYNC_UID),strip(SYNC_PSWD)) then
+		success = 0;
+		errmsg(024, strip(SYNC_URL),strip(SYNC_UID),strip(SYNC_PSWD))
+		       select("Edit CSweb URL", SYNC_URL, "Edit CSWeb Username", SYNC_UID, "Edit CSWeb Password", SYNC_PSWD);
+	else
+		errmsg(025);
+		syncdisconnect();
+	endif;
+	CheckCSWebConnection = success;
+end;
+
+function PartialSave()
+	savepartial();
+	stop(1);
+end;
+
+
+function OnKey(numeric x)
+
+	if x = 2069 then
+		move to QACTIVATED(TOT_Q) advance;
+	elseif x = 2083 then
+		move to QACTIVATED(1) advance;
+	else
+		OnKey = x;
+	endif;
+
+end;
+ 
+
+ 
+function MapQuestions()
+	
+	do i = 1 while i <= TOT_Q
+		QN(i) = i;
+		QNO(i) = QNO_MAP(i);
+		QMODULE(i) = QMODULE_MAP(i);
+		QASECTION(i)=QMSECTION(i);
+		
+		if availCore & QMODULE(i) in "AC","AC_RC" then
+			QACTIVATED(i) = 1;
+		elseif availAdd & QMODULE(i) in "AC","AA","AC_RC" then
+			QACTIVATED(i) = 1;
+		elseif availAddSup & QMODULE(i) = "AAS" then
+			QACTIVATED(i) = 1;
+		elseif readCore & QMODULE(i) in "RC","AC_RC","RC_MC" then
+			QACTIVATED(i) = 1;
+		elseif mgmtCore & QMODULE(i) in "MC","RC_MC" then		
+			QACTIVATED(i) = 1;
+		elseif mgmtAdd & QMODULE(i) in "MC","MA" then		
+			QACTIVATED(i) = 1;
+		elseif qocAddSup & QMODULE(i) = "QAS" then
+			QACTIVATED(i) = 1;
+		else
+			QACTIVATED(i) = 0;
+		endif;
+		
+	enddo;
+	if (availCore or availAdd) and readCore then
+		for numeric qstn in QUESTION_MAPPING where QASECTION = "SECT02" do
+			QACTIVATED(qstn) = 0;
+		endfor;
+	endif;
+end;
+
+function EndQmapping()
+	advance;
+end;
+
+
+{-------------------------------------------------------------------------------------------------------}
+ 
+
+function writeClusterInput()  
+	for i in QUESTION_MAPPING where tonumber(QASECTION[5])=SECTIONS_IN do 
+		startObject();
+		writePropertyName("id");
+		writeNumericValue(QN); 
+		writePropertyName("Activation");
+		writeStringValue(getlabel(QACTIVATED, QACTIVATED));
+		writePropertyName("Section");
+		writeStringValue(QASECTION);
+		writePropertyName("MODULE");
+		writeStringValue(QMODULE); 
+		writePropertyName("Question"); 
+		writeStringValue(QNO); 
+		writePropertyName("QuestionLabel");
+		writeStringValue(QMQUESTION_LABEL(QN)); 
+		writePropertyName("style");
+		if !QACTIVATED  then
+			writeStringValue("red");
+		else
+			writeStringValue("green");
+		endif;
+		endObject();	
+	enddo; 
+end;
+ 
+
+numeric curPortion = -1;
+numeric casesPerPortion = 5;
+
+function string getInputPortion(pIdx)
+	curPortion = pIdx;
+	string res = "";
+	
+	numeric pCount = 0;
+	
+	startJsonWrite();
+	startArray();
+	
+	numeric thereIsMore = false;
+	writeClusterInput(); 
+	if inc(pCount) >= casesPerPortion then
+		thereIsMore = true;
+	endif;
+	
+	if thereIsMore then
+		inc(curPortion);
+	else
+		curPortion = -1;
+	endif;
+	
+	endArray();
+	exit endJsonWrite();
+end;
+
+function getNextPortionidx()
+	exit curPortion;
+end;
+
+function exitApp()
+	reenter SECTIONS_IN;
+end;
+
+
+function split(string input, alpha(1) splitChar, list string output)
+	output.clear();
+	string gv_line;
+	numeric gv_splNum = 1;
+	numeric gv_p = pos(splitChar, input);
+	while gv_p do
+		output.add(input[1:gv_p - 1]);
+		gv_line = input[gv_p + 1:length(strip(input)) - gv_p];
+		input = gv_line;
+		inc(gv_splNum);
+		gv_p = pos(splitChar, input);
+	enddo;
+	output.add(strip(input)); 
+	exit gv_splNum;	
+end;
+
+
+function splitNumbers(string input, alpha(1) splitChar, list output, numeric skipErrors = true)
+	list string sl;
+	split(input, splitChar, sl);  
+	output.clear();
+	do  i = 1 while i <= sl.length() by 1
+		y = tonumber(sl(i));
+		if !(skipErrors & special(y)) then
+			output.add(y);
+		endif;
+	enddo;
+	
+	exit output.length();
+end;
+  
+ 
+
+function assignSelected(string selectedClusters, numeric doClear = false)
+	list selClust;
+	splitNumbers(selectedClusters, ";", selClust); 
+	numeric curLister = 0; 
+	if !doClear then 
+		numeric conf = errmsg(tr("Confirm activation of selected questions")) select(tr("Yes"), continue, tr("No"), continue);
+		if conf <> 1 then
+			exit;
+		endif;
+	else
+		numeric conf = errmsg(tr("Confirm deactivation of the selected questions")) select(tr("Yes"), continue, tr("No"), continue);
+		if conf <> 1 then
+			exit;
+		endif;
+	endif; 
+	
+	//updating assignments
+	do  i = 1 while i <= selClust.length() by 1
+		if doClear then
+			QACTIVATED(selClust(i))=0;		
+		else
+			QACTIVATED(selClust(i))=1;//listers(curLister);
+		endif;
+	enddo;
+end; 
+{//////////////////////////////////////////////////////////////////////////////////////////////////////}
+ 
+
+PROC CHFA_SETUP_FF
+preproc
+
+   pswd = loadsetting (sSavePswd);
+   if pswd <> "Geneva" then		 //!!! if the password was changed in the menu app, change it here to the same string
+     errmsg ("Incorrect password provided, exiting system.");
+     stop(1);
+   endif;
+   
+   userbar(clear);
+   userbar(add button, "Partial Save & Exit", PartialSave);
+   // userbar(add button, "Complete Question Mapping", do("EndGroup"));
+   userbar(add button, "Complete Question Mapping", EndQmapping);
+   
+   partial_saved_question = getsymbol(savepartial);
+
+PROC CHFA_QUEST
+preproc
+//InitQMapArray();
+
+postproc
+  errmsg("HHFA Set-Up Complete");
+  stop(1);
+  
+PROC CHFA_CC_REC_FORM
+preproc
+ string qmpFile = "../ref/QMap.csdb";
+ if !fileexist(qmpFile) then
+	errmsg("Question mapping file not found. Aborting!");
+	stop(1)
+ else
+	setfile(QMAPDICT_DICT, qmpFile);
+	if !loadcase(QMAPDICT_DICT) then
+		errmsg("Question mapping record not found. Aborting!");
+		stop(1)
+	else
+		sysDay = sysdate("DD");
+		sysMo = sysdate("MM");
+		sysYr = sysdate("YYYY");
+  
+		  if visualvalue(cHFA_ID) = notappl then // first time through, initialize all module fields (but not date fields)
+			
+			firstTime=1;
+			
+		  endif;
+	endif;
+  
+endif;
+PROC SURVEY_BASICS_BLOCK
+
+preproc
+userbar(hide);
+PROC CHFA_ID
+// Once the survey fieldwork has begun, the home office cannot change the ISO (i.e., UN M49) code
+
+preproc
+  if !firstTime then	// if first time thru, allow them to change country; o/w, they can't change it, as 
+    noinput
+  endif;
+
+onfocus
+  if !firstTime then
+    noinput;
+  endif;
+  
+  SelectionV.clear();
+  SelectionV = CHFA_ID_VS1;
+  
+  always = 1;
+	while always = 1 do
+		k = SelectionV.show("Select Survey Country");
+		if k>0 then
+			$=k; 
+			always =2;
+			break;
+		endif; 
+		
+	enddo; 
+    setvalueset($, SelectionV);
+	noinput;	
+  
+  
+  
+  
+
+
+PROC HFA_START_DATE
+
+postproc
+
+if firsttime then
+	if datediff(HFA_START_DATE, sysdate("YYYYMMDD")) > 0  then
+		errmsg (0014, "start", hfa_start_day, hfa_start_mon, hfa_start_yr, "today's", sysDay, sysMo, sysYr);
+		reenter;
+	endif;
+endif;
+PROC HFA_END_DATE
+
+postproc
+if datediff(HFA_END_DATE, HFA_START_DATE) > 0  then
+	errmsg (0014, "end", hfa_end_day, hfa_end_mon, hfa_end_yr, "the survey start", hfa_start_day, hfa_start_mon, hfa_start_yr);
+	reenter;
+endif;
+PROC EX_USD
+
+preproc
+ask if co_currency <> "USD";
+PROC SYNC_METHOD
+
+
+   if $ = 1 then
+   SYNC_URL = "";
+   SYNC_UID = "";
+   SYNC_PSWD = "";
+ 
+	skip to FACILITY_AUDITS_BLOCK;
+  endif;
+
+
+PROC SYNC_URL
+
+postproc
+if $ = "" then
+	errmsg(020);
+	reenter;
+elseif !regexmatch(SYNC_URL, "(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})") then
+	errmsg(021);
+	reenter;
+endif;
+PROC SYNC_UID
+
+if strip($) = "" then
+	errmsg(022);
+	reenter;
+endif;
+PROC SYNC_PSWD
+
+if strip($) = "" then
+	errmsg(023);
+	reenter;
+endif;
+
+CheckCSWebConnection();
+PROC MOD_AVAILABILITY
+preproc
+ preSelection = $;
+
+postproc
+if ischecked("1",$) & ischecked("2",$) then
+	errmsg("You can only choose one module between Core & Core+Additional.");
+	reenter;
+elseif ischecked("0",$) & poschar("123",$) then
+	errmsg("Please deselect other options if this module is not being conducted.");
+	reenter;
+endif;
+
+if preSelection <> "" & preSelection <> $ then
+	errmsg("You have modified module selections.") select("Reset question mappings", continue, "Reenter module selections", $);
+	
+	do i = 1 while i <= count(QMAP_REC)
+		if QMODULE(i) in "AC","AA","AAS" then
+			QACTIVATED(i) = notappl;
+		endif; 
+	enddo;
+
+endif;
+	
+	availCore = (ischecked("1", MOD_AVAILABILITY));
+	availAdd = (ischecked("2", MOD_AVAILABILITY));
+	availAddSup = (ischecked("3", MOD_AVAILABILITY));
+
+PROC MOD_READINESS
+
+postproc
+ readCore = (MOD_READINESS = 1);
+PROC MOD_QOC
+
+// if MOD_QOC = 1 then
+	// qocAddSup = 1;
+// endif;
+
+postproc
+qocAddSup = (MOD_QOC = 1);
+
+PROC MOD_FINANCE
+
+postproc
+
+	mgmtCore = (MOD_FINANCE = 1);
+	mgmtAdd = (MOD_FINANCE = 2);
+	
+	if !availCore & !availAdd & !availAddSup & !readCore & !qocAddSup & !mgmtCore & !mgmtAdd then
+	
+
+	errmsg(0015) select("Change Availability",MOD_AVAILABILITY, 
+						"Change Readiness", MOD_READINESS,
+						"Change QoC", MOD_QOC,
+						"Change Mngt&Finance", MOD_FINANCE);
+	endif;
+	
+	if !firsttime then
+		
+	endif;
+
+
+
+
+PROC TOT_Q 
+preproc
+
+$ = count(QMAP_REC);
+noinput;
+
+postproc
+	userbar(show); 
+	if !firstTime then
+		i = errmsg("Reset question mappings?") select("Yes", continue,"No, keep current mappings",continue);
+		if i = 1 then
+			MapQuestions();
+		else
+			advance to SECTIONS_IN;
+		endif;
+	else
+		MapQuestions();
+	endif;
+
+
+PROC SECTIONS_IN
+onfocus
+	SelectionV.clear();
+	InModules.clear();
+	InModules=SECT_NUMBER_VS1;
+	InModules.remove(1);
+	j=2; 
+	SelectionV.add("No more activation (Exit)", 99);
+	 do i=1 while i<=InModules.length(); 
+		t=count(QUESTION_MAPPING where QASECTION=maketext("SECT%02d",i+1) and QACTIVATED=1);
+		if t=0 then
+			SelectionV.add(maketext("%d. %s",i+1, InModules.labels(i)+ " <(No Question is activated)>"), i+1); 
+		else
+			SelectionV.add(maketext("%d. %s",i+1, InModules.labels(i)), i+1); 
+		endif;
+	 enddo; 
+	
+	always = 1;
+	while always = 1 do
+		k = SelectionV.show("Select Section to Actiavte/Deactivate Questions");
+		if k>0 then
+			$=k; 
+			always =2;
+			break;
+		endif; 
+		
+	enddo;  
+	setvalueset($, SelectionV);
+	noinput;
+ 
+	
+PROC SECTION_ACTIVATION
+preproc
+	if SECTIONS_IN =99 then
+		SECTIONS_IN=notappl;
+		skip;
+	endif;
+	
+	string display_options = maketext('{ "width": "%d",' 
+                                  '  "height": %d }',
+                                  tonumber(getproperty("MaxDisplayWidth")), 
+                                  tonumber(getproperty("MaxDisplayHeight")) * .9); 
+
+    numeric res = tonumber(htmlDialog("HFA_setup.html",
+                           inputData := "", 
+                           displayOptions := display_options));
+				
+	
+	$=1;
+	noinput;
+	
+postproc
+	reenter SECTIONS_IN;
+	

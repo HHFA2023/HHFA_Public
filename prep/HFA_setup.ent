@@ -1,0 +1,33 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=HFA_SETUP
+Name=HFA_SETUP
+AppType=DataEntry
+OperatorID=No
+ShowEndCaseDialog=No
+CAPI=Yes
+CaseTree=Never
+CreateListing=No
+CreateLog=No
+AutoAdvanceOnSelection=Yes
+DisplayCodesAlongsideLabels=Yes
+ShowFieldLabels=No
+[External Dictionaries]
+File=..\dicts\QMapDict.dcf
+File=..\dicts\HFA_Assignments.dcf
+[AppCode]
+File=.\HFA_setup.ent.apc
+Include=.\JSON.apc
+[Message]
+File=.\HFA_setup.mgf
+[Help]
+File=.\HFA_setup.ent.qsf
+[Forms]
+File=.\HFA_setup.fmf
+[Dictionary Types]
+Dict-Type=..\dicts\cHFA_setup.dcf,Input,.\HFA_setup.fmf
+Dict-Type=..\dicts\QMapDict.dcf,External
+Dict-Type=..\dicts\HFA_Assignments.dcf,External
+[Sync]
+Server=Dropbox
+Direction=Put

@@ -1,0 +1,238 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=HHFA_Menu
+Name=HHFA_MENU_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=70960AE6ADF7F55C86229251D07C8A32736AEA5B9957ABCD101F106ABA6706B4
+
+[Level]
+Label=HHFA_Menu Level
+Name=HHFA_MENU_LEVEL
+
+[IdItems]
+
+[Item]
+Label=HHFA_Menu Identification
+Name=HHFA_MENU_ID
+Start=2
+Len=1
+DataType=Numeric
+
+[Record]
+Label=HHFA_Menu Record
+Name=HHFA_MENU_REC
+RecordTypeValue='1'
+RecordLen=141
+
+[Item]
+Label=Login
+Name=LOGIN
+Start=3
+Len=5
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Data Manager Menu
+Name=DATA_MANAGER_MENU
+Start=8
+Len=1
+DataType=Alpha
+
+[Item]
+Label=Supervisor Menu
+Name=SUPERVISOR_MENU
+Start=9
+Len=1
+DataType=Alpha
+
+[Item]
+Label=Team Leader Menu
+Name=TEAM_LEADER_MENU
+Start=10
+Len=1
+DataType=Alpha
+
+[Item]
+Label=Interviewer Menu
+Name=INTERVIEWER_MENU
+Start=11
+Len=1
+DataType=Alpha
+
+[Item]
+Label=Select Region
+Name=SELECT_REGION
+Start=12
+Len=2
+DataType=Numeric
+
+[Item]
+Label=Select District
+Name=SELECT_DISTRICT
+Start=14
+Len=2
+DataType=Numeric
+
+[Item]
+Label=Select Facility for Assignments
+Name=SELECT_FACILITY
+Start=16
+Len=10
+DataType=Alpha
+
+[Item]
+Label=Select Facility (Survey)
+Name=INTERV_FACILITY
+Start=26
+Len=16
+DataType=Alpha
+
+[Item]
+Label=Select Facility (Survey Start/End Times)
+Name=SURVEY_START_END
+Start=42
+Len=16
+DataType=Alpha
+
+[Item]
+Label=Supervisor Report Type
+Name=SUP_REPORT_TYPE
+Start=58
+Len=1
+DataType=Numeric
+
+[Item]
+Label=Report Type
+Name=TL_REPORT_TYPE
+Start=59
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Report Type
+Name=TL_REPORT_TYPE_VS1
+Value=2;General report (all facilities)
+Value=3;Individual facility report
+Value=9;Back to menu
+
+[Item]
+Label=Interviewer Report Type
+Name=INTERV_REPORT_TYPE
+Start=60
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Interviewer Report Type
+Name=INTERV_REPORT_TYPE_VS1
+Value=1;General Progress Report
+Value=2;Facility Progress Report
+
+[Item]
+Label=Select Facility (Report)
+Name=SELECT_FACILITY_REPORT
+Start=61
+Len=16
+DataType=Alpha
+
+[Item]
+Label=Show Map
+Name=SHOW_MAP
+Start=77
+Len=1
+DataType=Numeric
+
+[Item]
+Label=Select Section (QActivation
+Name=SELECT_SECT
+Start=78
+Len=2
+DataType=Numeric
+
+[Item]
+Label=Activate Questions
+Name=ACTIVATE_QSTNS
+Start=80
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Activate Questions
+Name=ACTIVATE_QSTNS_VS1
+Value=1;Activate
+Value=0;Deactivate
+
+[Item]
+Label=Manage Duplicate Assignments
+Name=MANAGE_DUPLICATE_ASSIGNMENTS
+Start=81
+Len=16
+DataType=Alpha
+
+[Item]
+Label=Select Facility (Manage Assignments)
+Name=SELECT_FACILITY_ASSIGNMENT
+Start=97
+Len=16
+DataType=Alpha
+
+[Item]
+Label=Select Section
+Name=SELECT_SECTION_ASSIGNMENT
+Start=113
+Len=2
+DataType=Numeric
+
+[Item]
+Label=Select User
+Name=SELECT_USER_ASSIGNMENT
+Start=115
+Len=5
+DataType=Numeric
+
+[Item]
+Label=Select Region
+Name=REPORT_REGION
+Start=120
+Len=2
+DataType=Numeric
+
+[Item]
+Label=Select District
+Name=REPORT_DISTRICT
+Start=122
+Len=2
+DataType=Numeric
+
+[Item]
+Label=Date From
+Name=DATE_FROM
+Start=124
+Len=8
+DataType=Numeric
+
+[Item]
+Label=Date To
+Name=DATE_TO
+Start=132
+Len=8
+DataType=Numeric
+
+[Item]
+Label=Export Data
+Name=EXPORT_DATA
+Start=140
+Len=1
+DataType=Numeric
+
+[Item]
+Label=Export Data
+Name=EXPORT_DATA_CSV
+Start=141
+Len=1
+DataType=Numeric

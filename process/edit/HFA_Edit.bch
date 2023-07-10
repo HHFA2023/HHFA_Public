@@ -1,0 +1,13 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=HFA_EDIT
+Name=HFA_EDIT
+AppType=Batch
+[AppCode]
+File=.\HFA_Edit.bch.apc
+[Message]
+File=.\HFA_Edit.bch.mgf
+[Order]
+File=.\HFA_Edit.ord
+[Dictionary Types]
+Dict-Type=..\..\dicts\HFA_COMB.dcf,Input,.\HFA_Edit.ord
