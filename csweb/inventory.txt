@@ -1,2 +1,0 @@
-[hosts]
-hhfa_svr ansible_host=65.2.22.129 ansible_user=ubuntu ansible_ssh_private_key=~/.ssh/mumbai_key.pem

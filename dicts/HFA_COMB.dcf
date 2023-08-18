@@ -2821,7 +2821,7 @@ DataType=Numeric
 [ValueSet]
 Label=Introduction
 Name=I302_VS1
-Value=1;Continue
+Value=1
 
 [Item]
 Label=Official authorized/al-located: Total generalist medical practitioners

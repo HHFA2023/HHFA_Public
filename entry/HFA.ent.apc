@@ -34,6 +34,14 @@ PROC GLOBAL
 	
 	string capi_sect_name;
 	
+	numeric availCore = 0;		// Availability Core module being conducted
+	numeric availAdd = 0;		// Availability Core+Additional module being conducted
+	numeric availAddSup = 0;	// Availability Additional - Supplementary (Building Infrastructure) module being conducted
+	numeric readCore = 0;		// Readiness Core module being conducted
+	numeric qocAddSup = 0;		// QOC Additional - Supplementary (Record Review) module being conducted
+	numeric mgmtCore = 0;		// Mngmt & Fin Core module being conducted
+	numeric mgmtAdd = 0;		// Mngmt & Fin Core+Additiional module being conducted
+	
 	
 	
 	
@@ -370,6 +378,33 @@ preproc
 		errmsg (0001, filename(CHFA_DICT) ); 
 		stop (1);
 	endif;
+
+
+	//Check if avail core or addl is activated for staffing instructions
+	if ischecked("1", MOD_AVAILABILITY) then
+		availCore = 1;
+	endif;
+	if ischecked("2", MOD_AVAILABILITY) then
+		availAdd = 1;
+	endif;
+	if ischecked("3", MOD_AVAILABILITY) then
+		availAddSup = 1;
+	endif;
+	
+	if MOD_READINESS =1 then
+		readCore = 1;
+	endif;
+
+	if MOD_FINANCE = 1 then
+		mgmtCore = 1;
+	elseif MOD_FINANCE = 2 then
+		mgmtAdd = 1;
+	endif;
+	
+	if MOD_QOC = 1 then
+		qocRR = 1;
+	endif;
+	
 PROC HHFA_COVER
 onfocus
 	sectCode=1;

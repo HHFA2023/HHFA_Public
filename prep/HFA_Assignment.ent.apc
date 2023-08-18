@@ -280,7 +280,7 @@ preproc
 		if SECT_USER(j)=notappl then
 			SECT_USER(j)=0;
 		endif;
-		if j=1 then
+		if j =1 then
 			SECT_FIELDED(1) = 1;
 		else		
 			if count(QUESTION_MAPPING where QACTIVATED=1 and maketext("SECT%02d",j)= QASECTION)>0 then

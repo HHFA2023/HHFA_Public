@@ -26,8 +26,6 @@ Item=MOD_READINESS
 Item=MOD_QOC
 Item=MOD_FINANCE
 Item=SURVEY_LANG
-Item=CO_CURRENCY
-Item=EX_USD
 Item=TOT_Q
 Item=HFA_START_DATE
 Item=HFA_END_DATE
@@ -320,32 +318,6 @@ Position=40,287,192,310
 Text=Survey Language
  
   
-[Field]
-Name=CO_CURRENCY
-Position=278,332,321,352
-Item=CO_CURRENCY,CHFA_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=1
-  
-[Text]
-Position=40,335,193,358
-Text=Country Currency
- 
-  
-[Field]
-Name=EX_USD
-Position=278,381,419,401
-Item=EX_USD,CHFA_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=TextBox
-Form=1
-  
-[Text]
-Position=40,384,260,407
-Text=Exchange Rate with USD
- 
-  
   
 [Field]
 Name=SYNC_METHOD
@@ -491,20 +463,20 @@ Name=SURVEY_BASICS_BLOCK
 Label=Survey Bascis
 DisplayTogether=Yes
 Position=0
-Length=6
+Length=4
   
 [Block]
 Name=SYNC_BLOCK
 Label=Synchronization Setup
 DisplayTogether=No
-Position=7
+Position=5
 Length=4
   
 [Block]
 Name=FACILITY_AUDITS_BLOCK
 Label=Facility Audits Block
 DisplayTogether=Yes
-Position=12
+Position=10
 Length=4
   
 [EndGroup]
