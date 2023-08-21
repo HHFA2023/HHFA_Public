@@ -1093,7 +1093,7 @@ function CombinedDataMapping(sectIndex);
           HFA_COMB.FVRES = HHFA_DICT.FVRES;
           HFA_COMB.FVRES_OTHER = HHFA_DICT.FVRES_OTHER;
           HFA_COMB.GPS_READING = HHFA_DICT.GPS_READING;
-           HFA_COMB.Q110 = HHFA_DICT.Q110;
+          HFA_COMB.Q110 = HHFA_DICT.Q110;
           HFA_COMB.Q111 = HHFA_DICT.Q111;
           HFA_COMB.Q112 = HHFA_DICT.Q112;
           HFA_COMB.Q113 = HHFA_DICT.Q113;
@@ -4028,7 +4028,7 @@ function CombinedDataMapping(sectIndex);
 		HFA_COMB.Q13012 = HHFA_DICT.Q13012;
 		HFA_COMB.Q13012T = HHFA_DICT.Q13012T;
 		
-		do i = 1 while i <= totocc(hhfa_dict.SECT32_1)
+		do i = 1 while i <= count(hhfa_dict.SECT32_1)
 			HFA_COMB.Q13003_1(i) = HHFA_DICT.Q13003_1(i);
 			HFA_COMB.Q13003_2NR(i) = HHFA_DICT.Q13003_2NR(i);
 			HFA_COMB.Q13003_2(i) = HHFA_DICT.Q13003_2(i);
@@ -4128,7 +4128,7 @@ function CombinedDataMapping(sectIndex);
 		HFA_COMB.Q13108 = HHFA_DICT.Q13108;
 		HFA_COMB.Q13108T = HHFA_DICT.Q13108T;
 		
-		do i = 1 while i <= totocc(hhfa_dict.SECT33_1)
+		do i = 1 while i <= count(hhfa_dict.SECT33_1)
 			HFA_COMB.Q13103_1(i) = HHFA_DICT.Q13103_1(i);
 			HFA_COMB.Q13103_2(i) = HHFA_DICT.Q13103_2(i);
 			HFA_COMB.Q13103_3(i) = HHFA_DICT.Q13103_3(i);
@@ -4193,7 +4193,7 @@ function CombinedDataMapping(sectIndex);
 		HFA_COMB.Q13209 = HHFA_DICT.Q13209;
 		HFA_COMB.Q13209T = HHFA_DICT.Q13209T;
 		
-		do i = 1 while i <= totocc(hhfa_dict.SECT34_1)
+		do i = 1 while i <= count(hhfa_dict.SECT34_1)
 			HFA_COMB.Q13203_1(i) = HHFA_DICT.Q13203_1(i);
 			HFA_COMB.Q13203_2(i) = HHFA_DICT.Q13203_2(i);
 			HFA_COMB.Q13203_3(i) = HHFA_DICT.Q13203_3(i);
@@ -4266,7 +4266,7 @@ function CombinedDataMapping(sectIndex);
 		HFA_COMB.Q13306T = HHFA_DICT.Q13306T;
 		
 		
-		do i = 1 while i <= totocc(hhfa_dict.SECT35_1)
+		do i = 1 while i <= count(hhfa_dict.SECT35_1)
 			if HHFA_DICT.Q13301_2 > 0 then
 			HFA_COMB.Q13303_1(i) = HHFA_DICT.Q13303_1(i);
 			HFA_COMB.Q13303_2(i) = HHFA_DICT.Q13303_2(i);
@@ -4311,7 +4311,7 @@ function CombinedDataMapping(sectIndex);
 		HFA_COMB.Q13411 = HHFA_DICT.Q13411;	
 		HFA_COMB.Q13411T = HHFA_DICT.Q13411T;
         
-        do i = 1 while i <= totocc(hhfa_dict.SECT36_1)
+        do i = 1 while i <= count(hhfa_dict.SECT36_1)
 			HFA_COMB.Q13403(i) = HHFA_DICT.Q13403(i);
 			HFA_COMB.Q13404_1(i) = HHFA_DICT.Q13404_1(i);
 			HFA_COMB.Q13404_2(i) = HHFA_DICT.Q13404_2(i);
@@ -4374,7 +4374,7 @@ function CombinedDataMapping(sectIndex);
 		HFA_COMB.Q13513 = HHFA_DICT.Q13513;
 		HFA_COMB.Q13513T = HHFA_DICT.Q13513T;
 		
-		do i = 1 while i <= totocc(hhfa_dict.SECT37_1)
+		do i = 1 while i <= count(hhfa_dict.SECT37_1)
 			HFA_COMB.Q13504(i) = HHFA_DICT.Q13504(i);
 			HFA_COMB.Q13505_1(i) = HHFA_DICT.Q13505_1(i);
 			HFA_COMB.Q13505_2(i) = HHFA_DICT.Q13505_2(i);
@@ -5778,7 +5778,7 @@ else
 	registeredUser = loadsetting(device_reg_who);
 	CheckDeviceRegistration();
 	
-	{++++++++++++To remove the training/pilot data ++++++}
+	{++++++++++++To remove the training/test data ++++++}
 	  // Should be activated before main data collection
 	
 	{
@@ -5855,6 +5855,7 @@ onfocus
 	MyChoiceA(p)=maketext(1038); inc(p);{I. Create combined data}
 	MyChoiceA(p)=maketext(1039); inc(p);{J. Split Validation/Data Collection}
 	MyChoiceA(p)=maketext(1040); inc(p);{K. Data Cleaning Tool}
+	MyChoiceA(p)=maketext(1051); inc(p);{L. Review other responses}
 	MyChoiceA(p)=maketext(1041); inc(p);{X. Export Cleaned Data (combined data)}
 	
 	
@@ -5916,19 +5917,22 @@ postproc
 			errmsg("File: 2_HFA_COMB_FINALDATA.csdb missing, please run the supervisor split function first");
 			reenter;
 		endif;
-		if fileexist(".\data\HFA_COMB_FINALDATA_EDITED.csdb") then
-			filedelete(".\data\HFA_COMB_FINALDATA_EDITED.csdb");
+		if fileexist(".\data\6_HFA_COMB_FINALDATA_EDITED.csdb") then
+			filedelete(".\data\6_HFA_COMB_FINALDATA_EDITED.csdb");
 		endif;
 		execpff("./process/edit/HFA_Edit.pff",wait);
+		reenter;
+	elseif $ = "L" then
+		execpff("./process/report_other/Writing Other Specify.pff",wait);
 		reenter;
 	elseif $ = "X" then
 	
 	
-	    if !fileexist(".\data\HFA_COMB_FINALDATA_EDITED.csdb") then
-			errmsg("File: HFA_COMB_FINALDATA_EDITED missing, please run the data cleaning option to generate it");
+	    if !fileexist(".\data\6_HFA_COMB_FINALDATA_EDITED.csdb") then
+			errmsg("File: 6_HFA_COMB_FINALDATA_EDITED.csdb missing, please run the data cleaning option to generate it");
 			reenter;
 		endif;
-	    i = accept("Choose the Export Format", "Stata File", "CSV/Excel File");
+	    i = accept("Choose the Export Format", "STATA/SAS/SPSS File", "TXT/Excel File");
 		if i = 1 then
 			skip to EXPORT_DATA;
 		elseif i = 2 then
@@ -6496,7 +6500,7 @@ onfocus
 $ = notappl;
 
 	i=accept(maketext(0096),{"Choose report type"}
-             maketext(1003), //Facility validation report
+             maketext(1003), //Facility validation progress report
              maketext(1004), //Facility coverage report (List)
 	         maketext(1005), //Facility coverage
              maketext(1006));//tr("Back to menu")
@@ -6518,8 +6522,8 @@ $ = notappl;
 
 	i=accept(maketext(0096),{"Choose report type"}
 			//"checkDuplicateSections",
-			maketext(0099),//General report (all facilities)
-			maketext(0100),//Individual facility report
+			maketext(0099),//General progress report
+			maketext(0100),//Facility progress report
 			maketext(1006)); //Back to menu
 	{if i=1 then
 		checkDuplicateSections();
@@ -6712,6 +6716,11 @@ PROC MANAGE_DUPLICATE_ASSIGNMENTS
 
 PROC EXPORT_DATA
 preproc 
+	string export_file_name = "6_HFA_COMB_FINALDATA_EDITED.csdb"; // This file should be located in data folder;
+	if !fileexist(maketext(".\data\%s",export_file_name)) then
+		errmsg("Export File does not exist. Make sure the export file has been generated. Program will quit");
+		reenter DATA_MANAGER_MENU;
+	endif;
 	if !direxist("./Export_Data") then
 		dircreate("./Export_Data");
 	endif;
@@ -6723,13 +6732,15 @@ preproc
 	filewrite(tmpFile,"Version=CSPro 7.7");
 	filewrite(tmpFile,"");
 	filewrite(tmpFile,"[Dictionaries]");
-	filewrite(tmpFile,"File=..\data\HFA_COMB_FINALDATA_EDITED.csdb");
+	filewrite(tmpFile,maketext("File=..\data\%s",export_file_name));
 	filewrite(tmpFile,"");
 	filewrite(tmpFile,"[ExportType]");
 	filewrite(tmpFile,"FilesCreated=Single");
 	filewrite(tmpFile,"ReportLabels=Names");
-	filewrite(tmpFile,"ItemsAre=Included"); 
-	filewrite(tmpFile,"ExportMethod=Stata");
+	filewrite(tmpFile,"ItemsAre=Included");
+	//filewrite(tmpFile,"Language=FR"); {Uncomment this line if you want to export to specific language; change the abbreviation to match your selected language}
+	//filewrite(tmpFile,"ExportMethod=Stata"); {Export to STATA file format only}
+    filewrite(tmpFile,"ExportMethod=SPSS-SAS-Stata"); {Export to SPSS, SAS, and STATA formats}
 	filewrite(tmpFile,"MultipleOccs=OneRecord");
 	filewrite(tmpFile,"ExportRecordType=No");
 	filewrite(tmpFile,"ExportItemsSubItems=Items");
@@ -6768,10 +6779,10 @@ preproc
 	
 	close(tmpFile);
 	
-	if !direxist("./Data/Export_Data/Stata") then
-		dircreate("./Data/Export_Data/Stata");
+	if !direxist("./Data/Export_Data/STATA_SAS_SPSS") then
+		dircreate("./Data/Export_Data/STATA_SAS_SPSS");
 	endif;
-	filedelete("./Data/Export_Data/Stata/*.*");
+	filedelete("./Data/Export_Data/STATA_SAS_SPSS/*.*");
 	 
 	setfile(tmpFile, "./Export_Data/Export_Data.pff", create); 
 	close(tmpFile);
@@ -6779,20 +6790,26 @@ preproc
 	setup_pff.load("./Export_Data/Export_Data.pff");
 	setup_pff.setproperty("AppType", "Export"); 
 	setup_pff.setproperty("Application", "./Export_Data/Export_Data.exf"); 
-	setup_pff.setproperty("InputData", ".\Data\HFA_COMB_FINALDATA_EDITED.csdb"); 
-	setup_pff.setproperty("ExportedData", ".\Data\Export_Data\Stata\Exported.dat");
-	setup_pff.setproperty("STATADescFile", ".\Data\Export_Data\Stata\Exported.dct");
-	setup_pff.setproperty("STATALabelsFile", ".\Data\Export_Data\Stata\Exported.do");   
+	setup_pff.setproperty("InputData", maketext(".\Data\%s",export_file_name)); 
+	setup_pff.setproperty("ExportedData", ".\Data\Export_Data\STATA_SAS_SPSS\Exported.dat");
+	setup_pff.setproperty("STATADescFile", ".\Data\Export_Data\STATA_SAS_SPSS\Exported.dct");
+	setup_pff.setproperty("STATALabelsFile", ".\Data\Export_Data\STATA_SAS_SPSS\Exported.do");
+	setup_pff.setproperty("SPSSDescFile", ".\Data\Export_Data\STATA_SAS_SPSS\Exported.sps");
+	setup_pff.setproperty("SASDescFile", ".\Data\Export_Data\STATA_SAS_SPSS\Exported.sas");	
 	setup_pff.exec(); 
  
 	filedelete("./Export_Data/*.*");
 	dirdelete("./Export_Data"); 
-	errmsg("The exported data is in Data/Export_Data/Stata");
+	errmsg("The exported data is in Data/Export_Data/STATA_SAS_SPSS");
 	
 	reenter DATA_MANAGER_MENU;
 PROC EXPORT_DATA_CSV
-
 preproc 
+	string export_file_name = "6_HFA_COMB_FINALDATA_EDITED.csdb"; // This file should be located in data folder;
+	if !fileexist(maketext(".\data\%s",export_file_name)) then
+		errmsg("Export File does not exist. Make sure the export file has been generated. Program will quit");
+		reenter DATA_MANAGER_MENU;
+	endif;
 	if !direxist("./Export_Data/") then
 		dircreate("./Export_Data/");
 	endif;
@@ -6804,13 +6821,14 @@ preproc
 	filewrite(tmpFile,"Version=CSPro 7.7");
 	filewrite(tmpFile,"");
 	filewrite(tmpFile,"[Dictionaries]");
-	filewrite(tmpFile,"File=..\data\HFA_COMB_FINALDATA_EDITED.csdb");
+	filewrite(tmpFile,maketext("File=..\data\%s",export_file_name));
 	filewrite(tmpFile,"");
 	filewrite(tmpFile,"[ExportType]");
 	filewrite(tmpFile,"FilesCreated=Single");
 	filewrite(tmpFile,"ReportLabels=Names");
 	filewrite(tmpFile,"ItemsAre=Included"); 
-	filewrite(tmpFile,"ExportMethod=CommaDelimited");
+	filewrite(tmpFile,"ExportMethod=TabDelim"); {Export to tab delimited text file format only}
+	//filewrite(tmpFile,"Language=FR"); {Uncomment this line if you want to export to specific language; change the abbreviation to match your selected language}
 	filewrite(tmpFile,"MultipleOccs=OneRecord");
 	filewrite(tmpFile,"ExportRecordType=No");
 	filewrite(tmpFile,"ExportItemsSubItems=Items");
@@ -6834,6 +6852,8 @@ preproc
 		inc(i);
 	enddo;
 	
+	
+	
 	 {*** County specific Questions ***}
 	{
 		list string MyItemsCountry='XX01','XX01T','XX02'
@@ -6846,10 +6866,10 @@ preproc
 	
 	close(tmpFile);
 	
-	if !direxist("./Data/Export_Data/csv") then
-		dircreate("./Data/Export_Data/csv");
+	if !direxist("./Data/Export_Data/txt") then
+		dircreate("./Data/Export_Data/txt");
 	endif;
-	filedelete("./Data/Export_Data/csv/*.*");
+	filedelete("./Data/Export_Data/txt/*.*");
 	 
 	setfile(tmpFile, "./Export_Data/Export_Data.pff", create); 
 	close(tmpFile);
@@ -6857,14 +6877,14 @@ preproc
 	setup_pff.load("./Export_Data/Export_Data.pff");
 	setup_pff.setproperty("AppType", "Export"); 
 	setup_pff.setproperty("Application", "./Export_Data/Export_Data.exf"); 
-	setup_pff.setproperty("InputData", ".\Data\HFA_COMB_FINALDATA_EDITED.csdb"); 
-	setup_pff.setproperty("ExportedData", ".\Data\Export_Data\csv\Exported.csv");
+	setup_pff.setproperty("InputData", maketext(".\Data\%s",export_file_name)); 
+	setup_pff.setproperty("ExportedData", ".\Data\Export_Data\txt\Exported.txt");
  
 	setup_pff.exec(); 
  
 	filedelete("./Export_Data/*.*");
 	dirdelete("./Export_Data"); 
-	errmsg("The exported data is in Data/Export_Data/csv");
+	errmsg("The exported data is in Data/Export_Data/txt");
 	
 	reenter DATA_MANAGER_MENU;
 

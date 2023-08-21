@@ -99,8 +99,8 @@ Language=EN
 0096 Choose report type
 0097 Facilities list
 0098 Map view
-0099 General report (all facilities)
-0100 Individual facility report
+0099 General progress report (all facilities)
+0100 Facility progress report
 0101 Do you want to update the assignment for section: %s from %s to %s
 
 0106 WHO HHFA Survey
@@ -115,7 +115,7 @@ Language=EN
 1000 WHO HHFA Setup
 1001 Y Setup Survey Parameters
 1002 Z Quit
-1003 Facility validation report
+1003 Facility validation progress report
 1004 Facility coverage report (List)
 1005 Facility coverage report (Map)
 1006 Back to menu ↩️ 
@@ -151,6 +151,7 @@ Language=EN
 1038 I. Create combined data
 1039 J. Split Validation/Data Collection
 1040 K. Run data cleaning tool
+1051 L. Review other responses
 1041 X. Export cleaned data (combined data) 
 
 1042 A. Select facility sections for validation
