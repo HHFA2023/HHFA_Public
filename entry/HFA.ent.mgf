@@ -21,8 +21,8 @@ Language=EN
 0018 West
 0019 Enter Longitude Value
 0020 Unhandled value set option.
-0021 PreviousField
-0022 NextField
+0021 Previous Field
+0022 Next Field
 0023 ChangeLanguage
 0024 The survey date cannot be before the scheduled HHFA start date.
 0025 The survey date cannot be after the scheduled HHFA end date.
@@ -96,6 +96,99 @@ Language=EN
 800112 Reminder:- Be out in the open for the system to collect the GPS
 800113 GPS device acquiring GPS satellites. Please wait to complete its capture
 
-{Franch translations}
+{French translations}
 Language=FR 
+0001 ERREUR==>Impossible de charger le fichier de configuration HFA (%s). La collecte ne peut se poursuivre tant que ce fichier n'est pas localisé.
+0002 Si le consentement n'est pas obtenu, la collecte va s'arrêter.
+0003 Le consentement a été obtenu précédemment, êtes-vous sûr de vouloir le changer en "Non" ?
+0004 INC
+0005 N/A
+0006 FAIT
+0007 Collecter les coordonnées GPS ?
+0008 Vous avez choisi de ne pas mettre à jour les coordonnées GPS. Reprendre la collecte du GPS ?
+0009 La lecture du GPS a été abandonnée par l'utilisateur. Reprendre la collecte du GPS ?
+0010 La lecture du GPS a échoué. Reprendre la collecte du GPS ?
+0011 Échec du démarrage du GPS. Reprendre la collecte du GPS ?
+0012 Sélectionner Nord/Sud
+0013 Nord
+0014 Sud
+0015 Entrer la valeur pour la latitude
+0016 Sélectionner Est/Ouest
+0017 Est
+0018 Ouest
+0019 Entrer la valeur pour la longitude
+0020 Option de modalité de réponse non gérée
+0021 Champ précédent
+0022 Champ suivant
+0023 Changer la langue
+0024 La date de l'enquête ne peut pas être antérieure à la date de début prévue pour HHFA.
+0025 La date de l'enquête ne peut pas être postérieure à la date de fin prévue pour HHFA.
+0026 Aucune section ne vous a été assignée dans cet établissement.
+0027 Etablissement introuvable dans le fichier des assignations.
+0028 Voulez-vous arrêter la collecte ?
+0029 La collecte des données est terminée.
+0030 Une ou plusieurs sections ne sont pas encore terminées.
+0031 Les champs textuels doivent comporter au moins %d caractères.
+0032 Vous avez indiqué le résultat de cette visite d'établissement comme : %s. En êtes-vous sûr(e) ?
+0033 Collecter les coordonnées GPS de l'établissement ?
+0034 Vous devez d'abord renseigner la section Identification de l'établissement.
+0036 Cette section a été partiellement sauvegardée. Souhaitez-vous aller à la dernière question sauvegardée ?
+0037 Modifier la réponse concernant le résultat de l'entretien
+0038 Correct, continuer
+0039 Oui
+0040 Non
+0041 Pas collectée
+0042 Poursuivre vers le tableau de bord de statut des sections
 
+0301 Le nombre total d'agents à temps partiel ne peut être supérieur au nombre total d'agents affectés, employés et détachés.
+0302 Corriger le total des effectifs affectés, employés ou détachés (INCLUANT LES EMPLOYÉS À TEMPS PARTIEL)
+0303 Corriger le total du personnel à temps partiel
+0304 Le nombre total d'agents de sexe féminin ne peut être supérieur au nombre total d'agents affectés, employés ou détachés.
+0305 Corriger le total d'agents de sexe féminin
+
+0403 %s\n ne peut être supérieur au \n nombre total de lits de nuits/d'hospitalisation pour adultes dans l'établissement
+0404 Corriger le nombre actuel de lits de nuits/d'hospitalisation pour adultes dans l'établissement (%02d)
+0405 Corriger %s (%02d)
+0406 Le nombre total de lits de nuit/d'hospitalisation ne peut pas être supérieur à\n Nombre total réel de lits de nuit/d'hospitalisation pour adultes dans l' établissement
+0407 Le nombre de lits/berceaux pédiatriques en unités de soins intensifs  ne peut être supérieur au nombre total de lits pédiatriques.
+0408 Corriger le nombre total de lits pédiatriques de nuit/d'hospitalisation (plus petits que les lits pour adultes) et de lits pour nourrissons dans cet établissement (à l'exclusion des lits néonatals).
+0409 Corriger le nombre total de lits pédiatriques et de lits pour nourrissons de la question précédente, combien sont des lits/berceaux pédiatriques d'unités de soins intensifs ?
+
+0410 Le nombre total de lits néonatals en soins intensifs ne peut être supérieur au nombre total de lits de soins néonatals.
+0411 Nombre total de lits néonatals dans l'établissement
+0412 Corriger le nombre total de lits néonatals indiqué à la question précédente, combien de lits sont dédiés aux soins intensifs néonatals ?
+
+
+7000 Menu des modules
+7001 Changer de langue
+7002 Sauvegarder les données (partielles)
+7003 Arrêter la collecte
+
+7020 Essayez-vous de quitter cette section ?
+7021 Non, poursuivre la collecte
+7023 Sauvegarder les données et quitter
+7024 Oui, sauvegarder partiellement et quitter
+
+130041 L'âge gestationnel à la dernière visite de CPN ne peut pas être inférieur à l'âge gestationnel à la première visite de CPN.
+1300451 La date de naissance ne peut être postérieure à la date d'aujourd'hui.
+1300452 L'âge calculé du client est de %d. Considérez l'âge minimum pour procréer.
+
+
+8000 Vous ne pouvez pas sélectionner les options en MAJUSCULES (BLEU). Ce sont des en-têtes.
+8001 Vous devez sélectionner au moins une option.
+8002 Le nombre de remplacements ne peut pas dépasser le nombre de clients éligibles identifiés.
+
+800100 Vérifier la localisation de l'établissement de santé, les coordonnées GPS. Placez-vous en un endroit ouvert et cliquez sur [OK].
+800101 W Le GPS n'est pas actif. Activez le GPS et réessayez
+800102 Le GPS n'est pas actif. Activez le GPS et réessayez
+800103 Le GPS est activé, essayez à nouveau
+800104 Entrer les coordonnées GPS manuellement
+800105 Abandonner le processus de lecture
+800106 E Le GPS n'a pas pu lire les satellites, vérifiez que vous vous trouvez dans un endroit dégagé et réessayez.
+800107 E Le GPS n'a pas pu lire les satellites, confirmez que vous êtes dans un endroit dégagé et réessayez (2).
+800108 La précision de la collecte GPS était de %d mètres
+800109 Recollecter les coordonnées GPS
+800110 Continuer
+800111 Les coordonnées GPS ont été collectées avec succès
+800112 Rappel :- Soyez à l'air libre pour que le système collecte les coordonnées GPS.
+800113 Appareil GPS capturant des satellites GPS. Veuillez patienter jusqu'à la fin de la capture.

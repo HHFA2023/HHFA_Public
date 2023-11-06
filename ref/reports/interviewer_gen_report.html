@@ -17,7 +17,7 @@
   <!-- Report properties-->
     <?
     string report_title = "WHO HHFA";
-    string report_subtitle = "Interviewer General Report";
+    string report_subtitle = maketext(1104);
 
     ?>
 	
@@ -46,17 +46,20 @@
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                
                 <table class="table table-bordered table-striped">
-                    <thead>
-                        <tr>
-                            <th>Facility Name</th>
-                            <th>No. Assigned Sections</th>
-							<th>No. Completed</th>
-							<th>No. Pending</th>
+                    <? 
+					$.write('<thead>');
+					
+                     $.write('<tr>');
+                            $.write('<th>'+maketext(1108)+'</th>');
+                            $.write('<th>'+maketext(1109)+'</th>');
+							$.write('<th>'+maketext(1110)+'</th>');
+							$.write('<th>'+maketext(1111)+'</th>');
                             
-                        </tr>
-                    </thead>
-                    <tbody>
-					<?
+                       $.write('</tr>');
+						
+                      $.write('</thead>');
+                      $.write('<tbody>');
+					
 					i = 1;
 					forcase HFA_ASSIGNMENTS where Sect_User has login do
 					   $.write('<tr>');
@@ -80,9 +83,9 @@
 						$.write('<td>'+maketext('%v',(no_assigned - complete_sects))+'</td>');
 						inc(i);
 						$.write('</tr>');
-					endfor;?>
-				
-                    </tbody>
+					endfor;	
+                    $.write('</tbody>'); ?>
+					
                     
                 </table>
              

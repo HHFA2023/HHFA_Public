@@ -17,7 +17,7 @@
 	  <!-- Report properties-->
     <?
     string report_title = "WHO HHFA";
-    string report_subtitle = "Interviewer Progress Report";
+    string report_subtitle = maketext(1103);
 	string facility_title = LookupFacilityName(fac_id);
     ?>
 	
@@ -48,10 +48,13 @@
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
-                            <th>Section #</th>
-                            <th>Section Name</th>
-                            <th>Status</th>
-							<th>Interview Duration</th>
+						<?
+                            $.write('<th>'+maketext(1112)+'</th>');
+                            $.write('<th>'+maketext(1113)+'</th>');
+                            $.write('<th>'+maketext(1114)+'</th>');
+							$.write('<th>'+maketext(1115)+'</th>');
+							
+						?>
                             
                         </tr>
                     </thead>

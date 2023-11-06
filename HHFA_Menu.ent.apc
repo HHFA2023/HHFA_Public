@@ -5840,18 +5840,18 @@ onfocus
 	$ = ""; 
 	MyChoiceA.clear();
 	p=1;
-	MyChoiceA(p)=maketext("===========. HFA Survey Setup ========"); inc(p);
+	MyChoiceA(p)=maketext(1080); inc(p);
 	MyChoiceA(p)=maketext(1030);inc(p);{A. Setup HHFA survey parameters}
     MyChoiceA(p)=maketext(1031);inc(p);{B. Activate/Deactivate questions}
 
-	MyChoiceA(p)=maketext("=============. Reports ============="); inc(p);
+	MyChoiceA(p)=maketext(1081); inc(p);
 	MyChoiceA(p)=maketext(1032);inc(p);{C. Download all data}
 	MyChoiceA(p)=maketext(1033); inc(p);{D. Duplicates report}
 	MyChoiceA(p)=maketext(1034);inc(p);{E. Survey progress report} 
 	MyChoiceA(p)=maketext(1035);inc(p);{F. Detailed incomplete sections}
 	MyChoiceA(p)=maketext(1036);inc(p);{G. Facility validation report}
 	//MyChoiceA(p)=maketext(1037);  inc(p);{H. Get export questions}
-	MyChoiceA(p)=maketext("===========. Data Management =========="); inc(p);
+	MyChoiceA(p)=maketext(1082); inc(p);
 	MyChoiceA(p)=maketext(1038); inc(p);{I. Create combined data}
 	MyChoiceA(p)=maketext(1039); inc(p);{J. Split Validation/Data Collection}
 	MyChoiceA(p)=maketext(1040); inc(p);{K. Data Cleaning Tool}
@@ -5914,7 +5914,7 @@ postproc
 		reenter;
 	elseif $ = "K" then
 		if !fileexist(".\data\2_HFA_COMB_FINALDATA.csdb") then
-			errmsg("File: 2_HFA_COMB_FINALDATA.csdb missing, please run the supervisor split function first");
+			errmsg(1083);
 			reenter;
 		endif;
 		if fileexist(".\data\6_HFA_COMB_FINALDATA_EDITED.csdb") then
@@ -5929,10 +5929,10 @@ postproc
 	
 	
 	    if !fileexist(".\data\6_HFA_COMB_FINALDATA_EDITED.csdb") then
-			errmsg("File: 6_HFA_COMB_FINALDATA_EDITED.csdb missing, please run the data cleaning option to generate it");
+			errmsg(1084);
 			reenter;
 		endif;
-	    i = accept("Choose the Export Format", "STATA/SAS/SPSS File", "TXT/Excel File");
+	    i = accept(maketext(1085), maketext(1086), maketext(1087));
 		if i = 1 then
 			skip to EXPORT_DATA;
 		elseif i = 2 then
@@ -6198,7 +6198,7 @@ preproc
 		always = 1;
 		
 		while always = 1 do
-			k=accept("Do you want to make a new facility assignment?","Yes","No, modify existing assignment");
+			k=accept(maketext(1088),maketext(0009),maketext(1089));
 			if k>0 then
 				always =2;
 				break;
@@ -6229,7 +6229,7 @@ onfocus
 	enddo;  
 	always = 1;
 	while always = 1 do
-		k = geography_vs.show("Select the region");
+		k = geography_vs.show(maketext(1090));
 		if k>0 then
 			$=k; 
 			selected_fac_reg=k; 
@@ -6271,7 +6271,7 @@ onfocus
 	setvalueset(SELECT_DISTRICT,geography_vs);
 	always = 1;
 	while always = 1 do
-		k = geography_vs.show("Select the district");
+		k = geography_vs.show(maketext(1091));
 		if k>0 then
 			$=k; 
 			selected_fac_dist=k; 
@@ -6313,7 +6313,7 @@ $ = "";
 	
 	always = 1;
 	while always = 1 do
-		k = facilities_vs.show("Select the facility");
+		k = facilities_vs.show(maketext(1092));
 		if k>0 then
 			$=edit("9999999999", k); 
 			always =2;
@@ -6331,15 +6331,14 @@ if $ = "9999999999" then
 	onstop();
 else
 	loadcase(FACILITIES_DCF, SELECT_FACILITY);
-	
-	messgTxt = tr("Confirm selection of facility: %s, for section assignments");
+	selected_fac_name = strip(FAC_NAME);
+	messgTxt = maketext(1093, selected_fac_name);
 	if CheckFacilityAssigned() then
 
 		if find(HHFA_DICT, startswith, maketext("%010d",facility_id)) then
-			messgTxt = "Data collection for facility %s has started. Do you want to modify the assignments? Please note, you"+
-								  " will not be able to reassign sections if data collection has started.";
+			messgTxt = maketext(1094, selected_fac_name);
 		else
-			messgTxt = tr("Do you want to modify the section assignments for facility: %s");
+			messgTxt = maketext(1095, selected_fac_name);
 		endif;
 	endif;
 		
@@ -6422,7 +6421,7 @@ onfocus
 	else
 		forcase HFA_Assignments where HFA_ASSIGNMENTS.ASSIGNER_ID  = LOGIN do
 			if FacilityInSampleFile() then 
-				string str_status = "Modify Assignments";
+				string str_status = maketext(1096);
 				CaseId = maketext("%10d%d%05d", fac_id, ent_type, assigner_id);
 				// if loadcase(hfa_comb, CaseId) then
 					// str_status = getvaluelabel(int_status);
@@ -6474,13 +6473,12 @@ postproc
 		
 		if TEAM_LEADER_MENU="A" then 
 		
-			messgTxt = tr("Confirm selection of facility: %s, for section assignments");
+			messgTxt = maketext(1093, selected_fac_name);
 			if CheckFacilityAssigned() then 
 				if find(HHFA_DICT, startswith, maketext("%010d",facility_code)) then
-					messgTxt = "Data collection for facility %s has started. Do you want to modify the assignments? Please note, you"+
-										  " will not be able to reassign sections if data collection has started.";
+					messgTxt = maketext(1094, selected_fac_name);
 				else
-					messgTxt = tr("Do you want to modify the section assignments for facility: %s");
+					messgTxt = maketext(1095, selected_fac_name);
 				endif;
 			endif;
 				
@@ -6637,11 +6635,11 @@ onfocus
 	InModules.remove(1);
 	j=2;
 	
-	SelectionV.add("No more activation (Exit)", 99);
+	SelectionV.add(maketext(1097), 99);
 	 do i=1 while i<=InModules.length(); 
 		t=count(QUESTION_MAPPING where QASECTION=maketext("SECT%02d",i+1) and QACTIVATED=1);
 		if t=0 then
-			SelectionV.add(maketext("%d. %s",i+1, InModules.labels(i)+ " <(No Question is activated)>"), i+1); 
+			SelectionV.add(maketext("%d. %s",i+1, InModules.labels(i)+ maketext(1098)), i+1); 
 		else
 			SelectionV.add(maketext("%d. %s",i+1, InModules.labels(i)), i+1); 
 		endif;
@@ -6649,7 +6647,7 @@ onfocus
 	
  always = 1;
 	while always = 1 do
-		k = SelectionV.show("Select Section");
+		k = SelectionV.show(maketext(1099));
 		if k>0 then
 			$=k; 
 			always =2;
@@ -6799,8 +6797,9 @@ preproc
 	setup_pff.exec(); 
  
 	filedelete("./Export_Data/*.*");
-	dirdelete("./Export_Data"); 
-	errmsg("The exported data is in Data/Export_Data/STATA_SAS_SPSS");
+	dirdelete("./Export_Data");
+
+	errmsg(maketext(1100, " Data/Export_Data/STATA_SAS_SPSS"));
 	
 	reenter DATA_MANAGER_MENU;
 PROC EXPORT_DATA_CSV
@@ -6884,7 +6883,7 @@ preproc
  
 	filedelete("./Export_Data/*.*");
 	dirdelete("./Export_Data"); 
-	errmsg("The exported data is in Data/Export_Data/txt");
+	errmsg(maketext(1100, " Data/Export_Data/txt"));
 	
 	reenter DATA_MANAGER_MENU;
 
@@ -6898,7 +6897,7 @@ onfocus
 	selcase(FACILITIES_DCF,"")include(REG_CODE,REG_NAME)multiple(automark);
 	 
 	geography_vs.add(maketext(1006), 99);//"Back to Menu"  
-	geography_vs.add("All Regions", 98);//"Back to Menu"  
+	geography_vs.add(maketext(1101), 98);//"Back to Menu"  
 	for FACILITIES_DCF do  
 		i=0; 
 		do j=1 while j<= geography_vs.length()
@@ -6913,7 +6912,7 @@ onfocus
 	enddo;  
 	always = 1;
 	while always = 1 do
-		k = geography_vs.show("Select the region");
+		k = geography_vs.show(maketext(1090));
 		if k>0 then
 			$=k; 
 			selected_fac_reg=k;
@@ -6942,7 +6941,7 @@ onfocus
 	geography_vs.clear();
 	
 	geography_vs.add(maketext(1025), 99);//"Back to Menu"
-    geography_vs.add("All Districts", 98);//"All districts" 	
+    geography_vs.add(maketext(1102), 98);//"All districts" 	
 	selcase(FACILITIES_DCF,"")include(DIST_CODE,DIST_NAME) where (REG_CODE= selected_fac_reg)  multiple(automark); 
 	for FACILITIES_DCF  do 
 		i=0; 
@@ -6959,7 +6958,7 @@ onfocus
 	setvalueset(SELECT_DISTRICT,geography_vs);
 	always = 1;
 	while always = 1 do
-		k = geography_vs.show("Select the district");
+		k = geography_vs.show(maketext(1091));
 		if k>0 then
 			$=k; 
 			selected_fac_dist=k; 

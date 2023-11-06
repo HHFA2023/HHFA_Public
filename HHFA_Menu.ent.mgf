@@ -160,7 +160,202 @@ Language=EN
 1045 D. Download all data
 
 1050 Version: %s
- 
 
-{Franch translations}
+1080 ===========. HFA Survey Setup ========
+1081 =============. Reports =============
+1082 ===========. Data Management ==========
+1083 File: 2_HFA_COMB_FINALDATA.csdb missing, please run the supervisor split function first
+1084 File: 6_HFA_COMB_FINALDATA_EDITED.csdb missing, please run the data cleaning option to generate it
+1085 Choose the Export Format
+1086 STATA/SAS/SPSS File
+1087 TXT/Excel File
+1088 Do you want to make a new facility assignment?
+1089 No, modify existing assignment
+1090 Select the region
+1091 Select the district
+1092 Select the facility
+1093 Confirm selection of facility: %s, for section assignments
+1094 Data collection for facility %s has started. Do you want to modify the assignments? Please note, you will not be able to reassign sections if data collection has started.
+1095 Do you want to modify the section assignments for facility: %s
+1096 Modify Assignments
+1097 No more activation (Exit)
+1098  <(No Question is activated)>
+1099 Select Section
+1100 The exported data is located in %s
+1101 All Regions
+1102 All Districts
+1103 Interviewer Progress Report
+1104 Interviewer General Report
+1105 Facilities Progress Report
+1106 Facility Progress Report
+1107 Facilities Coverage Report
+1108 Facility Name
+1109 No. Assigned Sections
+1110 No. Completed
+1111 No. Pending
+1112 Section #
+1113 Section Name
+1114 Status
+1115 Interview Duration
+{French translations}
 Language=FR 
+0001 Section pas assignée
+0002 <Code invalide>
+0003 Annuler
+0004 Enregistrer l'appareil sous mon code.
+0005 Appareil enregistré avec succès!
+0006 Cet appareil est enregistré pour %s . Vous n'êtes pas autorisé à utiliser cet appareil pour la collecte des données. Veuillez consulter votre chef d'équipe pour réinitialiser l'appareil.
+0007 Entrez le code de réinitialisation de l'appareil
+0008 Êtes-vous sûr de vouloir réinitialiser le code utilisateur pour l'appareil de %s
+0009 Oui
+0010 Non
+0011 ATTENTION==>Le fichier de configuration HFA n'existe pas--il doît être créé avant de poursuivre.
+0012 Appareil réinitialisé avec succès!
+0013 <Nom de l'établissement invalide>
+0014 Géocode invalide
+0015 Échec de démarrage du serveur Bluetooth.
+0016 Échec de la connexion à CSWeb. Confirmez que vous disposez d'une connexion internet active.
+0017 Échec de la connexion à Dropbox. Confirmez que vous disposez d'une connexion internet active.
+0018 Échec de la connexion au serveur Bluetooth.
+0019 La méthode de synchronisation des données n'a pas été définie. Synchronisation des données interrompue!
+0020 Échec de mise à jour de l'application!
+0021 Application mise à jour avec succès!
+0022 Impossible de synchroniser le fichier %s
+0023 Application synchronisée avec succès!
+0024 Erreur de connexion à l'appareil du chef d'équipe!
+0025 Échec de téléchargement des données HHFA. Vérifiez que le dictionnaire existe!
+0026 Données individuelles HHFA téléchargées avec succès!
+0027 Échec de téléchargement des assignations. Vérifiez que le dictionnaire existe!
+0028 Échec de téléchargement des données de l'enquêteur.
+0029 Échec du transfert des données. Vérifiez que le dictionnaire existe!
+0030 Données individuelles HHFA synchronisées avec succès!
+0031 Échec de téléchargement des données combinées. Vérifiez que le dictionnaire existe.
+0032 Données combinées HHFA synchronisées avec succès!
+0033 Données envoyées au chef d'équipe avec succès!
+0034 Échec de téléchargement des données de l'enquêteur.
+0035 Données de l'enquêteur synchronisées avec succès!
+0036 Échec de téléchargement d'un enregistrement de l'ensemble des données.
+0037 Échec de téléchargement des assignations des sections.
+0038 Données combinées téléchargées avec succès!
+0039 Assignations téléchargées avec succès!
+0040 Données synchronisées avec succès!
+0041 Section pas débutée
+0042  (GPS pas capté)
+0043 GPS pas capté
+0044  (GPS capté)
+0045 GPS capté
+0046 GPS collecté
+0047 GPS pas collecté
+0048 Fichier combiné pas créé
+0049 Choisissez une région pour en afficher les établissements
+0050 Fichier CSV généré. Vérifier le fichier à %s
+0051 Entretien terminé
+0052 Entretien pas terminé
+0053 La concaténation des données est sur le point de débuter. En fonction du nombre de FOSA, le processus peut prendre un certain temps. Veuillez être patient pendant que le processus de concaténation se poursuit.
+0054 La concaténation des données est terminée
+0055 Fichier des codes d'accès des utilisateurs manquant. Arrêt de l'application!
+0056 Fichier des établissements  manquant. Arrêt de l'application!
+0057 Fichier des unités administratives manquant. Arrêt de l'application!
+0058 HHFA pas configurée.
+0059 Entrer un code d'accès valide
+0060 Code d'accès invalide - %v
+0061 Les fonctions du gestionnaire de données ne peuvent être exécutées que sur un ordinateur.
+0062 Rôle de l'utilisateur invalide
+0063 Le fichier de configuration HFA ne peut être exécuté que sur un ordinateur.
+0064 Mot de passe HFA :
+0065 Echec de réception des assignations des sections.
+0066 Assignations des sections reçues avec succès!
+0067 Cet appareil/tablette n'est pas enregistré pour la collecte des données.
+0068 Code saisi invalise!
+0069 Assignations des sections téléchargées avec succès!
+0070 %v minutes
+0071 %v heures
+0072 %v heures,%v minutes
+//0073 <b><u>Nom de l'établissement : %s</u></b><br/>Région : %s<br/>District: %s<br/> Location: %s<br/>Type d'établissement : %s<br/>Instance gestionnaire : %s<br/>Propriétaire : %s
+0073 <b><u>Nom de l'établissement : %s</u></b><br/>Région : %s<br/>District : %s<br/> Localisation : %s<br/>Type d'établissement : %s<br/>Instance gestionnaire : %s
+0074 Code de l'établissement, Nom de l'établissement, Code du chef d'équipe, Nom du chef d'équipe, Section #, Intitulé de la section , Code de l'enquêteur, Nom de l'enquêteur, Statut de l'entretien
+0075 Questionnaire pas trouvé
+0076 Code de l'établissement, Nom de l'établissement, Région, District, Code du chef d'équipe, Nom du chef d'équipe, Statut de l'entretien, GPS, % de complétude, Date de l'entretien
+0077 Données pas collectées
+0078 Pas collectées
+0079 Collectées
+0080 Code de l'établissement, Nom de l'établissement, Région, District, Données collectées
+0081 Entretien pas encore débuté
+0082 L'établissement %s a une assignation en double. La concaténation des données sera ignorée pour cet établissement.
+0083 Choisir la méthode de synchronisation des données
+0084 Bluetooth
+0085 Internet
+0086 (Modifier les assignations)
+0087 Oui, continuer
+0088 (Enregistrer l'heure de début)
+0089 (Enregistrer l'heure de fin)
+0090 Heure de début de la collecte dans l'établissement enregistrée avec succès!
+0091 Heure de fin de la collecte dans l'établissement enregistrée avec succès!
+0092 Sélectionner l'établissement (Enquête)
+0093 Nom de l'établissement
+0094 Accéder à l'établissement %s pour collecter des données.
+0095 Continuer
+0096 Choisir le type de rapport
+0097 Liste des établissements
+0098 Afficher la carte
+0099 Rapport général de collecte (Tous les établissements)
+0100 Rapport de collecte dans l'établissement
+0101 Souhaitez-vous mettre à jour l'assignation de la section : %s de %s à %s ?
+
+0106 WHO HHFA Survey
+0107 Configuration HHFA
+0108 Assignation des sections dans l'établissement
+0109 Choisir le type de carte
+0110 Vous ne pouvez pas synchroniser vos données avec l'appareil de %s. Il/elle n'est pas votre chef d'équipe.
+
+
+
+
+1000 Configuration OMS HHFA
+1001 Y Configurer les paramètres de l'enquête
+1002 Z Quitter
+1003 Rapport de contre-enquête de l'établissement
+1004 Rapport de couverture des établissements (Liste)
+1005 Rapport de couverture des établissements (Carte)
+1006 Retourner vers le menu ↩️ 
+1007 A. Assigner des sections de l'établissement pour la collecte de données
+1008 B. Transférer les assignations aux enquêteurs
+1009 K. Enregistrez l'heure de début/fin de l'entretien
+1010 C. Collecter les données
+1011 D. Recevoir les données des enquêteurs
+1012 E. Créer un enregistrement de toutes les données
+1013 F. Envoyer les données vers le serveur
+1014 G. Consulter les rapports de collecte
+1015 H. Apurer les sections dupliquées
+1016 U. Mettre à jour l'application
+1017 V. Transférer les fichiers de l'application à l'enquêteur
+1018 Y. Réinitialiser le code d'accès à l'appareil de (%s)
+1019 Z. Se déconnecter/Sortir
+1020 A. Recevoir les assignations des sections
+1021 D. Envoyer les données au chef d'équipe
+1022 E. Envoyer les données au serveur pour la sauvegarde
+1023 U. Mettre à jour l'application
+1024 V. Recevoir les fichiers de l'application du chef d'équipe
+1025 Retourner vers les régions ↩️
+1026 Retourner vers les districts ↩️
+
+1030 A. Configurer les paramètres de l'enquête HHFA
+1031 B. Activer/Désactiver des questions
+1032 C. Télécharger toutes les données
+1033 D. Rapport sur les doublons
+1034 E. Rapport de déroulement de l'enquête
+1035 F. Rapport détaillé sur les sections incomplètes
+1036 G. Rapport de contre-enquête de l'établissement
+1037 H. Obtenir les codes des questions à exporter
+1038 I. Créer les données combinées
+1039 J. Séparer les données de contre-enquête des données des enquêteurs
+1040 K. Exécuter l'outil d'apurement des données
+1051 L. Passer en revue les réponses "Autre"
+1041 X. Exporter les données apurées (données combinées) 
+
+1042 A. Sélectionner les sections de l'établissement pour la contre-enquête
+1043 B. Collecter les données de l'établissement pour la contre-enquête
+1044 C. Envoyer les données de la contre-enquête au serveur
+1045 D. Télécharger toutes les données
+
+1050 Version : %s

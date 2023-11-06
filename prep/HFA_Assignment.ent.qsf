@@ -35,5 +35,5 @@ questions:
     conditions:
       - questionText:
           EN: |
-            <span class="instruction">What would you like to do?</span>
+            <span class="instruction"><b>What would you like to do?</b></span>
 ...

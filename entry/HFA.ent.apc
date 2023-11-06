@@ -9,7 +9,7 @@ PROC GLOBAL
 	numeric GoToSect,sectCode,IsStoping; 
 	string sTemp, capi_client_no, next_client;
 	
-	numeric bEndingInterview;
+	numeric bEndingInterview = 0;
 	
 	numeric exitbutton;
 	array string aFlowArr(54,4);
@@ -184,8 +184,8 @@ end;
 
 function userbase();
   userbar( clear );
-  userbar(add button, "<", do(maketext(0021)));{PreviousField}
-  userbar(add button, ">", do(maketext(0022)));{NextField}
+  // userbar(add button, "<", do(maketext(0021)));{PreviousField}
+  // userbar(add button, ">", do(maketext(0022)));{NextField}
   userbar(add button, "Advance to end >>|", doadvance());
   userbar( add button, maketext(7000), movetoflow());	 {Module Menu} 
   userbar( add button, maketext(7001), do(maketext(0023)) ); {Switch Language}	 
@@ -402,7 +402,7 @@ preproc
 	endif;
 	
 	if MOD_QOC = 1 then
-		qocRR = 1;
+		qocAddSup = 1;
 	endif;
 	
 PROC HHFA_COVER
@@ -975,7 +975,7 @@ preproc
 	 i=count(S_SUMMARY_ROSTER where S_NUMBER= 2 and  S_RESULT in 0:2);  
 	if i=0 then
 		SECTION_COMPLETE02=notappl;
-		skip ;
+		skip;
 	else 
 		if !bEndingInterview then
 			SECTION_COMPLETE02=1;
@@ -1467,7 +1467,7 @@ preproc
 	
 postproc	
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE02;
 	endif;
 PROC Q212_1
 preproc
@@ -1511,7 +1511,7 @@ preproc
 	
 postproc	
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE02;
 	endif;
 PROC Q214_1
 preproc
@@ -2770,7 +2770,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE03;
 	endif;
 PROC Q315
 preproc
@@ -2792,7 +2792,7 @@ PROC SECT04_FORM
 preproc
 	 i=count(S_SUMMARY_ROSTER where S_NUMBER= 4 and  S_RESULT in 0:2);  
 	 if i=0 then
-		SECTION_COMPLETE04=notappl;
+		SECTION_COMPLETE04=notappl; 
 		skip;
 	else 
 		if !bEndingInterview then
@@ -2995,7 +2995,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE04;
 	endif;
 PROC Q410_1A
 preproc
@@ -3483,7 +3483,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE05;
 	endif;
 PROC Q540_1
 preproc
@@ -3620,7 +3620,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE06;
 	endif;
 PROC Q611
 preproc
@@ -3629,7 +3629,7 @@ preproc
 
 postproc
 	if !$ in 1,2,3 then
-		EndSection();
+		skip to SECTION_COMPLETE06;
 	endif;
 PROC Q612_1
 preproc
@@ -4423,7 +4423,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE08;
 	endif;
 PROC Q808
 preproc
@@ -4974,7 +4974,7 @@ preproc
 
 postproc
 	if $ <> 1 then
-		EndSection();
+		skip to SECTION_COMPLETE09;
 	endif;
 PROC Q938
 preproc
@@ -5266,7 +5266,7 @@ preproc
 
 postproc
 	if $=3 then
-		EndSection(); 
+		skip to SECTION_COMPLETE10;
 	endif;
 PROC Q1032_1
 preproc
@@ -5718,7 +5718,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection(); 
+		skip to SECTION_COMPLETE11;
 	endif;
 PROC Q1134
 preproc
@@ -6047,7 +6047,7 @@ preproc
 
 postproc
 	if $ = 3 then
-		EndSection();
+		skip to SECTION_COMPLETE12;
 	endif;
 PROC Q1233
 preproc
@@ -6099,7 +6099,7 @@ preproc
 	
 postproc
 	if $<>1 then 
-		EndSection();
+		skip to SECTION_COMPLETE13;
 	endif;
 PROC I1301
 preproc
@@ -6813,7 +6813,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE14;
 	endif;
 PROC I1415
 preproc
@@ -7011,7 +7011,7 @@ preproc
 
 postproc
 	if $<>1 then 
-		EndSection();
+		skip to SECTION_COMPLETE15;
 	endif;
 PROC I1523
 preproc
@@ -7266,7 +7266,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE15;
 	endif;
 PROC Q1546_1
 preproc
@@ -7639,7 +7639,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE17;
 	endif;
 PROC I1721
 preproc
@@ -8029,7 +8029,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE18;
 	endif;
 PROC Q1827
 preproc
@@ -8067,7 +8067,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE18;
 	endif;
 PROC Q1835_1
 preproc
@@ -8184,7 +8184,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE19;
 	endif;
 PROC Q1902
 preproc
@@ -8647,7 +8647,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE20;
 	endif;
 PROC Q2008
 preproc
@@ -8707,7 +8707,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE21;
 	endif;
 PROC Q2101
 preproc
@@ -9166,7 +9166,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE21;
 	endif;
 PROC Q2121_1
 preproc
@@ -10328,7 +10328,7 @@ preproc
 
 postproc
 	if $ =3 then
-		EndSection();
+		skip to SECTION_COMPLETE22;
 	endif;
 PROC I2256
 preproc
@@ -10709,7 +10709,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE23;
 	endif;
 PROC Q2326
 preproc
@@ -10783,7 +10783,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE24;
 	endif;
 PROC I2401
 preproc
@@ -10982,7 +10982,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE25;
 	endif;
 PROC Q2501
 preproc
@@ -11034,7 +11034,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE25;
 	endif;
 PROC I2505
 preproc
@@ -12106,7 +12106,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE26;
 	endif;
 PROC I2602
 preproc
@@ -13501,7 +13501,7 @@ preproc
 
 postproc
 	if $=3 then
-		EndSection();
+		skip to SECTION_COMPLETE26;
 	endif;
 PROC Q2666
 preproc
@@ -13840,7 +13840,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE28;
 	endif;
 PROC I2801
 preproc
@@ -14057,7 +14057,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE29;
 	endif;
 	
 	
@@ -15731,7 +15731,7 @@ preproc
 
 postproc
 	if $=3 then
-		EndSection();
+		skip to SECTION_COMPLETE29;
 	endif;
 	
 	
@@ -15759,7 +15759,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE29;
 	endif;
 	
 PROC Q2925_5T
@@ -16475,7 +16475,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE30;
 	endif;
 PROC I3005
 preproc
@@ -16699,7 +16699,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE31;
 	endif;
 PROC I3101
 preproc
@@ -19638,7 +19638,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE31;
 	endif;
 PROC I3146
 preproc
@@ -19708,7 +19708,7 @@ preproc
 
 postproc
 	if $<>1 then
-		EndSection();
+		skip to SECTION_COMPLETE31;
 	endif;
 PROC Q3152
 preproc
@@ -19774,7 +19774,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 2 then
-	EndSection();
+	skip to SECTION_COMPLETE32;
 endif;
 PROC Q13001_1
 
@@ -19787,7 +19787,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 0 then
-	EndSection();
+	skip to SECTION_COMPLETE32;
 endif;
 PROC Q13001_3
 
@@ -20371,7 +20371,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 2 then
-	EndSection();
+	skip to SECTION_COMPLETE33;
 endif;
 PROC Q13101_1
 
@@ -20384,7 +20384,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 0 then
-	EndSection();
+	skip to SECTION_COMPLETE33;
 endif;
 PROC Q13101_3
 
@@ -20700,7 +20700,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 2 then
-	EndSection();
+	skip to SECTION_COMPLETE34;
 endif;
 PROC Q13201_1
 
@@ -20713,7 +20713,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 0 then
-	EndSection();
+	skip to SECTION_COMPLETE34;
 endif;
 PROC Q13201_3
 
@@ -21174,7 +21174,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 2 then
-	EndSection();
+	skip to SECTION_COMPLETE35;
 endif;
 PROC Q13301_1
 
@@ -21186,7 +21186,7 @@ preproc
 QuestionIsActivated();
 
 if $ = 0 then
-	EndSection();
+	skip to SECTION_COMPLETE35;
 endif;
 PROC Q13301_3
 
@@ -21442,7 +21442,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 2 then
-	EndSection();
+	skip to SECTION_COMPLETE36;
 endif;
 PROC Q13401_1
 
@@ -21455,7 +21455,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 0 then
-	EndSection();
+	skip to SECTION_COMPLETE36;
 endif;
 PROC Q13401_3
 
@@ -21814,7 +21814,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 2 then
-	EndSection();
+	skip to SECTION_COMPLETE37;
 endif;
 PROC Q13501_1
 
@@ -21827,7 +21827,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 0 then
-	EndSection();
+	skip to SECTION_COMPLETE37;
 endif;
 PROC Q13501_3
 
@@ -21862,7 +21862,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 0 then
-	EndSection();
+	skip to SECTION_COMPLETE37;
 endif;
 PROC Q13502_3
 
@@ -22202,7 +22202,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 2 then
-	EndSection();
+	skip to SECTION_COMPLETE38;
 endif;
 PROC Q4701
 preproc
@@ -22427,7 +22427,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 3 then
-	EndSection();
+	skip to SECTION_COMPLETE38;
 endif;
 PROC Q4715_4
 preproc
@@ -22476,7 +22476,7 @@ QuestionIsActivated();
 
 postproc
 if $ <> 1 then
-	EndSection();
+	skip to SECTION_COMPLETE39;
 endif;
 PROC Q4801
 preproc
@@ -22695,7 +22695,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 3 then
-	EndSection();
+	skip to SECTION_COMPLETE39;
 endif;
 PROC Q4815_4
 preproc
@@ -22744,7 +22744,7 @@ QuestionIsActivated();
 
 postproc
 if $ <> 1 then
-	EndSection();
+	skip to SECTION_COMPLETE40;
 endif;
 PROC Q4901
 preproc
@@ -22955,7 +22955,7 @@ QuestionIsActivated();
 
 postproc
 if $ <> 1 then
-	EndSection();
+	skip to SECTION_COMPLETE40;
 endif;
 PROC Q4916_1
 preproc
@@ -22969,7 +22969,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 3 then
-	EndSection();
+	skip to SECTION_COMPLETE40;
 endif;
 PROC Q4916_4
 preproc
@@ -23019,7 +23019,7 @@ QuestionIsActivated();
 
 postproc
 if $ <> 1 then
-	EndSection();
+	skip to SECTION_COMPLETE41;
 endif;
 PROC Q5001
 preproc
@@ -23230,7 +23230,7 @@ QuestionIsActivated();
 
 postproc
 if $ <> 1 then
-	EndSection();
+skip to SECTION_COMPLETE41;
 endif;
 PROC Q5016_1
 preproc
@@ -23244,7 +23244,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 3 then
-	EndSection();
+	skip to SECTION_COMPLETE41;
 endif;
 PROC Q5016_4
 preproc
@@ -23293,7 +23293,7 @@ QuestionIsActivated();
 
 postproc
 if $ <> 1 then
-	EndSection();
+	skip to SECTION_COMPLETE42;
 endif;
 PROC Q5101
 preproc
@@ -23510,7 +23510,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 3 then
-	EndSection();
+	skip to SECTION_COMPLETE42;
 endif;
 PROC Q5115_4
 preproc
@@ -23559,7 +23559,7 @@ QuestionIsActivated();
 
 postproc
 if $ <> 1 then
-	EndSection();
+	skip to SECTION_COMPLETE43;
 endif;
 PROC Q5201
 preproc
@@ -23738,7 +23738,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 1 then 
-	EndSection();
+	skip to SECTION_COMPLETE43;
 endif;
 PROC Q5214A_1
 preproc
@@ -23809,7 +23809,7 @@ QuestionIsActivated();
 
 postproc
 if $ <> 1 then
-	EndSection();
+	skip to SECTION_COMPLETE44;
 endif;
 PROC Q5301
 preproc
@@ -23988,7 +23988,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 1 then 
-	EndSection();
+	skip to SECTION_COMPLETE44;
 endif;
 PROC Q5314A_1
 preproc
@@ -24065,7 +24065,7 @@ QuestionIsActivated();
 
 postproc
 if $ <> 1 then
-	EndSection();
+	skip to SECTION_COMPLETE45;
 endif;
 PROC Q5401
 preproc
@@ -24244,7 +24244,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 1 then 
-	EndSection();
+	skip to SECTION_COMPLETE45;
 endif;
 PROC Q5414A_1
 preproc
@@ -24949,7 +24949,7 @@ QuestionIsActivated();
 
 postproc
 if $ <> 1 then
-	EndSection();
+	skip to SECTION_COMPLETE46;
 endif;
 PROC Q5546
 preproc
@@ -25128,7 +25128,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 1 then
-	EndSection();
+	skip to SECTION_COMPLETE46;
 endif;
 PROC Q5559A_1
 preproc
@@ -25199,7 +25199,7 @@ QuestionIsActivated();
 
 postproc
 if $ <> 1 then
-	EndSection();
+	skip to SECTION_COMPLETE47;
 endif;
 PROC Q5601
 preproc
@@ -25416,7 +25416,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 3 then
-	EndSection();
+	skip to SECTION_COMPLETE47;
 endif;
 PROC Q5615_4
 preproc
@@ -25465,7 +25465,7 @@ QuestionIsActivated();
 
 postproc
 if $ <> 1 then
-	EndSection();
+	skip to SECTION_COMPLETE48;
 endif;
 PROC Q5701
 preproc
@@ -25682,7 +25682,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 3 then
-	EndSection();
+	skip to SECTION_COMPLETE48;
 endif;
 PROC Q5715_4
 preproc
@@ -25731,7 +25731,7 @@ QuestionIsActivated();
 
 postproc
 if $ <> 1 then
-	EndSection();
+	skip to SECTION_COMPLETE49;
 endif;
 PROC Q5801
 preproc
@@ -25910,7 +25910,7 @@ QuestionIsActivated();
 
 postproc
 if $ = 1 then
-	EndSection();
+	skip to SECTION_COMPLETE49;
 endif;
 PROC Q5814A_1
 preproc
