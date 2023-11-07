@@ -18237,14 +18237,14 @@ Value=2;Reported, not seen
 Value=3;Not available
 
 [Item]
-Label=DOCUMENT OBSERVED:Any other guidelines for integrated diagnosis and management of childhood illnesses
+Label=DOCUMENT OBSERVED:Guidelines for growth monitoring
 Name=Q2005_3
 Start=36
 Len=1
 DataType=Numeric
 
 [ValueSet]
-Label=DOCUMENT OBSERVED:Any other guidelines for integrated diagnosis and management of childhood illnesses
+Label=DOCUMENT OBSERVED:Guidelines for growth monitoring
 Name=Q2005_3_VS1
 Value=1;Observed
 Value=2;Reported, not seen
@@ -19454,14 +19454,14 @@ Value=1;Yes
 Value=2;No
 
 [Item]
-Label=VACCINW AVAILABLE:COVID-19 vaccine
+Label=VACCINW AVAILABLE:Hep B vaccine
 Name=Q2117_13A
 Start=189
 Len=1
 DataType=Numeric
 
 [ValueSet]
-Label=VACCINW AVAILABLE:COVID-19 vaccine
+Label=VACCINW AVAILABLE:Hep B vaccine
 Name=Q2117_13A_VS1
 Value=0;OBSERVED
 TextColor=Blue
@@ -19474,14 +19474,14 @@ Value=4;Not available today
 Value=5;Never available
 
 [Item]
-Label=VACCINE, ANY STOCK OUT IN PAST 3 MONTHS:COVID-19 vaccine
+Label=VACCINE, ANY STOCK OUT IN PAST 3 MONTHS:Hep B vaccine
 Name=Q2117_13B
 Start=190
 Len=1
 DataType=Numeric
 
 [ValueSet]
-Label=VACCINE, ANY STOCK OUT IN PAST 3 MONTHS:COVID-19 vaccine
+Label=VACCINE, ANY STOCK OUT IN PAST 3 MONTHS:Hep B vaccine
 Name=Q2117_13B_VS1
 Value=1;Yes
 Value=2;No
@@ -32853,14 +32853,14 @@ Value=4;Not available today
 Value=5;Never available
 
 [Item]
-Label=TEST AVAILABLE:
+Label=TEST AVAILABLE:Hepatitis C RDT
 Name=Q2911_10
 Start=63
 Len=1
 DataType=Numeric
 
 [ValueSet]
-Label=TEST AVAILABLE:
+Label=TEST AVAILABLE:Hepatitis C RDT
 Name=Q2911_10_VS1
 Value=0;OBSERVED
 TextColor=Blue
@@ -38445,14 +38445,14 @@ Value=4;Not available today
 Value=5;Never available
 
 [Item]
-Label=OBSERVED OTHER/GENERAL MEDICINES:Metoclopramide injection
+Label=OBSERVED OTHER/GENERAL MEDICINES:Morphine or other related opioid analgesics injection
 Name=Q3108_14
 Start=91
 Len=1
 DataType=Numeric
 
 [ValueSet]
-Label=OBSERVED OTHER/GENERAL MEDICINES:Metoclopramide injection
+Label=OBSERVED OTHER/GENERAL MEDICINES:Morphine or other related opioid analgesics injection
 Name=Q3108_14_VS1
 Value=0;OBSERVED
 TextColor=Blue
